@@ -1,7 +1,7 @@
 # Vamos a realizar los test de las funcionalidades del modulo htmlBase para comprobar
 # que se comportan como queremos
 
-from src.capaPresentacion.funcionHtmlBase import crearHtmlHead, crearHeader
+from src.capaPresentacion.funcionHtmlBase import crearHtmlHead, crearHeader, crearFooter
 import pytest
 
 # En primer lugar, un test que nos permite comprobar que los parametros asignados se introducen en la variable.
@@ -138,3 +138,29 @@ def test_crearHeaderSecondPages():
 '''
 
     assert crearHeader("second_pages/") ==  header
+
+@pytest.mark.test_crearFooter
+def test_crearFooter():
+
+    footer ='''
+            <footer id="footer">
+            <div class="soporte_links">
+                <ul>
+                    <li><a href="#">Contacto: 971621612 / rentatorsl@company.eu<br><br></a></li>
+                    <li><a href="#">Soporte<br><br></a></li>
+                    <li>
+                        <a href="https://twitter.com/topbici"><img class="icono_red" src="http://imgfz.com/i/j9If6lw.png" alt="icono de twitter" width="20" height="20"></a>
+                        <a href="https://www.instagram.com/sansebikes/?hl=es"><img class="icono_red" src="http://imgfz.com/i/4YfLF68.png" alt="icono de instagram" width="20" height="20"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright_footer">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                Este obra está bajo una licencia de Creative Commons Reconocimiento-Compartir. Igual 4.0 Internacional.
+                <br><br><img class="copyright_img" alt="Licencia de Creative Commons" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+            </div>
+        </footer>
+    </body>
+</html>
+    '''
+    assert crearFooter() ==  footer
