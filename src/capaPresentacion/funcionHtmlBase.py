@@ -31,3 +31,56 @@ def crearHtmlHead(titulo, descripcion, keywords, cssPath, cssLink):
 '''
     
     return head
+
+# Esta función con los parametros que se le aplican creará una variable header que 
+# será común a todas las páginas cambiando solo el path de los archivos.
+
+def printHeader(path,indexPath=""):
+
+    header =f'''
+    <body>
+        <header>
+            <div class="banner_social_network">
+                <a href="https://twitter.com/topbici"><img class="icono_red" src="http://imgfz.com/i/j9If6lw.png" alt="icono de twitter" width="20" height="20"></a>
+                <a href="https://www.instagram.com/sansebikes/?hl=es"><img class="icono_red" src="http://imgfz.com/i/4YfLF68.png" alt="icono de instagram" width="20" height="20"></a>
+            </div>
+            <div class="header">
+                <div class="header__logo">
+                    <h1>Rentator</h1>
+                    <h2>Tu Mejor Opcion</h2>
+                </div>
+                <div class="header__nav">
+                    <div class="header__links">
+                        <a href="">Iniciar Sesión</a>
+                        <a href="">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="{indexPath}index.html">Inicio</a></li>
+                <li class="bicisfiltroboton">Bicicletas
+                    <ul>
+                        <li><a href="{path}bicis.html">Todas las bicis</a></li>
+                        <li><a href="{path}biciscategoria.html">Bicis por categoria</a></li>
+                        <li><a href="{path}bicispormarca.html">Bicis por marca</a></li>
+                        <li><a href="{path}biciscaracteristica.html">Bicis por caracteristicas</a></li>
+                    </ul>
+                </li>
+                <li><a href="{path}marcas.html">Marcas</a></li>
+                <li><a href="{path}tipos.html">Tipos</a></li>
+                <li><a href="{path}rentals.html">Rentals</a></li>
+            </ul>
+        </nav>
+            <div id="buscador">
+                <form method="get" action="https://www.google.es/search">
+                    <label for="search"></label>
+                    <input type="text" id="search" placeholder="Buscar..." name="q" value="">
+                </form>
+            </div>
+        <div>
+            <a href="#nav" target="_self"><div class="volverarriba"><p>Volver arriba</p></div></a>
+        </div>
+'''
+    return header
