@@ -14,19 +14,19 @@ pathCcsStyles = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\cssStyle
 @pytest.mark.test_creacionDirectoriosVideos
 def test_creacionDirectoriosVideos():
 
-    creacionDirectorios()
+    creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles)
     assert os.path.exists(pathVideos) != False
 
 @pytest.mark.test_creacionDirectoriosBicisSolitarias
 def test_creacionDirectoriosBicisSolitarias():
 
-    creacionDirectorios()
+    creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles)
     assert os.path.exists(pathBiciSolitarias) != False
 
 @pytest.mark.test_creacionDirectoriosCssStyles
 def test_creacionDirectoriosCssStyles():
 
-    creacionDirectorios()
+    creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles)
     assert os.path.exists(pathCcsStyles) != False
 
 
@@ -35,4 +35,4 @@ def test_creacionDirectoriosCssStyles():
 @pytest.mark.test_creacionDirectoriosExisten
 def test_creacionDirectoriosVideosExiste():
 
-    assert creacionDirectorios() == None
+    assert creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles) == None
