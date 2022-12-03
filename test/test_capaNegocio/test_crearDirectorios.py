@@ -28,3 +28,11 @@ def test_creacionDirectoriosCssStyles():
 
     creacionDirectorios()
     assert os.path.exists(pathCcsStyles) != False
+
+
+# Ahora comprobaremos que en el caso de que existan, el programa no hace nada
+
+@pytest.mark.test_creacionDirectoriosExisten
+def test_creacionDirectoriosVideosExiste():
+
+    assert creacionDirectorios() == None
