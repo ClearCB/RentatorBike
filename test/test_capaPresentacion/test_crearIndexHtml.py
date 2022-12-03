@@ -1,10 +1,12 @@
-from src.capaPresentacion.crearIndexHtml import crearBodyIndex
+from src.capaPresentacion.crearIndexHtml import crearBodyIndex, crearIndexHtml
 import pytest
+import os
 
 @pytest.mark.test_crearBodyIndex
 def test_crearBodyIndex():
 
     body ='''
+        <hr>
         <section class="contenido">
             <div class="video_background">
                 <video autoplay muted>
@@ -24,7 +26,12 @@ def test_crearBodyIndex():
                 <h3>Noticias mas recientes del mundo del ciclismo</h3>
                     <iframe src="https://www.esciclismo.com/actualidad/"></iframe>
             </div>
-        </section>'''
+        </section>
+        '''
 
     assert crearBodyIndex() == body
 
+@pytest.mark.test_crearIndexHtml()
+def test_crearIndexHtml():
+
+    assert os.path.isfile("C:\\Users\\abelc\Desktop\github\RentatorBike\docs\\index.html") == True
