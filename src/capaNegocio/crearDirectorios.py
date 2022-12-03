@@ -7,11 +7,9 @@ import os
 
 # Esta funcion se encarga de la creacion de los directorios, contiene un bloque de try-except para comprobar
 # que estos se crearon correctamente y en el caso de que ya existan, continua con el programa.
-def creacionDirectorios():
+# Le asignamos como parametros el path de donde queremos ubicar los directorios creados.
 
-    pathVideos = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\videos"
-    pathBiciSolitarias = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\bicissolitarias"
-    pathCcsStyles = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\cssStyles"
+def creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles):
 
     # Primero comprobamos que existan los directorios, en caso contrario los creamos.
 
