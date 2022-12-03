@@ -9,36 +9,37 @@ import os
 # que estos se crearon correctamente y en el caso de que ya existan, continua con el programa.
 def creacionDirectorios():
 
-    videos = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\videos"
-    biciSolitarias = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\bicissolitarias"
-    ccsStyles = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\cssStyles"
+    pathVideos = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\videos"
+    pathBiciSolitarias = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\bicissolitarias"
+    pathCcsStyles = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\cssStyles"
 
     # Primero comprobamos que existan los directorios, en caso contrario los creamos.
 
-    if os.path.exists(videos):
+    if os.path.exists(pathVideos) and os.path.isdir(pathVideos):
         pass
     else:
         try:
-            os.makedirs(videos, exist_ok=True)
+            os.makedirs(pathVideos, exist_ok=True)
             print(f"El directorio 'videos' ha sido creado correctamente")
         except OSError:
             print(f"El directorio 'videos' no ha podido crearse")
 
 
-    if os.path.exists(biciSolitarias):
+    if os.path.exists(pathBiciSolitarias) and os.path.isdir(pathBiciSolitarias):
         pass
     else:
         try:
-            os.makedirs(biciSolitarias, exist_ok=True)
+            os.makedirs(pathBiciSolitarias, exist_ok=True)
             print(f"El directorio 'biciSolitarias' ha sido creado correctamente")
         except OSError:
             print(f"El directorio 'biciSolitarias' no ha podido crearse")
 
-    if os.path.exists(ccsStyles):
+
+    if os.path.exists(pathCcsStyles) and os.path.isdir(pathCcsStyles):
         pass
     else:
         try:
-            os.makedirs(ccsStyles, exist_ok=True)
+            os.makedirs(pathCcsStyles, exist_ok=True)
             print(f"El directorio 'ccsStyles' ha sido creado correctamente")
         except OSError:
             print(f"El directorio 'ccsStyles' no ha podido crearse")
