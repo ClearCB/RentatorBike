@@ -35,7 +35,7 @@ def crearHtmlHead(titulo, descripcion, keywords, cssPath, cssLink):
 # Esta función con los parametros que se le aplican creará una variable header que 
 # será común a todas las páginas cambiando solo el path de los archivos.
 
-def printHeader(path,indexPath=""):
+def crearHeader(path,indexPath=""):
 
     header =f'''
     <body>
