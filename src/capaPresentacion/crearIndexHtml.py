@@ -5,6 +5,7 @@ from src.capaPresentacion.funcionHtmlBase import crearHtmlHead, crearHeader, cre
 def crearBodyIndex():
 
     bodyIndex ='''
+        <hr>
         <section class="contenido">
             <div class="video_background">
                 <video autoplay muted>
@@ -24,18 +25,28 @@ def crearBodyIndex():
                 <h3>Noticias mas recientes del mundo del ciclismo</h3>
                     <iframe src="https://www.esciclismo.com/actualidad/"></iframe>
             </div>
-        </section>'''
+        </section>
+        '''
 
     return bodyIndex
 
 def crearIndexHtml():
 
-    head = crearHtmlHead()
-    header = crearHeader()
+    head = crearHtmlHead("Rentator", "Página principal de un buscador de bicicletas para alquilar", "Bicicletas, inicio, index, alquilar, rental, bike","cssStyles/","index")
+    header = crearHeader("second_pages/")
     body = crearBodyIndex()
     footer = crearFooter()
 
-    indexHtml = head + header + body + footer
+    try:
+        with open("C:\\Users\\abelc\Desktop\github\RentatorBike\docs\\index.html","w", encoding="utf-8") as archivo:
+            archivo.write(head)
 
-    return indexHtml
+    except FileNotFoundError:
+        print("El directorio no existe, ejecuta correctamente el programa y vuelve a intentarlo.")
 
+    else:
+        with open("C:\\Users\\abelc\Desktop\github\RentatorBike\docs\\index.html","a", encoding="utf-8") as archivo:
+            archivo.write(header)
+            archivo.write(body)
+            archivo.write(footer)
+            print("El archivo 'index.html' creado correctamente.")

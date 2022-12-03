@@ -41,3 +41,11 @@ def creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles):
             print(f"El directorio 'ccsStyles' ha sido creado correctamente")
         except OSError:
             print(f"El directorio 'ccsStyles' no ha podido crearse")
+
+
+# pathVideos = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\videos"
+# pathBiciSolitarias = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\bicissolitarias"
+# pathCcsStyles = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\cssStyles"
+
+
+# creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles)
