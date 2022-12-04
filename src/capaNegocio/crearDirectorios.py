@@ -1,8 +1,9 @@
+import os
+
 # Este modulo se va a encargar de la creación de los directorios que vamos a necesitar para la página 
 
 # Importamos la libreria os con la cual podremos crear los directorios.
 
-import os
 
 
 # Esta funcion se encarga de la creacion de los directorios, contiene un bloque de try-except para comprobar

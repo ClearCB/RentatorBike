@@ -1,7 +1,7 @@
-# Este test va a comprobar que si la funcion peticionMongo no obtiene la respuesta adecuada
-# nos lanza una excepcion y el programa no se ejecuta.
 from src.capaDatos.peticionMongo import conseguirRespuestaDatos, mongoKey, mongoUrl
 import pytest
+# Este test va a comprobar que si la funcion peticionMongo no obtiene la respuesta adecuada
+# nos lanza una excepcion y el programa no se ejecuta.
 
 @pytest.mark.test_conseguirRespuestaDatos
 def test_conseguirRespuestaDatos():

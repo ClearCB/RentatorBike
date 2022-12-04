@@ -1,10 +1,11 @@
-# En este módulo vamos a crear funciones que van a crear un archivo "index.html"
+from src.capaPresentacion.crearHtml.crearIndexHtml import crearBodyIndex, indexHtml
+import pytest
+import os
 
-from src.capaPresentacion.funcionHtmlBase import crearHtmlHead, crearHeader, crearFooter
+@pytest.mark.test_crearBodyIndex
+def test_crearBodyIndex():
 
-def crearBodyIndex():
-
-    bodyIndex ='''
+    body ='''
         <hr>
         <section class="contenido">
             <div class="video_background">
@@ -28,25 +29,10 @@ def crearBodyIndex():
         </section>
         '''
 
-    return bodyIndex
+    assert crearBodyIndex() == body
 
-def crearIndexHtml():
+@pytest.mark.test_crearIndexHtml()
+def test_crearIndexHtml():
 
-    head = crearHtmlHead("Rentator", "Página principal de un buscador de bicicletas para alquilar", "Bicicletas, inicio, index, alquilar, rental, bike","cssStyles/","index")
-    header = crearHeader("second_pages/")
-    body = crearBodyIndex()
-    footer = crearFooter()
-
-    try:
-        with open("C:\\Users\\abelc\Desktop\github\RentatorBike\docs\\index.html","w", encoding="utf-8") as archivo:
-            archivo.write(head)
-
-    except FileNotFoundError:
-        print("El directorio no existe, ejecuta correctamente el programa y vuelve a intentarlo.")
-
-    else:
-        with open("C:\\Users\\abelc\Desktop\github\RentatorBike\docs\\index.html","a", encoding="utf-8") as archivo:
-            archivo.write(header)
-            archivo.write(body)
-            archivo.write(footer)
-            print("El archivo 'index.html' creado correctamente.")
+    indexHtml()
+    assert os.path.isfile("C:\\Users\\abelc\Desktop\github\RentatorBike\docs\\index.html") == True

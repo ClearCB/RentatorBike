@@ -1,7 +1,7 @@
-# Este test va a comprobar que el modulo la funcion creacionDirectorios del modulo crearDirectorios funciona correctamente
 from src.capaNegocio.crearDirectorios import creacionDirectorios
 import pytest
 import os
+# Este test va a comprobar que el modulo la funcion creacionDirectorios del modulo crearDirectorios funciona correctamente
 
 # Nombramos las rutas de los directorios
 
