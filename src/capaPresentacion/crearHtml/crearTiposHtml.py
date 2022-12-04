@@ -82,5 +82,3 @@ def tiposHtml():
             archivo.write(body)
             archivo.write(footer)
             print("El archivo 'tipos.html' creado correctamente.")
-
-tiposHtml()
