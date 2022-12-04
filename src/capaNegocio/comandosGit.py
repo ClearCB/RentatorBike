@@ -7,19 +7,19 @@ import subprocess
 # Primero haremos una función que ejecute el commando git pull
 
 
-def gitPull():
+def gitPull(ramaRemotoObjetivo):
 
-    comandoPull = "git pull origin pagina"
+    comandoPull = f"git pull origin {ramaRemotoObjetivo}"
     subprocess.run(comandoPull)
 
-def gitCheckout():
+def gitCheckout(ramaLocalObjetivo):
 
-    comandoCheckout = "git checkout pagina"
+    comandoCheckout = f"git checkout  {ramaLocalObjetivo}"
     subprocess.run(comandoCheckout)
 
-def gitPush():
+def gitPush(ramaLocalObjetivo):
 
-    comandoPush = "git push origin pagina"
+    comandoPush = f"git push origin  {ramaLocalObjetivo}"
     subprocess.run(comandoPush)
 
 def gitAd():
@@ -27,26 +27,27 @@ def gitAd():
     comandoAdd = "git add ."
     subprocess.run(comandoAdd)
 
-def gitCommit():
+def gitCommit(ramaLocalObjetivo):
 
-    comandoCommit = 'git commit -m "update(branchPagina): actualizar informacion de la base de datos en gitHub Pages."'
+    comandoCommit = f'git commit -m "update({ramaLocalObjetivo}): actualizar informacion de la base de datos en gitHub Pages."'
     subprocess.run(comandoCommit)
 
-def gitMerge():
+def gitMerge(ramaLocal):
 
-    comandoMerge = "git merge main"
+    comandoMerge = f"git merge {ramaLocal}"
     subprocess.run(comandoMerge)
 
 def guardarCambios():
 
     gitAd()
-    gitCommit()
+    gitCommit("comandosGit")
 
-def actualizarGitHubPagina():
+def actualizarGitHubPagina(ramaLocal, ramaLocalObjetivo, ramaRemotoObjetivo):
 
-    gitCheckout()
-    gitMerge()
-    gitPull()
-    gitPush()
+    gitCheckout(ramaLocalObjetivo)
+    gitMerge(ramaLocal)
+    gitPull(ramaRemotoObjetivo)
+    gitPush(ramaLocalObjetivo)
 
 guardarCambios()
+actualizarGitHubPagina("comandosGit","develop","develop")
