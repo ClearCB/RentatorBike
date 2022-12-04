@@ -31,7 +31,7 @@ def test_crearBodyIndex():
 
     assert crearBodyIndex() == body
 
-@pytest.mark.test_crearIndexHtml()
+@pytest.mark.test_crearIndexHtml
 def test_crearIndexHtml():
 
     indexHtml()

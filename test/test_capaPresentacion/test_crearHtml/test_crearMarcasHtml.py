@@ -19,7 +19,7 @@ def test_crearBodyMarcas():
 
     assert crearBodyMarcas() == body
 
-@pytest.mark.test_crearMarcasHtml()
+@pytest.mark.test_crearMarcasHtml
 def test_crearMarcasHtml():
 
     marcasHtml()
