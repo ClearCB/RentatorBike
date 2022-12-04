@@ -50,5 +50,3 @@ def indexHtml():
             archivo.write(body)
             archivo.write(footer)
             print("El archivo 'index.html' creado correctamente.")
-
-indexHtml()
