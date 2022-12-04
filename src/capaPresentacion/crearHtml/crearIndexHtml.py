@@ -38,15 +38,17 @@ def indexHtml():
     footer = crearFooter()
 
     try:
-        with open("C:\\Users\\abelc\Desktop\github\RentatorBike\docs\\index.html","w", encoding="utf-8") as archivo:
+        with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\index.html","w", encoding="utf-8") as archivo:
             archivo.write(head)
 
     except FileNotFoundError:
         print("El directorio no existe, ejecuta correctamente el programa y vuelve a intentarlo.")
 
     else:
-        with open("C:\\Users\\abelc\Desktop\github\RentatorBike\docs\\index.html","a", encoding="utf-8") as archivo:
+        with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\index.html","a", encoding="utf-8") as archivo:
             archivo.write(header)
             archivo.write(body)
             archivo.write(footer)
             print("El archivo 'index.html' creado correctamente.")
+
+indexHtml()
