@@ -29,7 +29,7 @@ def creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles):
     else:
         try:
             os.makedirs(pathBiciSolitarias, exist_ok=True)
-            print(f"El directorio 'biciSolitarias' ha sido creado correctamente")
+            print(f"Los directorios 'second_pages' y 'bicisolitarias' han sido creados correctamente")
         except OSError:
             print(f"El directorio 'biciSolitarias' no ha podido crearse")
 
@@ -44,9 +44,9 @@ def creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles):
             print(f"El directorio 'ccsStyles' no ha podido crearse")
 
 
-# pathVideos = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\videos"
-# pathBiciSolitarias = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\bicissolitarias"
-# pathCcsStyles = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\cssStyles"
+pathVideos = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\videos"
+pathBiciSolitarias = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\bicissolitarias"
+pathCcsStyles = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\cssStyles"
 
 
-# creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles)
+creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles)

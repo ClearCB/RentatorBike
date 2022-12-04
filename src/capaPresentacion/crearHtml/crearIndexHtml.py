@@ -33,7 +33,7 @@ def crearBodyIndex():
 def indexHtml():
 
     head = crearHtmlHead("Rentator", "Página principal de un buscador de bicicletas para alquilar", "Bicicletas, inicio, index, alquilar, rental, bike","cssStyles/","index")
-    header = crearHeader("second_pages/")
+    header = crearHeader("second_pages/","")
     body = crearBodyIndex()
     footer = crearFooter()
 
@@ -50,5 +50,3 @@ def indexHtml():
             archivo.write(body)
             archivo.write(footer)
             print("El archivo 'index.html' creado correctamente.")
-
-indexHtml()
