@@ -1,28 +1,39 @@
-from src.capaDatos.peticionMongo import mongoUrl, mongoKey, conseguirRespuestaDatos
 import json
 
-respuesta = conseguirRespuestaDatos(mongoKey(),mongoUrl())
+def respuestaText(respuesta):
 
-def listarBicis():
+    respuesta = respuesta.text
+    respuesta = json.loads(respuesta)
 
-    bicis = (respuesta.text)
-    bicis = json.loads(bicis)
-    listaBicis = bicis["documents"]
-    return listaBicis
+    return respuesta
 
-def listarRentals():
+def listarBicis(json):
 
-    bicis = (respuesta.text)
-    bicis = json.loads(bicis)
-    listaBicis = bicis["documents"]
-    listaRentals = []
-    for bici in listaBicis:
-        
-        rental = bici["where"][0]
+    assert isinstance(json,dict)
+    
+    try:
+        listaBicis = json["documents"]
+    except KeyError:
+        print("El documento no cumple las condiciones de uso")
+    else:
+        return listaBicis
 
-        if rental in listaRentals:
-            continue
-        else:
-            listaRentals.append(rental)
+def listarRentals(json):
+
+    assert isinstance(json,dict)
+    try:
+        listaBicis = json["documents"]
+    except KeyError:
+        print("El documento no cumple las condiciones de uso")
+    else:
+        listaRentals = []
+        for bici in listaBicis:
+            
+            rental = bici["where"][0]
+
+            if rental in listaRentals:
+                continue
+            else:
+                listaRentals.append(rental)
 
     return listaRentals
