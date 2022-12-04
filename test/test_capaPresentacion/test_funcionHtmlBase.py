@@ -1,8 +1,8 @@
+from src.capaPresentacion.funcionHtmlBase import crearHtmlHead, crearHeader, crearFooter
+import pytest
 # Vamos a realizar los test de las funcionalidades del modulo htmlBase para comprobar
 # que se comportan como queremos
 
-from src.capaPresentacion.funcionHtmlBase import crearHtmlHead, crearHeader, crearFooter
-import pytest
 
 # En primer lugar, un test que nos permite comprobar que los parametros asignados se introducen en la variable.
 

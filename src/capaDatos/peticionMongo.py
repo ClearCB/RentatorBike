@@ -1,12 +1,13 @@
+import json
+import requests
+import os
+
+
 # Este modulo se va a encargar de conseguir la petición de mongoDB. En primer lugar 
 # añadiremos en nuestras variables de entorno la api-key por motivos de seguridad, después
 # la función ejecutara la petición al servidor de mongoDB y comprobaremos que la petición es 
 # la necesária para continuar con la ejecución del programa.
 
-
-import json
-import requests
-import os
 
 # Aqui estamos solicitando el valor de la uri/api-key de nuestro entorno 
 

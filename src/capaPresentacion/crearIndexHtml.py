@@ -1,6 +1,6 @@
-# En este módulo vamos a crear funciones que van a crear un archivo "index.html"
-
 from src.capaPresentacion.funcionHtmlBase import crearHtmlHead, crearHeader, crearFooter
+
+# En este módulo vamos a crear funciones que van a crear un archivo "index.html"
 
 def crearBodyIndex():
 
