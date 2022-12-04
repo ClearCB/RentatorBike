@@ -1,23 +1,14 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearFooter
-from src.capaDatos.listarDatosMongo import listarRentals
 
-listaRentals = listarRentals()
+def crearBodyRentals(listaRentals):
 
-def crearBodyRentalsTop():
-
-    rentalsBodyHtmlTop ='''
+    rentalsBodyHtml ='''
         <section class="rental_lista">
             <h3 class="titleRental">Rentals disponibles</h3>
             <hr>
             <div class="rental_lista_div">
                 <ul class="lista">
                 '''
-
-    return rentalsBodyHtmlTop
-
-def crearBodyRentalsMid(listaRentals):
-
-    rentalsBodyHtmlMid = ''''''
     for rental in listaRentals:
 
         nombreRental = rental["company_name"]
@@ -34,7 +25,7 @@ def crearBodyRentalsMid(listaRentals):
         bicisnodisponibles = rental["bikes"]["bikes_down"]["_idbikes"]
         fotoRental = rental["img"]
 
-        rentalsBodyHtmlMid += f'''
+        rentalsBodyHtml += f'''
                         <li class="rental"><h3> {nombreRental} <br><br><br><img  class="rentalIcono" src="{iconoRental}" alt="foto del icono del rental {nombreRental}"></h3> 
                             <ul class="contenidoDeRental">
                                 <li class="imparLista">Ubicacion: calle {direccionCalle}, {direccionZip}. {direccionCiudad}, {direccionPais}</li>
@@ -46,24 +37,18 @@ def crearBodyRentalsMid(listaRentals):
                             <a href="#"><img class=fotoRental src="{fotoRental}" alt="foto de la ubicacion del rental {nombreRental}"></a>
                         </li>'''
 
-    return rentalsBodyHtmlMid
-
-
-def crearBodyRentalsBot():
-    rentalsBodyHtmlBot='''
+    rentalsBodyHtml +='''
                 </ul>
             </div>
         </section>'''
 
-    return rentalsBodyHtmlBot
+    return rentalsBodyHtml
 
-def rentalsHtml():
+def rentalsHtml(listaRentals):
 
     head = crearHtmlHead("Rentals cercanos", "Página donde aparecen todos los rental de bikes cercanos", "bicicletas, alquilar, rental, bike, ubicacion, contacto, redes, sociales","../cssStyles/","rentals")
     header = crearHeader("","../")
-    bodyTop = crearBodyRentalsTop()
-    bodyMid = crearBodyRentalsMid(listaRentals)
-    bodyBot = crearBodyRentalsBot()
+    body = crearBodyRentals(listaRentals)
     footer = crearFooter()
 
     try:
@@ -76,10 +61,6 @@ def rentalsHtml():
     else:
         with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\rentals.html","a", encoding="utf-8") as archivo:
             archivo.write(header)
-            archivo.write(bodyTop)
-            archivo.write(bodyMid)
-            archivo.write(bodyBot)
+            archivo.write(body)
             archivo.write(footer)
             print("El archivo 'rentals.html' creado correctamente.")
-
-rentalsHtml()

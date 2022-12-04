@@ -7,22 +7,22 @@ def respuestaText(respuesta):
 
     return respuesta
 
-def listarBicis(json):
+def listarBicis(respuesta):
 
-    assert isinstance(json,dict)
+    assert isinstance(respuesta,dict)
     
     try:
-        listaBicis = json["documents"]
+        listaBicis = respuesta["documents"]
     except KeyError:
         print("El documento no cumple las condiciones de uso")
     else:
         return listaBicis
 
-def listarRentals(json):
+def listarRentals(respuesta):
 
-    assert isinstance(json,dict)
+    assert isinstance(respuesta,dict)
     try:
-        listaBicis = json["documents"]
+        listaBicis = respuesta["documents"]
     except KeyError:
         print("El documento no cumple las condiciones de uso")
     else:
