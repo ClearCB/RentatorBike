@@ -85,7 +85,7 @@ def test_crearHeaderIndex():
         </div>
 '''
 
-    assert crearHeader("second_pages/") ==  header
+    assert crearHeader("second_pages/","") ==  header
 
 @pytest.mark.test_crearHeaderSecondPages
 def test_crearHeaderSecondPages():
@@ -112,18 +112,18 @@ def test_crearHeaderSecondPages():
         </header>
         <nav id="nav">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li class="bicisfiltroboton">Bicicletas
                     <ul>
-                        <li><a href="second_pages/bicis.html">Todas las bicis</a></li>
-                        <li><a href="second_pages/biciscategoria.html">Bicis por categoria</a></li>
-                        <li><a href="second_pages/bicispormarca.html">Bicis por marca</a></li>
-                        <li><a href="second_pages/biciscaracteristica.html">Bicis por caracteristicas</a></li>
+                        <li><a href="bicis.html">Todas las bicis</a></li>
+                        <li><a href="biciscategoria.html">Bicis por categoria</a></li>
+                        <li><a href="bicispormarca.html">Bicis por marca</a></li>
+                        <li><a href="biciscaracteristica.html">Bicis por caracteristicas</a></li>
                     </ul>
                 </li>
-                <li><a href="second_pages/marcas.html">Marcas</a></li>
-                <li><a href="second_pages/tipos.html">Tipos</a></li>
-                <li><a href="second_pages/rentals.html">Rentals</a></li>
+                <li><a href="marcas.html">Marcas</a></li>
+                <li><a href="tipos.html">Tipos</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
             </ul>
         </nav>
             <div id="buscador">
@@ -137,7 +137,7 @@ def test_crearHeaderSecondPages():
         </div>
 '''
 
-    assert crearHeader("second_pages/") ==  header
+    assert crearHeader("","../") ==  header
 
 @pytest.mark.test_crearFooter
 def test_crearFooter():

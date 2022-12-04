@@ -12,8 +12,7 @@ def crearBodyMarcas():
                 <a href="bicispormarca.html#giant"><div class="box"> Giant</div></a>
                 <a href="bicispormarca.html#cannondale"><div class="box"> Cannondale</div></a>
             </div>
-        </section>
-    '''
+        </section>'''
     return marcasBodyHtml
 
 def marcasHtml():
@@ -36,5 +35,3 @@ def marcasHtml():
             archivo.write(body)
             archivo.write(footer)
             print("El archivo 'marcas.html' creado correctamente.")
-
-marcasHtml()
