@@ -1,4 +1,4 @@
-from src.capaPresentacion.funcionHtmlBase import crearHtmlHead, crearHeader, crearFooter
+from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader, crearFooter
 
 # En este módulo vamos a crear funciones que van a crear un archivo "index.html"
 
@@ -30,7 +30,7 @@ def crearBodyIndex():
 
     return bodyIndex
 
-def crearIndexHtml():
+def indexHtml():
 
     head = crearHtmlHead("Rentator", "Página principal de un buscador de bicicletas para alquilar", "Bicicletas, inicio, index, alquilar, rental, bike","cssStyles/","index")
     header = crearHeader("second_pages/")

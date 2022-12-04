@@ -1,4 +1,4 @@
-from src.capaPresentacion.funcionHtmlBase import crearHtmlHead, crearHeader, crearFooter
+from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader, crearFooter
 import pytest
 # Vamos a realizar los test de las funcionalidades del modulo htmlBase para comprobar
 # que se comportan como queremos

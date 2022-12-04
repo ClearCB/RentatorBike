@@ -1,4 +1,4 @@
-from src.capaPresentacion.crearIndexHtml import crearBodyIndex, crearIndexHtml
+from src.capaPresentacion.crearHtml.crearIndexHtml import crearBodyIndex, indexHtml
 import pytest
 import os
 
@@ -34,4 +34,5 @@ def test_crearBodyIndex():
 @pytest.mark.test_crearIndexHtml()
 def test_crearIndexHtml():
 
+    indexHtml()
     assert os.path.isfile("C:\\Users\\abelc\Desktop\github\RentatorBike\docs\\index.html") == True
