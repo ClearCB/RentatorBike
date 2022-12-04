@@ -43,5 +43,3 @@ def rentalsHtml():
             archivo.write(body)
             archivo.write(footer)
             print("El archivo 'rentals.html' creado correctamente.")
-
-rentalsHtml()
