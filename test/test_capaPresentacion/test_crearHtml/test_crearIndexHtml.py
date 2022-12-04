@@ -35,4 +35,4 @@ def test_crearBodyIndex():
 def test_crearIndexHtml():
 
     indexHtml()
-    assert os.path.isfile("C:\\Users\\abelc\Desktop\github\RentatorBike\docs\\index.html") == True
+    assert os.path.isfile("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\index.html") == True
