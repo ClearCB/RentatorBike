@@ -31,7 +31,7 @@ def conseguirRespuestaDatos(key,url):
 
     pipeline = [{ "$lookup": { "from": "rentals_data", "localField": "where._idrental",
     "foreignField": "_idrental", "as": "where" } },
-    { "$project": { "_id": 0, "bikes._id": 0,"where._id":0,"where.bikes":0} }
+    { "$project": { "_id": 0, "bikes._id": 0,"where._id":0} }
         ]
 
     payload = json.dumps({
