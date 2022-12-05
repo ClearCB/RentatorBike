@@ -48,3 +48,6 @@ def actualizarGitHubPagina():
     gitMerge()
     gitPull()
     gitPush()
+
+guardarCambios()
+actualizarGitHubPagina()
