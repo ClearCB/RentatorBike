@@ -1,14 +1,15 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearFooter
+from src.capaPresentacion.crearArchivos import crearArchivo
+from src.capaDatos.listarDatosMongo import listarRentals, respuestaText
+from src.capaDatos.peticionMongo import conseguirRespuestaDatos, mongoKey, mongoUrl
 
+# En este módulo vamos a crear funciones que van a crear un archivo "rentals.html"
+
+# En primer lugar, creamos una función que devuelva el valor del body del rentals.html
 def crearBodyRentals(listaRentals):
 
-    rentalsBodyHtml ='''
-        <section class="rental_lista">
-            <h3 class="titleRental">Rentals disponibles</h3>
-            <hr>
-            <div class="rental_lista_div">
-                <ul class="lista">
-                '''
+    bodyRentals = ''''''
+
     for rental in listaRentals:
 
         nombreRental = rental["company_name"]
@@ -25,42 +26,46 @@ def crearBodyRentals(listaRentals):
         bicisnodisponibles = rental["bikes"]["bikes_down"]["_idbikes"]
         fotoRental = rental["img"]
 
-        rentalsBodyHtml += f'''
-                        <li class="rental"><h3> {nombreRental} <br><br><br><img  class="rentalIcono" src="{iconoRental}" alt="foto del icono del rental {nombreRental}"></h3> 
-                            <ul class="contenidoDeRental">
-                                <li class="imparLista">Ubicacion: calle {direccionCalle}, {direccionZip}. {direccionCiudad}, {direccionPais}</li>
-                                <li class="parLista">Contacto: num ({contactoNum}) email ({contactoEmail})</li>
-                                <li class="imparLista">Instagram:{redesInsta} /  Twitter: {redesTwitter}</li>
-                                <li class="parLista">Bicis disponibles:{bicisdisponibles}</li>
-                                <li class="imparLista">Bicis no disponibles:{bicisnodisponibles}</li>
-                            </ul>
-                            <a href="#"><img class=fotoRental src="{fotoRental}" alt="foto de la ubicacion del rental {nombreRental}"></a>
-                        </li>'''
+        bodyRentals += f'''
+            <div class="rentals">
+                <div class="rentals__container">
+                    <div class="rentals__titulo__logo">
+                        <h3 class="rentals__titulo">
+                            {nombreRental} 
+                        </h3>
+                        <div class="rentals__logo">
+                            <img  class="rentalIcono" src="{iconoRental}" alt="foto del icono del rental {nombreRental}">
+                        </div>
+                    </div>
+                    <div class="rentals__description">
+                        <ul>
+                            <li>Ubicacion: {direccionCalle}, {direccionCiudad} ({direccionPais}). {direccionZip}</li>
+                            <li>Contacto: num({contactoNum}) / email({contactoEmail})</li>
+                            <li>Redes sociales: instagram({redesInsta}) / twitter({redesTwitter})</li>
+                            <li>Bicis disponibles:{bicisdisponibles}</li>
+                            <li>Bicis no disponibles:{bicisnodisponibles}</li>
+                        </ul>
+                    </div>
+                    <div class="rentals__img__location">
+                        <a href="#"><img class=fotoRental src="{fotoRental}" alt="foto de la ubicacion del rental {nombreRental}"></a>
+                    </div>
+                </div>
+            </div>'''
 
-    rentalsBodyHtml +='''
-                </ul>
-            </div>
-        </section>'''
-
-    return rentalsBodyHtml
+    return bodyRentals
 
 def rentalsHtml(listaRentals):
 
-    head = crearHtmlHead("Rentals cercanos", "Página donde aparecen todos los rental de bikes cercanos", "bicicletas, alquilar, rental, bike, ubicacion, contacto, redes, sociales","../cssStyles/","rentals")
-    header = crearHeader("","../")
-    body = crearBodyRentals(listaRentals)
-    footer = crearFooter()
+    rentals = ''''''
+    rentals += crearHtmlHead("Rentals cercanos", "Página donde aparecen todos los rental de bikes cercanos", "bicicletas, alquilar, rental, bike, ubicacion, contacto, redes, sociales","../cssStyles/","rentals")
+    rentals += crearHeader("../","")
+    rentals += crearBodyRentals(listaRentals)
+    rentals += crearFooter()
 
-    try:
-        with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\rentals.html","w", encoding="utf-8") as archivo:
-            archivo.write(head)
 
-    except FileNotFoundError:
-        print("El directorio no existe, ejecuta correctamente el programa y vuelve a intentarlo.")
+    return rentals # Devolvemos la variable rentals que contiene el código del archivo rentals.html
 
-    else:
-        with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\rentals.html","a", encoding="utf-8") as archivo:
-            archivo.write(header)
-            archivo.write(body)
-            archivo.write(footer)
-            print("El archivo 'rentals.html' creado correctamente.")
+# Definimos una función que ejecuta la función necesaria para crear el archivo correctamente.
+def crearRentalsHtml(listaRentals):
+
+    crearArchivo(rentalsHtml(listaRentals),".\\docs\\second_pages","rentals","html")

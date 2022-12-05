@@ -17,6 +17,7 @@ def crearBodyMarcas():
                 <a href="bicispormarca.html#cannondale"><div class="box"> Cannondale</div></a>
             </div>
         </section>'''
+    
     return bodyMarcas
 
 # Función que construye el marcas.html y lo devuelve en una variable

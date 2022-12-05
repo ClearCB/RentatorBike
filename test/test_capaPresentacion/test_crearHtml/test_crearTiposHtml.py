@@ -1,7 +1,10 @@
-from src.capaPresentacion.crearHtml.crearTiposHtml import crearBodyTipos, tiposHtml
+from src.capaPresentacion.crearHtml.crearTiposHtml import crearBodyTipos, crearTiposHtml
 import pytest
 import os
 
+# Estos test se encargan de comprobar que el body se crea correctamente y de comprobar que el archivo tipos.html existe
+
+# Comprueba que el body se crea correctamente
 @pytest.mark.test_crearBodyTipos
 def test_crearBodyTipos():
 
@@ -66,8 +69,10 @@ def test_crearBodyTipos():
 
     assert crearBodyTipos() == body
 
+# Comprueba que el archivo tipos.html se crea correctamente
 @pytest.mark.test_crearTiposHtml
 def test_crearTiposHtml():
 
-    tiposHtml()
-    assert os.path.isfile("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\tipos.html") == True
+    crearTiposHtml()
+    ruta = os.path.relpath(".\\docs\\second_pages\\tipos.html")
+    assert os.path.isfile(ruta) == True
