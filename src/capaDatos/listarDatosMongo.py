@@ -13,7 +13,7 @@ def respuestaText(respuesta):
 # Transformar respuesta a una lista de bicis
 def listarBicis(respuesta):
     
-    try: # Comprobamos que la respuesta cumple las condiciones de uso
+    try: # Comprobamos que la respuesta cumple las condiciones de uso y convertimos la respuesta en lista
         listaBicis = respuesta["documents"]
     except KeyError:
         print("El documento no cumple las condiciones de uso")
@@ -23,7 +23,7 @@ def listarBicis(respuesta):
 # Transformar respuesta a una lista de rentals
 def listarRentals(respuesta):
 
-    try: # Comprobamos que la respuesta cumple las condiciones de uso
+    try: # Comprobamos que la respuesta cumple las condiciones de uso y convertimos la respuesta en lista
         listaBicis = respuesta["documents"]
     except KeyError:
         print("El documento no cumple las condiciones de uso")
