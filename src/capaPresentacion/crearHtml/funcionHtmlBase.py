@@ -26,8 +26,7 @@ def crearHtmlHead(titulo, descripcion, keywords, cssPath, cssLink):
         <link rel="stylesheet" type="text/css" href="{cssPath}base.css">
         <link rel="stylesheet" type="text/css" href="{cssPath}nav.css">
         <link rel="stylesheet" type="text/css" href="{cssPath}{cssLink}.css">
-    </head>
-'''
+    </head>'''
     
     return head
 
