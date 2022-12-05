@@ -1,8 +1,12 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearFooter
+from src.capaPresentacion.crearArchivos import crearArchivo
 
+# En este módulo vamos a crear funciones que van a crear un archivo "marcas.html"
+
+# En primer lugar, creamos una función que devuelva el valor del body del marcas.html
 def crearBodyMarcas():
 
-    marcasBodyHtml ='''
+    bodyMarcas ='''
         <section>
             <h3 class="titleBike">Marcas de bicicletas</h3>
             <hr>
@@ -13,25 +17,21 @@ def crearBodyMarcas():
                 <a href="bicispormarca.html#cannondale"><div class="box"> Cannondale</div></a>
             </div>
         </section>'''
-    return marcasBodyHtml
+    return bodyMarcas
 
+# Función que construye el marcas.html y lo devuelve en una variable
 def marcasHtml():
 
-    head = crearHtmlHead("Marcas disponibles", "Página donde aparecen un link a todas las marcas disponibles", "cube, specialized, giant, cannondale, marca, brand, alquilar, rental, bike","../cssStyles/","marcas")
-    header = crearHeader("","../")
-    body = crearBodyMarcas()
-    footer = crearFooter()
+    marcas = ''''''
+    # Añadimos cada parte del código independientemente 
+    marcas += crearHtmlHead("Marcas disponibles", "Página donde aparecen un link a todas las marcas disponibles", "cube, specialized, giant, cannondale, marca, brand, alquilar, rental, bike","../cssStyles/","marcas")
+    marcas += crearHeader("..\\","")
+    marcas += crearBodyMarcas()
+    marcas += crearFooter()
 
-    try:
-        with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\marcas.html","w", encoding="utf-8") as archivo:
-            archivo.write(head)
+    return marcas # Devolvemos la variable marcas que contiene el código del archivo marcas.html
 
-    except FileNotFoundError:
-        print("El directorio no existe, ejecuta correctamente el programa y vuelve a intentarlo.")
+# Definimos una función que ejecuta la función necesaria para crear el archivo correctamente.
+def crearMarcasHtml():
 
-    else:
-        with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\marcas.html","a", encoding="utf-8") as archivo:
-            archivo.write(header)
-            archivo.write(body)
-            archivo.write(footer)
-            print("El archivo 'marcas.html' creado correctamente.")
+    crearArchivo(marcasHtml(),".\\docs\\second_pages","marcas","html")

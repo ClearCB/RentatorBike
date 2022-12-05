@@ -37,7 +37,7 @@ def indexHtml():
     index = ''''''
     # Añadimos cada parte del código independientemente 
     index += crearHtmlHead("Rentator", "Página principal de un buscador de bicicletas para alquilar", "Bicicletas, inicio, index, alquilar, rental, bike","cssStyles/","index")
-    index += crearHeader("second_pages/","")
+    index += crearHeader("","second_pages/")
     index += crearBodyIndex()
     index += crearFooter()
 
