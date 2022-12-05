@@ -41,10 +41,6 @@ def test_crearHeaderIndex():
     header =f'''
     <body>
         <header>
-            <div class="banner_social_network">
-                <a href="https://twitter.com/topbici"><img class="icono_red" src="http://imgfz.com/i/j9If6lw.png" alt="icono de twitter" width="20" height="20"></a>
-                <a href="https://www.instagram.com/sansebikes/?hl=es"><img class="icono_red" src="http://imgfz.com/i/4YfLF68.png" alt="icono de instagram" width="20" height="20"></a>
-            </div>
             <div class="header">
                 <div class="header__logo">
                     <h1>Rentator</h1>
@@ -74,16 +70,15 @@ def test_crearHeaderIndex():
                 <li><a href="second_pages/rentals.html">Rentals</a></li>
             </ul>
         </nav>
-            <div id="buscador">
+        <div id="buscador">
                 <form method="get" action="https://www.google.es/search">
                     <label for="search"></label>
                     <input type="text" id="search" placeholder="Buscar..." name="q" value="">
                 </form>
             </div>
-        <div>
-            <a href="#nav" target="_self"><div class="volverarriba"><p>Volver arriba</p></div></a>
-        </div>
-'''
+        <div  class="volverArriba">
+            <a href="#nav" target="_self"><img class="flechaSubir" alt="flecha_arriba" src="/public_html/imagenes/iconos/flecha_arriba.png"></a>
+        </div>'''
 
     assert crearHeader("second_pages/","") ==  header
 
@@ -93,10 +88,6 @@ def test_crearHeaderSecondPages():
     header =f'''
     <body>
         <header>
-            <div class="banner_social_network">
-                <a href="https://twitter.com/topbici"><img class="icono_red" src="http://imgfz.com/i/j9If6lw.png" alt="icono de twitter" width="20" height="20"></a>
-                <a href="https://www.instagram.com/sansebikes/?hl=es"><img class="icono_red" src="http://imgfz.com/i/4YfLF68.png" alt="icono de instagram" width="20" height="20"></a>
-            </div>
             <div class="header">
                 <div class="header__logo">
                     <h1>Rentator</h1>
@@ -126,16 +117,15 @@ def test_crearHeaderSecondPages():
                 <li><a href="rentals.html">Rentals</a></li>
             </ul>
         </nav>
-            <div id="buscador">
+        <div id="buscador">
                 <form method="get" action="https://www.google.es/search">
                     <label for="search"></label>
                     <input type="text" id="search" placeholder="Buscar..." name="q" value="">
                 </form>
             </div>
-        <div>
-            <a href="#nav" target="_self"><div class="volverarriba"><p>Volver arriba</p></div></a>
-        </div>
-'''
+        <div  class="volverArriba">
+            <a href="#nav" target="_self"><img class="flechaSubir" alt="flecha_arriba" src="/public_html/imagenes/iconos/flecha_arriba.png"></a>
+        </div>'''
 
     assert crearHeader("","../") ==  header
 
@@ -155,12 +145,19 @@ def test_crearFooter():
                 </ul>
             </div>
             <div class="copyright_footer">
+                
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-                Este obra está bajo una licencia de Creative Commons Reconocimiento-Compartir. Igual 4.0 Internacional.
-                <br><br><img class="copyright_img" alt="Licencia de Creative Commons" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+                    <div class="footer__license__description">
+                        <p>Este obra está bajo una licencia de Creative Commons Reconocimiento-Compartir. Igual 4.0 Internacional.</p>
+                    </div>
+
+                    <div class="footer__license__img">
+                        <img class="copyright_img" alt="Licencia de Creative Commons" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png">
+                    </div>
+                </a>
             </div>
         </footer>
     </body>
-</html>
-    '''
+</html>'''
+
     assert crearFooter() ==  footer
