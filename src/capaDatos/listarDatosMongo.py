@@ -1,19 +1,19 @@
-# Este código va a conseguir una lista de bicis y rentals mediante la respuesta de mongoDB.
-
 import json
 
-# Transformar respuesta a un string
+# Este código va a conseguir una lista de bicis y rentals mediante la respuesta de mongoDB.
+
+# Transformar respuesta a un diccionario JSON
 def respuestaText(respuesta):
 
     respuesta = respuesta.text
-    respuesta = json.loads(respuesta)
+    respuesta = json.loads(respuesta) # Tranformamos el string con formato JSON a un diccionario
 
     return respuesta
 
 # Transformar respuesta a una lista de bicis
 def listarBicis(respuesta):
     
-    try:
+    try: # Comprobamos que la respuesta cumple las condiciones de uso
         listaBicis = respuesta["documents"]
     except KeyError:
         print("El documento no cumple las condiciones de uso")
@@ -23,7 +23,7 @@ def listarBicis(respuesta):
 # Transformar respuesta a una lista de rentals
 def listarRentals(respuesta):
 
-    try:
+    try: # Comprobamos que la respuesta cumple las condiciones de uso
         listaBicis = respuesta["documents"]
     except KeyError:
         print("El documento no cumple las condiciones de uso")
