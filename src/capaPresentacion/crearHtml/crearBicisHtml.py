@@ -28,7 +28,7 @@ def crearBodyBicis(listaBicis):
         bicisBodyHtml+=f'''
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="{imagenBici}" alt="bicicleta de la marca {marca} y tipo {tipo}"></a>
+                        <a href="./bicissolitarias/bicissolitaria{bici["_idbike"]}.html"><img src="{imagenBici}" alt="bicicleta de la marca {marca} y tipo {tipo}"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>{tipo}</h5>

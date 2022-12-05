@@ -34,7 +34,7 @@ def gitCommit():
 
 def gitMerge():
 
-    comandoMerge = f"git merge develop"
+    comandoMerge = f"git merge main"
     subprocess.run(comandoMerge)
 
 def guardarCambios():
@@ -48,6 +48,3 @@ def actualizarGitHubPagina():
     gitMerge()
     gitPull()
     gitPush()
-
-guardarCambios()
-actualizarGitHubPagina()
