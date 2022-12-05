@@ -1,35 +1,35 @@
-from src.capaPresentacion.crearCss.crearPrincipalCss import headerCss, baseCss, navCss, indexCss, footerCss
+from src.capaPresentacion.crearCss.crearPrincipalCss import crearHeaderCss, crearBaseCss, crearNavCss, crearIndexCss, crearFooterCss
 import pytest
 import os
 
-@pytest.mark.test_footerCss
-def test_footerStylesCss():
-    footerCss()
+@pytest.mark.test_crearFooterCss
+def test_crearFooterCss():
+    crearFooterCss()
     assert os.path.isfile("C:\\WORKSPACES\\cssStyles\\footer.css") == True
 
 
-@pytest.mark.test_headerCss
-def test_headerCss():
-    headerCss()
+@pytest.mark.test_crearHeaderCss
+def test_crearHeaderCss():
+    crearHeaderCss()
     assert os.path.isfile("C:\\WORKSPACES\\cssStyles\\header.css") == True
 
 
-@pytest.mark.test_baseCss
-def test_baseStylesCss():
-    baseCss()
+@pytest.mark.test_crearBaseCss
+def test_crearBaseCss():
+    crearBaseCss()
     assert os.path.isfile("C:\\WORKSPACES\\cssStyles\\base.css") == True
 
 
-@pytest.mark.test_navCss
-def test_navStylesCss():
-    navCss()
-    assert os.path.isfile("C:\\WORKSPACES\\cssStyles\\base.css") == True
+@pytest.mark.test_crearNavCss
+def test_crearNavCss():
+    crearNavCss()
+    assert os.path.isfile("C:\\WORKSPACES\\cssStyles\\nav.css") == True
 
 
-@pytest.mark.test_indexCss
-def test_indexStylesCss():
-    indexCss()
-    assert os.path.isfile("C:\\WORKSPACES\\cssStyles\\base.css") == True
+@pytest.mark.test_crearIndexCss
+def test_crearIndexCss():
+    crearIndexCss()
+    assert os.path.isfile("C:\\WORKSPACES\\cssStyles\\index.css") == True
     
 
     
