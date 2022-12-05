@@ -1,7 +1,9 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader, crearFooter
+from src.capaPresentacion.crearArchivos import crearArchivo
 
 # En este módulo vamos a crear funciones que van a crear un archivo "index.html"
 
+# En primer lugar, creamos una función que devuelva el valor del body del index.html
 def crearBodyIndex():
 
     bodyIndex ='''
@@ -29,23 +31,19 @@ def crearBodyIndex():
 
     return bodyIndex
 
+# Función que construye el index.html y lo devuelve en una variable
 def indexHtml():
 
-    head = crearHtmlHead("Rentator", "Página principal de un buscador de bicicletas para alquilar", "Bicicletas, inicio, index, alquilar, rental, bike","cssStyles/","index")
-    header = crearHeader("second_pages/","")
-    body = crearBodyIndex()
-    footer = crearFooter()
+    index = ''''''
+    # Añadimos cada parte del código independientemente 
+    index += crearHtmlHead("Rentator", "Página principal de un buscador de bicicletas para alquilar", "Bicicletas, inicio, index, alquilar, rental, bike","cssStyles/","index")
+    index += crearHeader("second_pages/","")
+    index += crearBodyIndex()
+    index += crearFooter()
 
-    try:
-        with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\index.html","w", encoding="utf-8") as archivo:
-            archivo.write(head)
+    return index # Devolvemos la variable index que contiene el código del archivo index.html
 
-    except FileNotFoundError:
-        print("El directorio no existe, ejecuta correctamente el programa y vuelve a intentarlo.")
+# Definimos una función que ejecuta la función necesaria para crear el archivo correctamente.
+def crearIndexHtml():
 
-    else:
-        with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\index.html","a", encoding="utf-8") as archivo:
-            archivo.write(header)
-            archivo.write(body)
-            archivo.write(footer)
-            print("El archivo 'index.html' creado correctamente.")
+    crearArchivo(indexHtml(),".\\docs","index","html")
