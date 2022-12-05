@@ -1,4 +1,5 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearFooter
+from src.capaPresentacion.crearCss.crearSecundarioCss import crearRentalsCss
 
 def crearBodyRentals(listaRentals):
 
@@ -45,6 +46,8 @@ def crearBodyRentals(listaRentals):
     return rentalsBodyHtml
 
 def rentalsHtml(listaRentals):
+
+    crearRentalsCss()
 
     head = crearHtmlHead("Rentals cercanos", "Página donde aparecen todos los rental de bikes cercanos", "bicicletas, alquilar, rental, bike, ubicacion, contacto, redes, sociales","../cssStyles/","rentals")
     header = crearHeader("","../")

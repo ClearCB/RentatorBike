@@ -1,4 +1,5 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearFooter, crearHeader, crearHtmlHead
+from src.capaPresentacion.crearCss.crearSecundarioCss import crearBiciSolitariaCss
 
 
 def crearHtmlBiciSolitaria(bici):
@@ -122,6 +123,8 @@ def crearHtmlBiciSolitaria(bici):
 
 def crearBiciSolitariaHtml(bici):
 
+    crearBiciSolitariaCss()
+    
     id = bici["_idbike"]
     html = crearHtmlBiciSolitaria(bici)
 

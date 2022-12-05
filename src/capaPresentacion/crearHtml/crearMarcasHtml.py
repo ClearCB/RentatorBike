@@ -1,5 +1,6 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearFooter
 from src.capaPresentacion.crearArchivos import crearArchivo
+from src.capaPresentacion.crearCss.crearSecundarioCss import crearMarcasCss
 
 # En este módulo vamos a crear funciones que van a crear un archivo "marcas.html"
 
@@ -21,6 +22,7 @@ def crearBodyMarcas():
 
 # Función que construye el marcas.html y lo devuelve en una variable
 def marcasHtml():
+    crearMarcasCss()
 
     marcas = ''''''
     # Añadimos cada parte del código independientemente 

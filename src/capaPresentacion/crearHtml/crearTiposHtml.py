@@ -1,4 +1,5 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearFooter
+from src.capaPresentacion.crearCss.crearSecundarioCss import crearTiposCss
 
 def crearBodyTipos():
 
@@ -63,6 +64,8 @@ def crearBodyTipos():
     return tiposBodyHtml
 
 def tiposHtml():
+    
+    crearTiposCss()
 
     head = crearHtmlHead("Tipos de bicicletas", "Página donde aparecen las definiciones de los principales tipos de bicicletas", "bicicletas, tipos, mtb, carretera, electrica, ciudad, alquilar, rental, bike","../cssStyles/","tipos")
     header = crearHeader("","../")
