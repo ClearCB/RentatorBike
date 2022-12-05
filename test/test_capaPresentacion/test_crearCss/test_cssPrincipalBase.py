@@ -1,4 +1,4 @@
-from src.capaPresentacion.crearCss.cssPrincipalBase import footerStylesCss, baseStylesCss, headerStylesCss, indexStylesCss, navStylesCss
+from src.capaPresentacion.crearCss.cssPrincipalUtilidades import footerStylesCss, baseStylesCss, headerStylesCss, indexStylesCss, navStylesCss
 import pytest
 # Vamos a realizar los test de los estilos del modulo ccsPrincipalBase para comprobar
 # que se comportan como queremos
