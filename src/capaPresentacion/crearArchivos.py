@@ -9,6 +9,6 @@ def crearArchivo(contenido, ruta, nombre, tipo):
     try:
         with open(f"{ruta}\\{nombre}.{tipo}","w", encoding="utf-8") as archivo: # Le asignamos los parametros detallados, creamos el archivo
             archivo.write(contenido) # Escribimos el contenido en el archivo
-            print("El archivo 'index.html' creado correctamente.")
+            print(f"El archivo '{nombre}.html' creado correctamente.")
     except FileNotFoundError: # Captamos una excepción en caso de que no encuentre el directorio.
         print("El directorio no existe, ejecuta correctamente el programa y vuelve a intentarlo.")
