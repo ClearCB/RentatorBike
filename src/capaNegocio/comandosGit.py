@@ -34,7 +34,7 @@ def gitCommit():
 
 def gitMerge():
 
-    comandoMerge = f"git merge main"
+    comandoMerge = f"git merge develop"
     subprocess.run(comandoMerge)
 
 def guardarCambios():
