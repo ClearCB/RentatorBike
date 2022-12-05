@@ -34,6 +34,7 @@ def crearBodyBicis(listaBicis):
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: {estado}</li> 
+                                <li>Marca: {marca}</li> 
                                 <li>Groupset: {groupset}</li> 
                                 <li>Talla: {talla}</li> 
                                 <li>Tamaño de ruedas: {ruedas}</li> 
