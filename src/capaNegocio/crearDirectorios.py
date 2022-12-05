@@ -3,7 +3,7 @@ import os
 # Este modulo se va a encargar de la creación de los directorios que vamos a necesitar para la página
 
 # Definimos una función que toma como parámetros las rutas que queremos de los directorios y los crea
-def creacionDirectorio(ruta,nombreDirectorio):
+def creacionDirectorios(ruta,nombreDirectorio):
 
     ruta = os.path.relpath(ruta) # Nombramos la ruta relativa para que se creen las carpetas en el directorio actual
 
