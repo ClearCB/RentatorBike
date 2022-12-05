@@ -1,7 +1,10 @@
-from src.capaPresentacion.crearHtml.crearIndexHtml import crearBodyIndex, indexHtml
+from src.capaPresentacion.crearHtml.crearIndexHtml import crearBodyIndex, crearIndexHtml
 import pytest
 import os
 
+# Estos test se encargan de comprobar que el body se crea correctamente y de comprobar que el archivo index.html existe
+
+# Comprueba que el body se crea correctamente
 @pytest.mark.test_crearBodyIndex
 def test_crearBodyIndex():
 
@@ -30,8 +33,9 @@ def test_crearBodyIndex():
 
     assert crearBodyIndex() == body
 
+# Comprueba que el archivo index.html se crea correctamente
 @pytest.mark.test_crearIndexHtml
 def test_crearIndexHtml():
 
-    indexHtml()
+    crearIndexHtml()
     assert os.path.isfile("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\index.html") == True
