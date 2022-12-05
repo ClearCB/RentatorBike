@@ -1,15 +1,16 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader, crearFooter
 import pytest
+
 # Vamos a realizar los test de las funcionalidades del modulo htmlBase para comprobar
 # que se comportan como queremos
 
 
-# En primer lugar, un test que nos permite comprobar que los parametros asignados se introducen en la variable.
-
+# En primer lugar, un test que nos permite comprobar que los parametros asignados se introducen en la variable head para conseguir así una función
+# común a todos los archivos .html
 @pytest.mark.test_crearHtmlHead
 def test_crearHtmlHead():
 
-    
+    # Le asignamos el valor que queremos a una variable
     head = f'''
 <!DOCTYPE html>
 <!-- Hemos añadido el atributo lang en la etiqueta html en lugar de hacerlo en meta porque el validador nos daba problemas -->
@@ -30,11 +31,11 @@ def test_crearHtmlHead():
         <link rel="stylesheet" type="text/css" href="cssStyles/base.css">
         <link rel="stylesheet" type="text/css" href="cssStyles/nav.css">
         <link rel="stylesheet" type="text/css" href="cssStyles/index.css">
-    </head>
-'''
-    
+    </head>'''
+    # Comprobamos que la función con los parámetros es igual a la variable que buscamos.
     assert crearHtmlHead("Rentator", "Página principal de un buscador de bicicletas para alquilar", "Bicicletas, inicio, index, alquilar, rental, bike", "cssStyles/", 'index') == head
 
+# Comprobamos que la función crea un header para el index igual al que le pasamos en la variable
 @pytest.mark.test_crearHeaderIndex
 def test_crearHeaderIndex():
 
@@ -44,7 +45,7 @@ def test_crearHeaderIndex():
             <div class="header">
                 <div class="header__logo">
                     <h1>Rentator</h1>
-                    <h2>Tu Mejor Opcion</h2>
+                    <h2>Tu Mejor Opción</h2>
                 </div>
                 <div class="header__nav">
                     <div class="header__links">
@@ -75,13 +76,14 @@ def test_crearHeaderIndex():
                     <label for="search"></label>
                     <input type="text" id="search" placeholder="Buscar..." name="q" value="">
                 </form>
-            </div>
+        </div>
         <div  class="volverArriba">
             <a href="#nav" target="_self"><img class="flechaSubir" alt="flecha_arriba" src="/public_html/imagenes/iconos/flecha_arriba.png"></a>
         </div>'''
 
-    assert crearHeader("second_pages/","") ==  header
+    assert crearHeader("", "second_pages/") ==  header
 
+# Ahora comprobamos que si le asignamos diferentes valores, también nos devuelve el valor que deseamos
 @pytest.mark.test_crearHeaderSecondPages
 def test_crearHeaderSecondPages():
 
@@ -91,7 +93,7 @@ def test_crearHeaderSecondPages():
             <div class="header">
                 <div class="header__logo">
                     <h1>Rentator</h1>
-                    <h2>Tu Mejor Opcion</h2>
+                    <h2>Tu Mejor Opción</h2>
                 </div>
                 <div class="header__nav">
                     <div class="header__links">
@@ -122,18 +124,19 @@ def test_crearHeaderSecondPages():
                     <label for="search"></label>
                     <input type="text" id="search" placeholder="Buscar..." name="q" value="">
                 </form>
-            </div>
+        </div>
         <div  class="volverArriba">
             <a href="#nav" target="_self"><img class="flechaSubir" alt="flecha_arriba" src="/public_html/imagenes/iconos/flecha_arriba.png"></a>
         </div>'''
 
-    assert crearHeader("","../") ==  header
+    assert crearHeader("../","") ==  header
 
+# Finalmente, comprobamos que la función nos devuelve el footer tal y como deseamos
 @pytest.mark.test_crearFooter
 def test_crearFooter():
 
     footer ='''
-            <footer id="footer">
+        <footer id="footer">
             <div class="soporte_links">
                 <ul>
                     <li><a href="#">Contacto: 971621612 / rentatorsl@company.eu<br><br></a></li>
