@@ -1,5 +1,8 @@
+# Este código va a conseguir una lista de bicis y rentals mediante la respuesta de mongoDB.
+
 import json
 
+# Transformar respuesta a un string
 def respuestaText(respuesta):
 
     respuesta = respuesta.text
@@ -7,9 +10,8 @@ def respuestaText(respuesta):
 
     return respuesta
 
+# Transformar respuesta a una lista de bicis
 def listarBicis(respuesta):
-
-    assert isinstance(respuesta,dict)
     
     try:
         listaBicis = respuesta["documents"]
@@ -18,9 +20,9 @@ def listarBicis(respuesta):
     else:
         return listaBicis
 
+# Transformar respuesta a una lista de rentals
 def listarRentals(respuesta):
 
-    assert isinstance(respuesta,dict)
     try:
         listaBicis = respuesta["documents"]
     except KeyError:
