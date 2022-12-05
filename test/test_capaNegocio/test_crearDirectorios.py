@@ -1,38 +1,31 @@
 from src.capaNegocio.crearDirectorios import creacionDirectorios
 import pytest
 import os
-# Este test va a comprobar que el modulo la funcion creacionDirectorios del modulo crearDirectorios funciona correctamente
+
+# Este test va a comprobar que el modulo la funcion creacionDirectorios del modulo crearDirectorios funciona correctamente 
+# y lanza las excepciones.
 
 # Nombramos las rutas de los directorios
+pathVideos = ".\\dirTest\\videos"
+pathBiciSolitarias = ".\\dirTest\\second_pages\\bicissolitarias"
+pathPaginaSecundaria = ".\\dirTest\\second_pages"
+pathCcsStyles = ".\\dirTest\\cssStyles"
 
-pathVideos = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\videos"
-pathBiciSolitarias = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\bicissolitarias"
-pathCcsStyles = "C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\cssStyles"
-
-# En primer lugar, ejecutamos la funcion para que cree los directorios y después comprobamos que existen.
-
-@pytest.mark.test_creacionDirectoriosVideos
+# Comprobamos que se crean correctamente
+@pytest.mark.test_creacionDirectorios
 def test_creacionDirectoriosVideos():
 
-    creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles)
-    assert os.path.exists(pathVideos) != False
+    creacionDirectorios(pathVideos, "videos") # Creamos el directorio
+    assert os.path.exists(pathVideos) != False # La ruta existe
+    assert os.path.isdir(pathVideos) == True # En la ruta existe un directorio
 
-@pytest.mark.test_creacionDirectoriosBicisSolitarias
-def test_creacionDirectoriosBicisSolitarias():
-
-    creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles)
-    assert os.path.exists(pathBiciSolitarias) != False
-
-@pytest.mark.test_creacionDirectoriosCssStyles
-def test_creacionDirectoriosCssStyles():
-
-    creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles)
-    assert os.path.exists(pathCcsStyles) != False
+# Comprobamos que si no puede crearse un directorio, lanza error y termina la ejecución
+@pytest.mark.test_errorCreacionDirectorios
+def test_errorCreacionDirectorios():
 
 
-# Ahora comprobaremos que en el caso de que existan, el programa no hace nada
+    with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\dirTest\\second_pages", "w") as file: # Abrimos un archivo para generar un error
+        file.write("Este texto es de prueba")
+        print("El archivo second_pages creado correctamente")
 
-@pytest.mark.test_creacionDirectoriosExisten
-def test_creacionDirectoriosVideosExiste():
-
-    assert creacionDirectorios(pathVideos,pathBiciSolitarias,pathCcsStyles) == None
+    assert creacionDirectorios(pathPaginaSecundaria, "second_pages")  == False # Nos devuelve False si no puede crear el directorio
