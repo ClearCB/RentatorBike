@@ -1,6 +1,5 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearFooter
 
-
 def crearBodyBicis(listaBicis):
 
     bicisBodyHtml ='''
@@ -74,4 +73,3 @@ def bicisHtml(listaBicis):
             archivo.write(body)
             archivo.write(footer)
             print("El archivo 'bicis.html' creado correctamente.")
-

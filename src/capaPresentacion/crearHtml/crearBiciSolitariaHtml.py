@@ -1,6 +1,4 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearFooter, crearHeader, crearHtmlHead
-from src.capaDatos.listarDatosMongo import listarBicis, respuestaText
-from src.capaDatos.peticionMongo import conseguirRespuestaDatos, mongoKey, mongoUrl
 
 
 def crearHtmlBiciSolitaria(bici):
@@ -141,6 +139,3 @@ def crearBicisSolitarias (listaBicis):
     for bici in listaBicis:
 
         crearBiciSolitariaHtml(bici)
-
-
-crearBicisSolitarias(listarBicis(respuestaText(conseguirRespuestaDatos(mongoKey(),mongoUrl()))))
