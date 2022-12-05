@@ -12,3 +12,4 @@ def creacionDirectorios(ruta,nombreDirectorio):
         print(f"El directorio {nombreDirectorio} ha sido creado correctamente")
     except OSError: # En el caso de que no se pueda crear, el programa lanzará una excepción
         print(f"El directorio {nombreDirectorio} no ha podido crearse")
+        return False

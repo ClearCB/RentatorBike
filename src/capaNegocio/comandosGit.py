@@ -41,7 +41,7 @@ def gitPush():
 def gitAd():
 
     try: # Comprobamos que el comando se puede ejecutar sin problema
-        comandoAdd = "git add ."
+        comandoAdd = "git add docs/"
         subprocess.run(comandoAdd)
         print("Comando git add ejecutado correctamente.")
 
