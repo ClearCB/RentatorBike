@@ -3,8 +3,7 @@
 # que serán llamadas desde otro modulo para printar el contenido en un archivo ".html"
 
 
-# La primera función, a raiz de una serie de parámetros, va a devolver la variable head
-
+# Esta función a raiz de una serie de parámetros, va a devolver la variable head que contiene el código html de la parte head.
 def crearHtmlHead(titulo, descripcion, keywords, cssPath, cssLink):
 
     head = f'''
@@ -32,10 +31,8 @@ def crearHtmlHead(titulo, descripcion, keywords, cssPath, cssLink):
     
     return head
 
-# Esta función con los parametros que se le aplican creará una variable header que 
-# será común a todas las páginas cambiando solo el path de los archivos.
-
-def crearHeader(path,indexPath):
+# Esta funcion a raiz de una serie de parámetros, va a devolver la variable header que contiene el código html de la parte del header/nav
+def crearHeader(indexPath, path):
 
     header =f'''
     <body>
@@ -43,7 +40,7 @@ def crearHeader(path,indexPath):
             <div class="header">
                 <div class="header__logo">
                     <h1>Rentator</h1>
-                    <h2>Tu Mejor Opcion</h2>
+                    <h2>Tu Mejor Opción</h2>
                 </div>
                 <div class="header__nav">
                     <div class="header__links">
@@ -74,17 +71,18 @@ def crearHeader(path,indexPath):
                     <label for="search"></label>
                     <input type="text" id="search" placeholder="Buscar..." name="q" value="">
                 </form>
-            </div>
+        </div>
         <div  class="volverArriba">
             <a href="#nav" target="_self"><img class="flechaSubir" alt="flecha_arriba" src="/public_html/imagenes/iconos/flecha_arriba.png"></a>
         </div>'''
     
     return header
 
+# Esta funcion a raiz de una serie de parámetros, va a devolver la variable footer que contiene el código html de la parte del footer
 def crearFooter():
 
     footer ='''
-            <footer id="footer">
+        <footer id="footer">
             <div class="soporte_links">
                 <ul>
                     <li><a href="#">Contacto: 971621612 / rentatorsl@company.eu<br><br></a></li>
@@ -110,4 +108,5 @@ def crearFooter():
         </footer>
     </body>
 </html>'''
+    
     return footer
