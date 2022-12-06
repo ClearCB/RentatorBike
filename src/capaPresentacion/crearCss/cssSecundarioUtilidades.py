@@ -426,12 +426,6 @@ def indexStylesCss():
     margin-left: 30px;
     color: black;
 }
-.volverArriba .flechaSubir{
-    height: 53px;
-    width: 49px;
-    position: fixed;
-    right: 25px;
-}
 /* 280px — 480px: dispositivos móviles */
 @media (min-width: 280px) and (max-width: 480px) {
     .contenedorinfo {
