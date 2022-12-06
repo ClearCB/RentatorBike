@@ -1,0 +1,54 @@
+footer {
+  display: flex;
+  background-color: grey;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  color: rgb(0, 0, 0);
+  justify-content: space-evenly;
+  margin-top: 20px;
+  z-index: 0;
+}
+.copyright_footer a{
+  text-decoration: none;
+}
+.soporte_links ul {
+  padding-left: 0px;
+}
+.soporte_links ul, li{
+  list-style: none;
+}
+.soporte_links a{
+  text-decoration: none;
+}
+/* 280px — 480px */
+@media (min-width: 280px) and (max-width: 480px) {
+}
+/* 481px — 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+/* 769px — 1024px*/
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+/* 1025px — 1200px */
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
+/* INICIO ESTILOS PARA dispositivos móviles, iPads, tabletas, iPads, tabletas */
+@media (min-width: 280px) and (max-width:1024px)  { 
+  footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+  }
+  .soporte_links {
+    width: 100%;
+  }
+  .soporte_links ul, .footer__license__description, .footer__license__img {
+    margin: 15px;
+  }
+  .copyright_footer {
+    width: 100%;
+   }
+}
+/* FIN ESTILOS PARA dispositivos móviles, iPads, tabletas, iPads, tabletas */
