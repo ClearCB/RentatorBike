@@ -6,8 +6,10 @@ from src.capaNegocio.crearArchivos import crearArchivo
 # En primer lugar, creamos una función que devuelva el valor del body del rentals.html
 def crearBodyRentals(listaRentals):
 
+    # Definimos parte del body de rentals
     bodyRentals = ''''''
 
+    # Recorremos la lista de los rentals para determinar los valores que queremos
     for rental in listaRentals:
 
         nombreRental = rental["company_name"]
@@ -52,6 +54,7 @@ def crearBodyRentals(listaRentals):
 
     return bodyRentals
 
+# Definimos una funcion que unifica el html
 def rentalsHtml(listaRentals):
 
     rentals = ''''''
@@ -67,8 +70,3 @@ def rentalsHtml(listaRentals):
 def crearRentalsHtml(listaRentals):
 
     crearArchivo(rentalsHtml(listaRentals),".\\docs\\second_pages","rentals","html")
-
-from src.capaDatos.listarDatosMongo import listarRentals, respuestaText
-from src.capaDatos.peticionMongo import conseguirRespuestaDatos, mongoKey ,mongoUrl
-
-crearRentalsHtml(listarRentals(respuestaText(conseguirRespuestaDatos(mongoKey(),mongoUrl()))))
