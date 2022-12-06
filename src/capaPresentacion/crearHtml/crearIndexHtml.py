@@ -34,6 +34,7 @@ def crearBodyIndex():
 # Función que construye el index.html y lo devuelve en una variable
 def indexHtml():
 
+
     index = ''''''
     # Añadimos cada parte del código independientemente 
     index += crearHtmlHead("Rentator", "Página principal de un buscador de bicicletas para alquilar", "Bicicletas, inicio, index, alquilar, rental, bike","cssStyles/","index")

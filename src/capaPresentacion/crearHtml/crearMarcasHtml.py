@@ -22,6 +22,7 @@ def crearBodyMarcas():
 
 # Función que construye el marcas.html y lo devuelve en una variable
 def marcasHtml():
+  
 
     marcas = ''''''
     # Añadimos cada parte del código independientemente 
