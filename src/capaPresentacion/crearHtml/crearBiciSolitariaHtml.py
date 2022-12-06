@@ -1,7 +1,8 @@
-from src.capaPresentacion.crearHtml.funcionHtmlBase import crearFooter, crearHeader, crearHtmlHead
+from src.capaNegocio.crearArchivos import crearArchivo
+from src.capaDatos.listarDatosMongo import respuestaText, listarBicis
+from src.capaDatos.peticionMongo import conseguirRespuestaDatos, mongoKey, mongoUrl
 
-
-def crearHtmlBiciSolitaria(bici):
+def biciSolitariaHtml(bici):
 
     htmlBiciSolitaria = '''
 <!DOCTYPE html>
@@ -55,9 +56,9 @@ def crearHtmlBiciSolitaria(bici):
                         <li><a href="../biciscaracteristica.html">Bicis por caracteristicas</a></li>
                     </ul>
                 </li>
-                <li><a href="marcas.html">Marcas</a></li>
-                <li><a href="tipos.html">Tipos</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="../marcas.html">Marcas</a></li>
+                <li><a href="../tipos.html">Tipos</a></li>
+                <li><a href="../rentals.html">Rentals</a></li>
             </ul>
         </nav>
         <div id="buscador">
@@ -77,7 +78,7 @@ def crearHtmlBiciSolitaria(bici):
     cuadro = bici["techinfo"]["size"]
     complementos = ""
     for complemento in bici["complements"]:
-        complementos += complemento
+        complementos += complemento+"  "
     precio = bici["prize_euros_days"]
     ubicacion = bici["where"][0]["company_name"]
 
@@ -120,22 +121,14 @@ def crearHtmlBiciSolitaria(bici):
         </section>'''
     return htmlBiciSolitaria
 
-def crearBiciSolitariaHtml(bici):
 
-    id = bici["_idbike"]
-    html = crearHtmlBiciSolitaria(bici)
-
-
-    try:
-        with open(f"C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\bicissolitarias\\bicissolitaria{id}.html","w", encoding="utf-8") as archivo:
-            archivo.write(html)
-            print(f"El archivo 'bicisolitaria{id}' creado correctamente.")
-
-    except FileNotFoundError:
-        print("El directorio no existe, ejecuta correctamente el programa y vuelve a intentarlo.")
-
-def crearBicisSolitarias (listaBicis):
+# Definimos una función que ejecuta la función necesaria para crear el archivo correctamente.
+def crearBiciSolitariaHtml(listaBicis):
 
     for bici in listaBicis:
 
-        crearBiciSolitariaHtml(bici)
+        id = bici["_idbike"]
+        bicisolitaria = biciSolitariaHtml(bici)
+        crearArchivo(bicisolitaria,".\\docs\\second_pages\\bicissolitarias\\",f"bicissolitaria{id}","html")
+
+crearBiciSolitariaHtml(listarBicis(respuestaText(conseguirRespuestaDatos( mongoKey(), mongoUrl()))))

@@ -99,5 +99,3 @@ def tiposHtml():
 def crearTiposHtml():
 
     crearArchivo(tiposHtml(),".\\docs\\second_pages","tipos","html")
-
-crearTiposHtml()
