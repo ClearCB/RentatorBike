@@ -19,15 +19,5 @@ def crearTiposCss():
 def crearBicisFiltroCss():
     crearArchivo(bicisfiltroStylesCss(), ".\\docs\\cssStyles", "bicisfiltro", "css")
 
-def crearIndexCss():
-    crearArchivo(indexStylesCss(), ".\\docs\\cssStyles", "index", "css")
 
-def crearCssSecundario():
 
-    crearBicisCss()
-    crearBiciSolitariaCss()
-    crearMarcasCss()
-    crearRentalsCss()
-    crearTiposCss()
-    crearBicisFiltroCss()
-    crearIndexCss()

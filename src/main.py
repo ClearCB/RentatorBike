@@ -28,8 +28,8 @@ def generarPáginasEstáticas(listaBicis,listaRentals):
     crearRentalsHtml(listaRentals)
     crearMainCss()
     crearCssSecundario()
-    guardarCambios()
-    actualizarGitHubPagina()
+    # guardarCambios()
+    # actualizarGitHubPagina()
 
 generarPáginasEstáticas(listaBicis,listaRentals)
 

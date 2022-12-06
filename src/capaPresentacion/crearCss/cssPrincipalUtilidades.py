@@ -161,8 +161,12 @@ form{
 /* FIN ESTILOS HASTA 480px */
 '''
 
+# Esta función define el valor del código del nav de nuestra pagina.
 def navStylesCss():
-    return  '''#nav {
+    
+    # Definimos el valor de la variable navCss con el código css.
+    navCss =  '''
+    #nav {
     display: block;
     background: #54aa51;
     width: 100%;
@@ -224,3 +228,5 @@ def navStylesCss():
     z-index: 1;
   }
 '''
+
+    return navCss
