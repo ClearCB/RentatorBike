@@ -159,10 +159,3 @@ def biciCategoriaHtml(listaBicis):
 def crearBiciCategoriaHtml(listaBicis):
 
     crearArchivo(biciCategoriaHtml(listaBicis),".\\docs\\second_pages","biciscategoria","html")
-
-from src.capaDatos.listarDatosMongo import listarBicis, respuestaText
-from src.capaDatos.peticionMongo import respuestaMongo
-
-crearBiciCategoriaHtml(listarBicis(respuestaText(respuestaMongo())))
-
-

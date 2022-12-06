@@ -246,10 +246,3 @@ def biciCaracteristicaHtml(listaBicis):
 def crearBiciCaracteristicaHtml(listaBicis):
 
     crearArchivo(biciCaracteristicaHtml(listaBicis),".\\docs\\second_pages","biciscaracteristica","html")
-
-from src.capaDatos.listarDatosMongo import listarBicis, respuestaText
-from src.capaDatos.peticionMongo import respuestaMongo
-
-crearBiciCaracteristicaHtml(listarBicis(respuestaText(respuestaMongo())))
-
-

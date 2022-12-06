@@ -8,8 +8,10 @@ from src.capaPresentacion.crearHtml.crearIndexHtml import crearIndexHtml
 from src.capaPresentacion.crearHtml.crearRentalsHtml import crearRentalsHtml
 from src.capaPresentacion.crearHtml.crearTiposHtml import crearTiposHtml
 from src.capaPresentacion.crearHtml.crearMarcasHtml import crearMarcasHtml
-from src.capaPresentacion.crearCss.crearPrincipalCss import crearMainCss
-from src.capaPresentacion.crearCss.crearSecundarioCss import crearCssSecundario
+from src.capaPresentacion.crearHtml.crearBiciCaractHtml import crearBiciCaracteristicaHtml
+from src.capaPresentacion.crearHtml.crearBiciCategHtml import crearBiciCategoriaHtml
+from src.capaPresentacion.crearHtml.crearBiciMarcaHtml import crearBiciMarcaHtml
+
 
 # Nombrar variables necesarias
 datosMongo = respuestaText(respuestaMongo())
@@ -24,12 +26,13 @@ def generarPáginasEstáticas(listaBicis,listaRentals):
     crearMarcasHtml()
     crearTiposHtml()
     crearBicisHtml(listaBicis)
-    crearBiciSolitariaHtml(listaBicis)
+    crearBiciCaracteristicaHtml(listaBicis)
+    crearBiciCategoriaHtml(listaBicis)
+    crearBiciMarcaHtml(listaBicis)
     crearRentalsHtml(listaRentals)
-    crearMainCss()
-    crearCssSecundario()
-    guardarCambios()
-    actualizarGitHubPagina()
+    crearBiciSolitariaHtml(listaBicis)
+    # guardarCambios()
+    # actualizarGitHubPagina()
 
 generarPáginasEstáticas(listaBicis,listaRentals)
 

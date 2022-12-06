@@ -135,10 +135,3 @@ def biciMarcaHtml(listaBicis):
 def crearBiciMarcaHtml(listaBicis):
 
     crearArchivo(biciMarcaHtml(listaBicis),".\\docs\\second_pages","bicispormarca","html")
-
-from src.capaDatos.listarDatosMongo import listarBicis, respuestaText
-from src.capaDatos.peticionMongo import respuestaMongo
-
-crearBiciMarcaHtml(listarBicis(respuestaText(respuestaMongo())))
-
-
