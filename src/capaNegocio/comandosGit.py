@@ -15,6 +15,7 @@ def gitPull():
     except subprocess.SubprocessError: # Capturamos un error en el caso de que no se pueda ejecutar correctamente
         print("El comando git pull no se ha podido ejecutar correctamente, revíselo e inténtelo de nuevo.")
 
+# Definimos una función que ejecuta el comando gitdelete
 def gitDelete():
 
     try: # Comprobamos que el comando se puede ejecutar sin problema
