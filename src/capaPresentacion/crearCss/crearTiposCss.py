@@ -1,11 +1,11 @@
 from src.capaNegocio.crearArchivos import crearArchivo
 
-#Funcion que define el codigo Css del archivo tipos.css
+#Funcion que define el codigo css del archivo tipos.css
 
 def tiposStylesCss():
 
-    # Definimos el valor de la variable css con el código css
-    tipos =  '''
+    # Definimos el valor de la variable tiposCss con el código css
+    tiposCss =  '''
 .contenedor{
   display: flex;
   align-items: center;
@@ -79,7 +79,7 @@ button:hover {
   }
 }'''
 
-    return tipos
+    return tiposCss
 
 
     #Funcion que crea el archivo tipos.css en la ruta indicada.
