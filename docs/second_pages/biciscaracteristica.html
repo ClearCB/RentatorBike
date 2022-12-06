@@ -1,0 +1,1120 @@
+
+<!DOCTYPE html>
+<!-- Hemos añadido el atributo lang en la etiqueta html en lugar de hacerlo en meta porque el validador nos daba problemas -->
+<html lang="es" dir="ltr">
+    <head>
+        <!-- La etiqueta meta la hemos obviado ya que en el footer hemos incluido una licencia de Creative Commons, sin embargo esta sería su sintaxis:  
+        <meta name="copyright" content="Licencia de la empresa RentatorSL, propiedad de Gema Marquinez y Abel Casas"-->
+        <title>Bicicletas por caracteristica</title>
+        <base target="_blank">
+        <meta charset="UTF-8">
+        <meta name="author" content="Gema Marquinez y Abel Casas">
+        <meta name="description" content="Página donde aparecen las bicicletas filtradas por sus caracteristica">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="keywords" content="bicicletas, cuadro, talla, ruedas, tamaño, groupset">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../cssStyles/footer.css">
+        <link rel="stylesheet" type="text/css" href="../cssStyles/header.css">
+        <link rel="stylesheet" type="text/css" href="../cssStyles/base.css">
+        <link rel="stylesheet" type="text/css" href="../cssStyles/nav.css">
+        <link rel="stylesheet" type="text/css" href="../cssStyles/bicisfiltro.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="header__logo">
+                    <h1>Rentator</h1>
+                    <h2>Tu Mejor Opción</h2>
+                </div>
+                <div class="header__nav">
+                    <div class="header__links">
+                        <a href="">Iniciar Sesión</a>
+                        <a href="">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="..\index.html">Inicio</a></li>
+                <li class="bicisfiltroboton">Bicicletas
+                    <ul>
+                        <li><a href="bicis.html">Todas las bicis</a></li>
+                        <li><a href="biciscategoria.html">Bicis por categoria</a></li>
+                        <li><a href="bicispormarca.html">Bicis por marca</a></li>
+                        <li><a href="biciscaracteristica.html">Bicis por caracteristicas</a></li>
+                    </ul>
+                </li>
+                <li><a href="marcas.html">Marcas</a></li>
+                <li><a href="tipos.html">Tipos</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+            </ul>
+        </nav>
+        <div id="buscador">
+                <form method="get" action="https://www.google.es/search">
+                    <label for="search"></label>
+                    <input type="text" id="search" placeholder="Buscar..." name="q" value="">
+                </form>
+        </div>
+        <div  class="volverArriba">
+            <a href="#nav" target="_self"><img class="flechaSubir" alt="flecha_arriba" src="http://imgfz.com/i/63T0IuS.png"></a>
+        </div>
+        <section>
+            <h3 class="titleBicis"> Bicis por caracteristica </h3>
+            <div class="categorias">
+                <a href="#cuadro" target="_self"><div class="nombrecategorias"><h4>Por tamaño del cuadro</h4></div></a>
+                <a href="#rueda" target="_self"><div class="nombrecategorias"><h4>Por tamaño de las ruedas</h4></div></a>
+                <a href="#groupset" target="_self"><div class="nombrecategorias"><h4>Por marca del groupset</h4></div></a>
+            </div><hr>
+            <div id="contenedorPadre">
+                    <h4 class="filtrotitulo"><span id="cuadro"></span>Tamaño del cuadro </h4>
+                    <h5 class="filtrocaract"> Talla XS</h5> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaMA0202.html"><img src="http://imgfz.com/i/kaSt31V.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: orbea</li> 
+                                <li>Talla: xs</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rybm</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaCA0102.html"><img src="http://imgfz.com/i/Gtuk9Ah.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: giro</li> 
+                                <li>Talla: xs</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 17</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en touristbike</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaCA0202.html"><img src="http://imgfz.com/i/8bkws5n.jpeg" alt="bicicleta de la marca cube y tipo bici de carretera"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kona</li> 
+                                <li>Talla: xs</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentalride</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="filtrocaract"> Talla S</h5> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0102.html"><img src="http://imgfz.com/i/YaJj6u9.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: s</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bibike</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="filtrocaract"> Talla M</h5> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaMA0101.html"><img src="http://imgfz.com/i/B1zMU2r.jpeg" alt="bicicleta de la marca specialized y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 18</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en habikemall</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaMA0102.html"><img src="http://imgfz.com/i/PjOVTLa.jpeg" alt="bicicleta de la marca giant y tipo e-mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 17</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en habikemall</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaAL0202.html"><img src="http://imgfz.com/i/q5d318P.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 17</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en speedyrent</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaSO0201.html"><img src="http://imgfz.com/i/2eNLWgp.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: giro</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 14</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentingmanakia</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaCA0201.html"><img src="http://imgfz.com/i/nfUeIZh.jpeg" alt="bicicleta de la marca cannondale y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cannondale</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 29</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentalride</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="filtrocaract"> Talla L</h5> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0201.html"><img src="http://imgfz.com/i/kaSt31V.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 14</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentbima</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaMA0201.html"><img src="http://imgfz.com/i/A4W1wGp.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 29</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rybm</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaAL0101.html"><img src="http://imgfz.com/i/lDAfFpc.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 14</li> 
+                                <li>Complementos disponibles: casco luz guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bikeandgo</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaAL0201.html"><img src="http://imgfz.com/i/yXMpcKR.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 18</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en speedyrent</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaSO0102.html"><img src="http://imgfz.com/i/I8Q0myp.jpeg" alt="bicicleta de la marca cube y tipo e-mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: giro</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en energylegs</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaCA0101.html"><img src="http://imgfz.com/i/u3NH9RI.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad electrica"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kona</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 18</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en touristbike</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="filtrocaract"> Talla XL</h5> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0202.html"><img src="http://imgfz.com/i/bn1AQ2q.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: orbea</li> 
+                                <li>Talla: xl</li> 
+                                <li>Tamaño de ruedas: 29</li> 
+                                <li>Precio por dia: 16</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentbima</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaAL0102.html"><img src="http://imgfz.com/i/rovgac9.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: xl</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 16</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bikeandgo</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaSO0202.html"><img src="http://imgfz.com/i/n0APhL1.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: orbea</li> 
+                                <li>Talla: xl</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 16</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentingmanakia</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="filtrotitulo"> <span id="rueda"></span> Tamaño de la rueda </h4>
+                <h5 class="filtrocaract"> Talla 26'</h5> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0102.html"><img src="http://imgfz.com/i/YaJj6u9.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: s</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bibike</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaMA0101.html"><img src="http://imgfz.com/i/B1zMU2r.jpeg" alt="bicicleta de la marca specialized y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 18</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en habikemall</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaMA0102.html"><img src="http://imgfz.com/i/PjOVTLa.jpeg" alt="bicicleta de la marca giant y tipo e-mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 17</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en habikemall</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaMA0202.html"><img src="http://imgfz.com/i/kaSt31V.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: orbea</li> 
+                                <li>Talla: xs</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rybm</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaAL0101.html"><img src="http://imgfz.com/i/lDAfFpc.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 14</li> 
+                                <li>Complementos disponibles: casco luz guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bikeandgo</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaAL0102.html"><img src="http://imgfz.com/i/rovgac9.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: xl</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 16</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bikeandgo</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaAL0201.html"><img src="http://imgfz.com/i/yXMpcKR.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 18</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en speedyrent</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaSO0101.html"><img src="http://imgfz.com/i/NvAWrJi.jpeg" alt="bicicleta de la marca cannondale y tipo e-mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cannondale</li> 
+                                <li>Groupset: giro</li> 
+                                <li>Talla: </li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en energylegs</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaSO0201.html"><img src="http://imgfz.com/i/2eNLWgp.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: giro</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 14</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentingmanakia</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaCA0101.html"><img src="http://imgfz.com/i/u3NH9RI.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad electrica"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kona</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 18</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en touristbike</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaCA0102.html"><img src="http://imgfz.com/i/Gtuk9Ah.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: giro</li> 
+                                <li>Talla: xs</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 17</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en touristbike</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="filtrocaract"> Talla 27'</h5> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0201.html"><img src="http://imgfz.com/i/kaSt31V.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 14</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentbima</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaAL0202.html"><img src="http://imgfz.com/i/q5d318P.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 17</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en speedyrent</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaSO0102.html"><img src="http://imgfz.com/i/I8Q0myp.jpeg" alt="bicicleta de la marca cube y tipo e-mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: giro</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en energylegs</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaSO0202.html"><img src="http://imgfz.com/i/n0APhL1.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: orbea</li> 
+                                <li>Talla: xl</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 16</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentingmanakia</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaCA0202.html"><img src="http://imgfz.com/i/8bkws5n.jpeg" alt="bicicleta de la marca cube y tipo bici de carretera"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kona</li> 
+                                <li>Talla: xs</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentalride</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="filtrocaract"> Talla 29'</h5> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0101.html"><img src="http://imgfz.com/i/CiZJnhA.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: x</li> 
+                                <li>Tamaño de ruedas: 29</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bibike</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0202.html"><img src="http://imgfz.com/i/bn1AQ2q.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: orbea</li> 
+                                <li>Talla: xl</li> 
+                                <li>Tamaño de ruedas: 29</li> 
+                                <li>Precio por dia: 16</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentbima</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaMA0201.html"><img src="http://imgfz.com/i/A4W1wGp.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 29</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rybm</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaCA0201.html"><img src="http://imgfz.com/i/nfUeIZh.jpeg" alt="bicicleta de la marca cannondale y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cannondale</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 29</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentalride</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="filtrotitulo"> <span id="groupset"></span>Marca del groupset </h4>
+                <h5 class="filtrocaract"> Kask</h5>
+                <h5 class="filtrocaract"> Specialized </h5> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0201.html"><img src="http://imgfz.com/i/kaSt31V.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 14</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentbima</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaMA0102.html"><img src="http://imgfz.com/i/PjOVTLa.jpeg" alt="bicicleta de la marca giant y tipo e-mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 17</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en habikemall</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaAL0101.html"><img src="http://imgfz.com/i/lDAfFpc.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 14</li> 
+                                <li>Complementos disponibles: casco luz guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bikeandgo</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaAL0202.html"><img src="http://imgfz.com/i/q5d318P.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 17</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en speedyrent</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaCA0201.html"><img src="http://imgfz.com/i/nfUeIZh.jpeg" alt="bicicleta de la marca cannondale y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cannondale</li> 
+                                <li>Groupset: specialized</li> 
+                                <li>Talla: m</li> 
+                                <li>Tamaño de ruedas: 29</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentalride</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="filtrocaract"> Kona</h5> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaCA0101.html"><img src="http://imgfz.com/i/u3NH9RI.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad electrica"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kona</li> 
+                                <li>Talla: l</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 18</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en touristbike</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaCA0202.html"><img src="http://imgfz.com/i/8bkws5n.jpeg" alt="bicicleta de la marca cube y tipo bici de carretera"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kona</li> 
+                                <li>Talla: xs</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentalride</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="filtrocaract">Orbea</h5> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0202.html"><img src="http://imgfz.com/i/bn1AQ2q.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: orbea</li> 
+                                <li>Talla: xl</li> 
+                                <li>Tamaño de ruedas: 29</li> 
+                                <li>Precio por dia: 16</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentbima</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaMA0202.html"><img src="http://imgfz.com/i/kaSt31V.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
+                                <li>Groupset: orbea</li> 
+                                <li>Talla: xs</li> 
+                                <li>Tamaño de ruedas: 26</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rybm</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaSO0202.html"><img src="http://imgfz.com/i/n0APhL1.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
+                                <li>Groupset: orbea</li> 
+                                <li>Talla: xl</li> 
+                                <li>Tamaño de ruedas: 27</li> 
+                                <li>Precio por dia: 16</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en rentingmanakia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="soporte_links">
+                <ul>
+                    <li><a href="#">Contacto: 971621612 / rentatorsl@company.eu<br><br></a></li>
+                    <li><a href="#">Soporte<br><br></a></li>
+                    <li>
+                        <a href="https://twitter.com/topbici"><img class="icono_red" src="http://imgfz.com/i/j9If6lw.png" alt="icono de twitter" width="20" height="20"></a>
+                        <a href="https://www.instagram.com/sansebikes/?hl=es"><img class="icono_red" src="http://imgfz.com/i/4YfLF68.png" alt="icono de instagram" width="20" height="20"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright_footer">
+                
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                    <div class="footer__license__description">
+                        <p>Este obra está bajo una licencia de Creative Commons Reconocimiento-Compartir. Igual 4.0 Internacional.</p>
+                    </div>
+
+                    <div class="footer__license__img">
+                        <img class="copyright_img" alt="Licencia de Creative Commons" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png">
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
