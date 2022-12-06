@@ -1,7 +1,5 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearFooter
-from src.capaPresentacion.crearArchivos import crearArchivo
-from src.capaDatos.listarDatosMongo import listarRentals, respuestaText
-from src.capaDatos.peticionMongo import conseguirRespuestaDatos, mongoKey, mongoUrl
+from src.capaNegocio.crearArchivos import crearArchivo
 
 # En este módulo vamos a crear funciones que van a crear un archivo "rentals.html"
 

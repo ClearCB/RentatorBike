@@ -1,4 +1,4 @@
-from src.capaPresentacion.crearArchivos import crearArchivo
+from src.capaNegocio.crearArchivos import crearArchivo
 import pytest 
 import os
 
