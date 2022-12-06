@@ -11,7 +11,7 @@ def crearBodyIndex():
         <section class="contenido">
             <div class="video_background">
                 <video autoplay muted loop>
-                    <source src="https://drive.google.com/uc?export=download&id=1tJ2jny-F1gMKFEGqffhfk14_zcT5UbWg" type='video/mp4'>
+                    <source src="https://thumbs-eu-west-1.myalbum.io/video/1k0_h264/8f0ee98f-a7e7-4463-9bb3-2b27b648d0c1.mp4" type='video/mp4'>
                 </video>
             </div> 
             <div class="contenedorinfo" id="rutasFamosas">
