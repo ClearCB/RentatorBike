@@ -1,4 +1,4 @@
-from src.capaPresentacion.crearCss.cssSecundarioUtilidades import bicisStylesCss, biciSolitariaStylesCss, marcasStylesCss, rentalsStylesCss, tiposStylesCss, bicisfiltroStylesCss
+from src.capaPresentacion.crearCss.cssSecundarioUtilidades import indexStylesCss, bicisStylesCss, biciSolitariaStylesCss, marcasStylesCss, rentalsStylesCss, tiposStylesCss, bicisfiltroStylesCss
 from src.capaNegocio.crearArchivos import crearArchivo
 
 def crearBicisCss():
@@ -18,3 +18,16 @@ def crearTiposCss():
 
 def crearBicisFiltroCss():
     crearArchivo(bicisfiltroStylesCss(), ".\\docs\\cssStyles", "bicisfiltro", "css")
+
+def crearIndexCss():
+    crearArchivo(indexStylesCss(), ".\\docs\\cssStyles", "index", "css")
+
+def crearCssSecundario():
+
+    crearBicisCss()
+    crearBiciSolitariaCss()
+    crearMarcasCss()
+    crearRentalsCss()
+    crearTiposCss()
+    crearBicisFiltroCss()
+    crearIndexCss()

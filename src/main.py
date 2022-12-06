@@ -8,6 +8,8 @@ from src.capaPresentacion.crearHtml.crearIndexHtml import crearIndexHtml
 from src.capaPresentacion.crearHtml.crearRentalsHtml import crearRentalsHtml
 from src.capaPresentacion.crearHtml.crearTiposHtml import crearTiposHtml
 from src.capaPresentacion.crearHtml.crearMarcasHtml import crearMarcasHtml
+from src.capaPresentacion.crearCss.crearPrincipalCss import crearMainCss
+from src.capaPresentacion.crearCss.crearSecundarioCss import crearCssSecundario
 
 # Nombrar variables necesarias
 datosMongo = respuestaText(respuestaMongo())
@@ -24,6 +26,8 @@ def generarPáginasEstáticas(listaBicis,listaRentals):
     crearBicisHtml(listaBicis)
     crearBiciSolitariaHtml(listaBicis)
     crearRentalsHtml(listaRentals)
+    crearMainCss()
+    crearCssSecundario()
 
 generarPáginasEstáticas(listaBicis,listaRentals)
 

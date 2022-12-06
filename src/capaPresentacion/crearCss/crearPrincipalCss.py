@@ -1,4 +1,4 @@
-from src.capaPresentacion.crearCss.cssPrincipalUtilidades import footerStylesCss, headerStylesCss, baseStylesCss, navStylesCss, indexStylesCss
+from src.capaPresentacion.crearCss.cssPrincipalUtilidades import footerStylesCss, headerStylesCss, baseStylesCss, navStylesCss
 from src.capaNegocio.crearArchivos import crearArchivo
 
 def crearFooterCss():
@@ -13,12 +13,9 @@ def crearBaseCss():
 def crearNavCss():
     crearArchivo(navStylesCss(), ".\\docs\\cssStyles", "nav", "css")
 
-def crearIndexCss():
-    crearArchivo(indexStylesCss(), ".\\docs\\cssStyles", "index", "css")
 
 def crearMainCss():
     crearFooterCss()
     crearHeaderCss()
     crearBaseCss()
     crearNavCss()
-    crearIndexCss()
