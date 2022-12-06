@@ -1,15 +1,19 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearFooter
-from src.capaPresentacion.crearCss.crearSecundarioCss import crearBicisCss
+from src.capaNegocio.crearArchivos import crearArchivo
 
+# En este módulo vamos a crear funciones que van a crear un archivo "bicis.html"
+
+# En primer lugar, creamos una función que devuelva el valor del body del bicis.html
 def crearBodyBicis(listaBicis):
 
+    # Definimos parte del body html
     bicisBodyHtml ='''
         <h3 class="titleBicis"> Bicis disponibles </h3>
         <hr>
         <section>
-            <div id="contenedorPadre">
-                '''
-    for bici in listaBicis:
+            <div id="contenedorPadre">'''
+    
+    for bici in listaBicis: # Recorremos la lista de las bicis para conseguir los valores que queremos
 
         tipo = bici["type"]
         estado = bici["state"]
@@ -25,6 +29,7 @@ def crearBodyBicis(listaBicis):
             strComplementos += (complemento+" ")
         rental = bici["where"][0]["company_name"]
 
+        # Definimos la parte final del body html
         bicisBodyHtml+=f'''
                 <div class="container">
                     <div class="img">
@@ -48,6 +53,7 @@ def crearBodyBicis(listaBicis):
                         </div>
                     </div>
                 </div>'''
+    
     bicisBodyHtml+='''
             </div>
         </section>'''
@@ -55,25 +61,19 @@ def crearBodyBicis(listaBicis):
 
     return bicisBodyHtml
 
+# Funcion que crear el html de bicis.html
 def bicisHtml(listaBicis):
 
-    crearBicisCss()
-    
-    head = crearHtmlHead("Bicis disponibles", "Página donde aparecen todas las bicicletas disponibles", "bicicletas, disponible, up, down alquilar, rental, bike","../cssStyles/","bicis")
-    header = crearHeader("","../")
-    body = crearBodyBicis(listaBicis)
-    footer = crearFooter()
+    # Vamos a unificar el html
+    bicis=''''''
+    bicis += crearHtmlHead("Bicis disponibles", "Página donde aparecen todas las bicicletas disponibles", "bicicletas, disponible, up, down alquilar, rental, bike","../cssStyles/","bicis")
+    bicis += crearHeader("../","")
+    bicis += crearBodyBicis(listaBicis)
+    bicis += crearFooter()
 
-    try:
-        with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\bicis.html","w", encoding="utf-8") as archivo:
-            archivo.write(head)
+    return bicis # Devolvemos la variable bicis que contiene el código del archivo bicis.html
 
-    except FileNotFoundError:
-        print("El directorio no existe, ejecuta correctamente el programa y vuelve a intentarlo.")
+# Definimos una función que ejecuta la función necesaria para crear el archivo correctamente.
+def crearBicisHtml(listaBicis):
 
-    else:
-        with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\bicis.html","a", encoding="utf-8") as archivo:
-            archivo.write(header)
-            archivo.write(body)
-            archivo.write(footer)
-            print("El archivo 'bicis.html' creado correctamente.")
+    crearArchivo(bicisHtml(listaBicis),".\\docs\\second_pages","bicis","html")

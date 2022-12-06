@@ -12,16 +12,16 @@ def test_crearBodyBicis():
         <hr>
         <section>
             <div id="contenedorPadre">
-                
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/0bzEH63.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                        <a href="./bicissolitarias/bicissolitariaPA0101.html"><img src="http://imgfz.com/i/0bzEH63.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>bici de ciudad</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
                                 <li>Groupset: kask</li> 
                                 <li>Talla: x</li> 
                                 <li>Tamaño de ruedas: 29</li> 
@@ -36,13 +36,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/3WgxtCF.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
+                        <a href="./bicissolitarias/bicissolitariaPA0102.html"><img src="http://imgfz.com/i/3WgxtCF.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>bici de ciudad electrica</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
                                 <li>Groupset: kask</li> 
                                 <li>Talla: s</li> 
                                 <li>Tamaño de ruedas: 26</li> 
@@ -57,13 +58,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/uLz1k3I.png" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaPA0201.html"><img src="http://imgfz.com/i/uLz1k3I.png" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>e-mtb</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: up</li> 
+                                <li>Marca: specialized</li> 
                                 <li>Groupset: specialized</li> 
                                 <li>Talla: l</li> 
                                 <li>Tamaño de ruedas: 27</li> 
@@ -78,13 +80,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/f2OzdrC.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaPA0202.html"><img src="http://imgfz.com/i/f2OzdrC.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>e-mtb</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
                                 <li>Groupset: orbea</li> 
                                 <li>Talla: xl</li> 
                                 <li>Tamaño de ruedas: 29</li> 
@@ -99,13 +102,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/ZYmUuQV.jpeg " alt="bicicleta de la marca specialized y tipo mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaMA0101.html"><img src="http://imgfz.com/i/ZYmUuQV.jpeg " alt="bicicleta de la marca specialized y tipo mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>mtb</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: up</li> 
+                                <li>Marca: specialized</li> 
                                 <li>Groupset: kask</li> 
                                 <li>Talla: m</li> 
                                 <li>Tamaño de ruedas: 26</li> 
@@ -120,13 +124,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/fLM1rap.jpeg" alt="bicicleta de la marca giant y tipo e-mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaMA0102.html"><img src="http://imgfz.com/i/fLM1rap.jpeg" alt="bicicleta de la marca giant y tipo e-mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>e-mtb</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
                                 <li>Groupset: specialized</li> 
                                 <li>Talla: m</li> 
                                 <li>Tamaño de ruedas: 26</li> 
@@ -141,13 +146,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/yspcgEA.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                        <a href="./bicissolitarias/bicissolitariaMA0201.html"><img src="http://imgfz.com/i/yspcgEA.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>bici de ciudad</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
                                 <li>Groupset: kask</li> 
                                 <li>Talla: l</li> 
                                 <li>Tamaño de ruedas: 29</li> 
@@ -162,13 +168,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/VSt9ABZ.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaMA0202.html"><img src="http://imgfz.com/i/VSt9ABZ.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>mtb</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
                                 <li>Groupset: orbea</li> 
                                 <li>Talla: xs</li> 
                                 <li>Tamaño de ruedas: 26</li> 
@@ -183,13 +190,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/oFsXH7a.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaAL0101.html"><img src="http://imgfz.com/i/oFsXH7a.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>mtb</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: up</li> 
+                                <li>Marca: giant</li> 
                                 <li>Groupset: specialized</li> 
                                 <li>Talla: l</li> 
                                 <li>Tamaño de ruedas: 26</li> 
@@ -204,13 +212,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/ASf5R7d.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
+                        <a href="./bicissolitarias/bicissolitariaAL0102.html"><img src="http://imgfz.com/i/ASf5R7d.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>bici de ciudad electrica</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
                                 <li>Groupset: kask</li> 
                                 <li>Talla: xl</li> 
                                 <li>Tamaño de ruedas: 26</li> 
@@ -225,13 +234,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/u1qZJXl.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                        <a href="./bicissolitarias/bicissolitariaAL0201.html"><img src="http://imgfz.com/i/u1qZJXl.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>bici de ciudad</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
                                 <li>Groupset: kask</li> 
                                 <li>Talla: l</li> 
                                 <li>Tamaño de ruedas: 26</li> 
@@ -246,13 +256,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/F9tJs46.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaAL0202.html"><img src="http://imgfz.com/i/F9tJs46.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>mtb</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
                                 <li>Groupset: specialized</li> 
                                 <li>Talla: m</li> 
                                 <li>Tamaño de ruedas: 27</li> 
@@ -267,13 +278,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/aoBKA5Z.jpeg" alt="bicicleta de la marca cannondale y tipo e-mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaSO0101.html"><img src="http://imgfz.com/i/aoBKA5Z.jpeg" alt="bicicleta de la marca cannondale y tipo e-mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>e-mtb</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: up</li> 
+                                <li>Marca: cannondale</li> 
                                 <li>Groupset: giro</li> 
                                 <li>Talla: </li> 
                                 <li>Tamaño de ruedas: 26</li> 
@@ -288,13 +300,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/cgK7Uxf.jpeg" alt="bicicleta de la marca cube y tipo e-mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaSO0102.html"><img src="http://imgfz.com/i/cgK7Uxf.jpeg" alt="bicicleta de la marca cube y tipo e-mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>e-mtb</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: down</li> 
+                                <li>Marca: cube</li> 
                                 <li>Groupset: giro</li> 
                                 <li>Talla: l</li> 
                                 <li>Tamaño de ruedas: 27</li> 
@@ -309,13 +322,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/baoeuFc.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaSO0201.html"><img src="http://imgfz.com/i/baoeuFc.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>mtb</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: up</li> 
+                                <li>Marca: giant</li> 
                                 <li>Groupset: giro</li> 
                                 <li>Talla: m</li> 
                                 <li>Tamaño de ruedas: 26</li> 
@@ -330,13 +344,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/g31AHse.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad"></a>
+                        <a href="./bicissolitarias/bicissolitariaSO0202.html"><img src="http://imgfz.com/i/g31AHse.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>bici de ciudad</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: down</li> 
+                                <li>Marca: specialized</li> 
                                 <li>Groupset: orbea</li> 
                                 <li>Talla: xl</li> 
                                 <li>Tamaño de ruedas: 27</li> 
@@ -351,13 +366,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/ZoKTLvs.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad electrica"></a>
+                        <a href="./bicissolitarias/bicissolitariaCA0101.html"><img src="http://imgfz.com/i/ZoKTLvs.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad electrica"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>bici de ciudad electrica</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
                                 <li>Groupset: kona</li> 
                                 <li>Talla: l</li> 
                                 <li>Tamaño de ruedas: 26</li> 
@@ -372,13 +388,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/p8eYINZ.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaCA0102.html"><img src="http://imgfz.com/i/p8eYINZ.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>mtb</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: down</li> 
+                                <li>Marca: giant</li> 
                                 <li>Groupset: giro</li> 
                                 <li>Talla: xs</li> 
                                 <li>Tamaño de ruedas: 26</li> 
@@ -393,13 +410,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/1VcN9HE.jpeg" alt="bicicleta de la marca cannondale y tipo mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaCA0201.html"><img src="http://imgfz.com/i/1VcN9HE.jpeg" alt="bicicleta de la marca cannondale y tipo mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>mtb</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: up</li> 
+                                <li>Marca: cannondale</li> 
                                 <li>Groupset: specialized</li> 
                                 <li>Talla: m</li> 
                                 <li>Tamaño de ruedas: 29</li> 
@@ -414,13 +432,14 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicisolitaria.html"><img src="http://imgfz.com/i/b4jVFNa.jpeg" alt="bicicleta de la marca cube y tipo bici de carretera"></a>
+                        <a href="./bicissolitarias/bicissolitariaCA0202.html"><img src="http://imgfz.com/i/b4jVFNa.jpeg" alt="bicicleta de la marca cube y tipo bici de carretera"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>bici de carretera</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: down</li> 
+                                <li>Marca: cube</li> 
                                 <li>Groupset: kona</li> 
                                 <li>Talla: xs</li> 
                                 <li>Tamaño de ruedas: 27</li> 

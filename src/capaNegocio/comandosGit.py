@@ -15,6 +15,16 @@ def gitPull():
     except subprocess.SubprocessError: # Capturamos un error en el caso de que no se pueda ejecutar correctamente
         print("El comando git pull no se ha podido ejecutar correctamente, revíselo e inténtelo de nuevo.")
 
+def gitDelete():
+
+    try: # Comprobamos que el comando se puede ejecutar sin problema
+        comandoDelete = f"git branch -D pagina"
+        subprocess.run(comandoDelete)
+        print("Comando git delete ejecutado correctamente.")
+
+    except subprocess.SubprocessError: # Capturamos un error en el caso de que no se pueda ejecutar correctamente
+        print("El comando git delete no se ha podido ejecutar correctamente, revíselo e inténtelo de nuevo.")
+
 # Definimos una función que ejecuta el comando gitcheckout y cambia a la rama "pagina"
 def gitCheckout():
 
@@ -41,7 +51,7 @@ def gitPush():
 def gitAd():
 
     try: # Comprobamos que el comando se puede ejecutar sin problema
-        comandoAdd = "git add docs/"
+        comandoAdd = "git add ."
         subprocess.run(comandoAdd)
         print("Comando git add ejecutado correctamente.")
 
@@ -79,6 +89,7 @@ def guardarCambios():
 # Definimos una función que ejecuta los comandos gitcheckout gitmerge gitpull y gitpush para actualizar la pagina en el remoto
 def actualizarGitHubPagina():
 
+    gitDelete()
     gitCheckout()
     gitMerge()
     gitPull()

@@ -1,9 +1,9 @@
-from src.capaPresentacion.crearHtml.funcionHtmlBase import crearFooter, crearHeader, crearHtmlHead
-from src.capaPresentacion.crearCss.crearSecundarioCss import crearBiciSolitariaCss
+from src.capaNegocio.crearArchivos import crearArchivo
 
+# Funcion que determina el html de una bici en solitario
+def biciSolitariaHtml(bici):
 
-def crearHtmlBiciSolitaria(bici):
-
+    # Definimos parte del html de bicisolitaria
     htmlBiciSolitaria = '''
 <!DOCTYPE html>
 <!-- Hemos añadido el atributo lang en la etiqueta html en lugar de hacerlo en meta porque el validador nos daba problemas -->
@@ -56,9 +56,9 @@ def crearHtmlBiciSolitaria(bici):
                         <li><a href="../biciscaracteristica.html">Bicis por caracteristicas</a></li>
                     </ul>
                 </li>
-                <li><a href="marcas.html">Marcas</a></li>
-                <li><a href="tipos.html">Tipos</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="../marcas.html">Marcas</a></li>
+                <li><a href="../tipos.html">Tipos</a></li>
+                <li><a href="../rentals.html">Rentals</a></li>
             </ul>
         </nav>
         <div id="buscador">
@@ -68,6 +68,7 @@ def crearHtmlBiciSolitaria(bici):
                 </form>
         </div>'''
 
+    # Recorremos el diccionario bici para conseguir los valores que queremos
     imagen = bici["img"]
     marca = bici["techinfo"]["brand"]
     tipo = bici["type"]
@@ -78,7 +79,7 @@ def crearHtmlBiciSolitaria(bici):
     cuadro = bici["techinfo"]["size"]
     complementos = ""
     for complemento in bici["complements"]:
-        complementos += complemento
+        complementos += complemento+"  "
     precio = bici["prize_euros_days"]
     ubicacion = bici["where"][0]["company_name"]
 
@@ -121,24 +122,13 @@ def crearHtmlBiciSolitaria(bici):
         </section>'''
     return htmlBiciSolitaria
 
-def crearBiciSolitariaHtml(bici):
 
-    crearBiciSolitariaCss()
-    
-    id = bici["_idbike"]
-    html = crearHtmlBiciSolitaria(bici)
+# Definimos una función que ejecuta la función necesaria para crear los archivos bicissolitarias correctamente.
+def crearBiciSolitariaHtml(listaBicis):
 
+    for bici in listaBicis: # Recorremos la lista de las bicis
 
-    try:
-        with open(f"C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\bicissolitarias\\bicissolitaria{id}.html","w", encoding="utf-8") as archivo:
-            archivo.write(html)
-            print(f"El archivo 'bicisolitaria{id}' creado correctamente.")
+        id = bici["_idbike"]
+        bicisolitaria = biciSolitariaHtml(bici) # Creamos un html con los datos de la bici en concreto 
+        crearArchivo(bicisolitaria,".\\docs\\second_pages\\bicissolitarias\\",f"bicissolitaria{id}","html") # Generamos un archivos html con los datos de la bici
 
-    except FileNotFoundError:
-        print("El directorio no existe, ejecuta correctamente el programa y vuelve a intentarlo.")
-
-def crearBicisSolitarias (listaBicis):
-
-    for bici in listaBicis:
-
-        crearBiciSolitariaHtml(bici)

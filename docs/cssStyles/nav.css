@@ -1,0 +1,61 @@
+#nav {
+    display: block;
+    background: #54aa51;
+    width: 100%;
+    position: relative;
+  }
+#nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+  }
+#nav ul li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+#nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+#nav ul li a:hover {
+    background: #f0b967;
+  }
+  .bicisfiltroboton{
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .bicisfiltroboton ul{ 
+    
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#54aa51;
+    padding:0;
+   }
+  .bicisfiltroboton:hover > ul{ 
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    left: 7%;
+  }
+  .volverarriba {
+    position: fixed;
+    left: 80%;
+    padding: 0px 32px 0px 32px;
+    top: 90%;
+    height: 48px;
+    background-color: #8EDD65;
+    color: white;
+    z-index: 1;
+  }
+.volverarriba:hover {
+    background-position: center;
+    background: #00BB31 radial-gradient(circle, transparent 1%, #00BB31 1%) center/15000%;
+    z-index: 1;
+  }
