@@ -1,10 +1,9 @@
 from src.capaNegocio.crearArchivos import crearArchivo
 
 #Funcion que define el codigo Css del archivo footer.css
-
 def footerStylesCss():
   
-     # Definimos el valor de la variable footerCss con el código css.
+     # Definimos el valor de la variable css con el código css
     footer =  '''
 footer {
   display: flex;
@@ -61,12 +60,13 @@ footer {
 }
 /* FIN ESTILOS PARA dispositivos móviles, iPads, tabletas, iPads, tabletas */'''
    
+   
     return footer
 
-#Funcion que define el codigo Css del archivo header.css
+#Funcion que define el codigo css del archivo header.css
 def headerStylesCss():
 
-     # Definimos el valor de la variable headerCss con el código css.
+     #Definimos el valor de la variable headerCss con el código css
     header =  '''
 .header {
   background: #edeebc;
@@ -145,10 +145,10 @@ def headerStylesCss():
 
     return header
 
-#Funcion que define el codigo Css del archivo base.css
+#Funcion que define el codigo css del archivo base.css
 def baseStylesCss():
     
-     # Definimos el valor de la variable baseCss con el código css.
+     #Definimos el valor de la variable base con el código css
     base =  '''
 body {
      margin: 0;
@@ -179,11 +179,10 @@ form{
 
     return base
 
-#Funcion que define el codigo Css del archivo nav.css
-
+#Funcion que define el codigo css del archivo nav.css
 def navStylesCss():
     
-    # Definimos el valor de la variable navCss con el código css.
+    #Definimos el valor de la variable nav con el código css
     navCss =  '''
     #nav {
     display: block;
@@ -250,7 +249,7 @@ def navStylesCss():
 
     return navCss
 
-
+#Funcion que crea el archivo base.css en la ruta indicada.
 def crearCssBase():
 
     crearArchivo(footerStylesCss(), ".\\docs\\cssStyles", "footer", "css")

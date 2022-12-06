@@ -4,7 +4,7 @@ from src.capaNegocio.crearArchivos import crearArchivo
 
 def tiposStylesCss():
 
-    # Definimos el valor de la variable footerCss con el código css
+    # Definimos el valor de la variable css con el código css
     tipos =  '''
 .contenedor{
   display: flex;
@@ -82,6 +82,6 @@ button:hover {
     return tipos
 
 
-    #Funcion que crea el archivo crearTipos.css en la ruta indicada.
+    #Funcion que crea el archivo tipos.css en la ruta indicada.
 def crearTiposCss():
     crearArchivo(tiposStylesCss(), ".\\docs\\cssStyles", "tipos", "css")
