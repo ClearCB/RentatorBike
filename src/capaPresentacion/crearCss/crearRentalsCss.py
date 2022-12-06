@@ -1,11 +1,10 @@
 from src.capaNegocio.crearArchivos import crearArchivo
 
-#Funcion que define el codigo Css del archivo rentals.css
-
+#Funcion que define el codigo css del archivo rentals.css
 def rentalsStylesCss():
 
-    # Definimos el valor de la variable footerCss con el código css
-    rentals =  '''
+    # Definimos el valor de la variable rentalsCss con el código css
+    rentalsCss =  '''
 .rentals {
     display: flex;
     justify-content: center;
@@ -70,7 +69,7 @@ def rentalsStylesCss():
 }
 }'''
     
-    return rentals
+    return rentalsCss
 
 #Funcion que crea el archivo rentals.css en la ruta indicada.
 def crearRentalsCss():

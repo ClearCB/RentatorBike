@@ -1,10 +1,10 @@
 from src.capaNegocio.crearArchivos import crearArchivo
 
-#Funcion que define el codigo css del archivo base.css
+#Funcion que define el codigo css del archivo bicis.css
 def bicisStylesCss():
    
-  #Definimos el valor de la variable bicis con el código css
-    bicis =  '''
+  #Definimos el valor de la variable bicisCss con el código css
+    bicisCss =  '''
   #contenedorPadre {
   display: flex;
   justify-content: center;
@@ -54,8 +54,8 @@ h2, h5 {
   margin-bottom: 20px;
 }'''
     
-    return bicis
+    return bicisCss
 
-#Funcion que crea el archivo crearBicis.css en la ruta indicada.
+#Funcion que crea el archivo bicis.css en la ruta indicada.
 def crearBicisCss():
     crearArchivo(bicisStylesCss(), ".\\docs\\cssStyles", "bicis", "css")

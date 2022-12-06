@@ -4,8 +4,8 @@ from src.capaNegocio.crearArchivos import crearArchivo
 #Funcion que define el codigo Css del archivo biciSolitaria.css
 def biciSolitariaStylesCss():
     
-    #Definimos el valor de la variable css con el código css
-    biciSolitaria =  '''
+    #Definimos el valor de la variable biciSolitariaCss con el código css
+    biciSolitariaCss =  '''
 .titleBicis{
     text-align:center;
     font-size: 50px;
@@ -44,7 +44,7 @@ td {
     background-color: rgb(238, 238, 238);
 }'''
     
-    return biciSolitaria
+    return biciSolitariaCss
 
 #Funcion que crea el archivo biciSolitaria.css en la ruta indicada.
 def crearBiciSolitariaCss():

@@ -1,11 +1,10 @@
 from src.capaNegocio.crearArchivos import crearArchivo
 
 #Funcion que define el codigo css del archivo marcas.css
-
 def marcasStylesCss():
 
-     #Definimos el valor de la variable marcas con el código css
-    marcas =  '''
+     #Definimos el valor de la variable marcasCss con el código css
+    marcasCss =  '''
 #container{
   position: relative;
   text-align: center;
@@ -33,7 +32,7 @@ def marcasStylesCss():
   color: rgb(56, 146, 46);
 }'''
 
-    return marcas
+    return marcasCss
 
 #Funcion que crea el archivo marcas.css en la ruta indicada.
 def crearMarcasCss():
