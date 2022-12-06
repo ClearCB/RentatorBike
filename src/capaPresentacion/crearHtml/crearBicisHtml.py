@@ -1,13 +1,18 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearFooter
+from src.capaNegocio.crearArchivos import crearArchivo
+from src.capaDatos.listarDatosMongo import respuestaText, listarBicis
+from src.capaDatos.peticionMongo import conseguirRespuestaDatos, mongoKey, mongoUrl
 
+# En este módulo vamos a crear funciones que van a crear un archivo "bicis.html"
+
+# En primer lugar, creamos una función que devuelva el valor del body del bicis.html
 def crearBodyBicis(listaBicis):
 
     bicisBodyHtml ='''
         <h3 class="titleBicis"> Bicis disponibles </h3>
         <hr>
         <section>
-            <div id="contenedorPadre">
-                '''
+            <div id="contenedorPadre">'''
     for bici in listaBicis:
 
         tipo = bici["type"]
@@ -56,21 +61,17 @@ def crearBodyBicis(listaBicis):
 
 def bicisHtml(listaBicis):
 
-    head = crearHtmlHead("Bicis disponibles", "Página donde aparecen todas las bicicletas disponibles", "bicicletas, disponible, up, down alquilar, rental, bike","../cssStyles/","bicis")
-    header = crearHeader("","../")
-    body = crearBodyBicis(listaBicis)
-    footer = crearFooter()
+    bicis=''''''
+    bicis += crearHtmlHead("Bicis disponibles", "Página donde aparecen todas las bicicletas disponibles", "bicicletas, disponible, up, down alquilar, rental, bike","../cssStyles/","bicis")
+    bicis += crearHeader("../","")
+    bicis += crearBodyBicis(listaBicis)
+    bicis += crearFooter()
 
-    try:
-        with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\bicis.html","w", encoding="utf-8") as archivo:
-            archivo.write(head)
+    return bicis # Devolvemos la variable bicis que contiene el código del archivo bicis.html
 
-    except FileNotFoundError:
-        print("El directorio no existe, ejecuta correctamente el programa y vuelve a intentarlo.")
+# Definimos una función que ejecuta la función necesaria para crear el archivo correctamente.
+def crearBicisHtml(listaBicis):
 
-    else:
-        with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\bicis.html","a", encoding="utf-8") as archivo:
-            archivo.write(header)
-            archivo.write(body)
-            archivo.write(footer)
-            print("El archivo 'bicis.html' creado correctamente.")
+    crearArchivo(bicisHtml(listaBicis),".\\docs\\second_pages","bicis","html")
+
+crearBicisHtml(listarBicis(respuestaText(conseguirRespuestaDatos( mongoKey(), mongoUrl()))))
