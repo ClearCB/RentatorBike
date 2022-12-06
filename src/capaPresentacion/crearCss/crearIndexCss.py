@@ -3,7 +3,7 @@ from src.capaNegocio.crearArchivos import crearArchivo
 #Funcion que define el codigo Css del archivo index.html
 def indexStylesCss():
 
-    # Comentario
+     # Definimos el valor de la variable indexCss con el código css.
     indexCss = '''
 body{
     background-color: rgb(225, 251, 244);
@@ -126,7 +126,7 @@ body{
         width: 70%;
     }
 }'''
-    
+
     return indexCss
 
 #Funcion que crea el archivo index.css en la ruta indicada.
