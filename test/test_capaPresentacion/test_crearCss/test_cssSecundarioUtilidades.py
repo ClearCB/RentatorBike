@@ -1,7 +1,11 @@
 from src.capaPresentacion.crearCss.cssSecundarioUtilidades import bicisStylesCss, bicisfiltroStylesCss, biciSolitariaStylesCss, marcasStylesCss, rentalsStylesCss, tiposStylesCss
 import pytest
+<<<<<<< HEAD
+# Vamos a realizar los test de los estilos del modulo ccsPrincipalSecundario 
+=======
 # Vamos a realizar los test de los estilos del modulo ccsPrincipalBase para comprobar
 # que se comportan como queremos
+>>>>>>> 0d96df9c20cf79b2e710c1c6f799e87779115fb0
 
 
 @pytest.mark.test_bicisStylesCss
