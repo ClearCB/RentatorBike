@@ -73,5 +73,3 @@ def bicisHtml(listaBicis):
 def crearBicisHtml(listaBicis):
 
     crearArchivo(bicisHtml(listaBicis),".\\docs\\second_pages","bicis","html")
-
-crearBicisHtml(listarBicis(respuestaText(conseguirRespuestaDatos( mongoKey(), mongoUrl()))))
