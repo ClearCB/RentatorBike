@@ -1,5 +1,12 @@
+from src.capaNegocio.crearArchivos import crearArchivo
+
+#Funcion que define el codigo Css del archivo footer.css
+
 def footerStylesCss():
-    return  '''footer {
+  
+     # Definimos el valor de la variable footerCss con el código css.
+    footer =  '''
+footer {
   display: flex;
   background-color: grey;
   position: relative;
@@ -52,13 +59,98 @@ def footerStylesCss():
     width: 100%;
    }
 }
-/* FIN ESTILOS PARA dispositivos móviles, iPads, tabletas, iPads, tabletas */
-'''
+/* FIN ESTILOS PARA dispositivos móviles, iPads, tabletas, iPads, tabletas */'''
+   
+    return footer
 
+#Funcion que define el codigo Css del archivo header.css
+def headerStylesCss():
 
+     # Definimos el valor de la variable headerCss con el código css.
+    header =  '''
+.header {
+  background: #edeebc;
+  overflow: hidden;
+  position: relative;
+}
+.header__logo {
+  height: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 20%;
+}
+.header__logo h1,
+.header__logo h2 {
+  font-family: "Century Gothic";
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+.header__logo h1 {
+  font-size: 3.6rem;
+  margin-bottom: 5px;
+}
+.header__logo h2 {
+  font-size: 1.7rem;
+}
+.header__nav {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: -350px;
+  transition: right 0.3s ease;
+  background: #ff9200;
+  clip-path: polygon(0px 0px, 35% 100%, 100% 100%, 100% 0%, 75% 0px);
+}
+.header:hover .header__nav {
+  right: 0;
+}
+.header__links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 33px;
+  width: 500px;
+  height: 500px;
+  left: 150px;
+  z-index: 3;
+}
+.header__links a {
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px 60px 0 -200px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* 320px — 480px: dispositivos móviles */
+@media (min-width: 320px) and (max-width: 480px) {
+}
+/* 481px — 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+/* 769px — 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+/* 1025px — 1200px*/
+@media (min-width: 1025px) and (max-width: 1200px) {
+}'''
 
+    return header
+
+#Funcion que define el codigo Css del archivo base.css
 def baseStylesCss():
-    return  '''body {
+    
+     # Definimos el valor de la variable baseCss con el código css.
+    base =  '''
+body {
      margin: 0;
      background-color:rgb(255, 255, 255);
 }
@@ -83,10 +175,12 @@ form{
         width: 90%;
     }
 }
-/* FIN ESTILOS HASTA 480px */
-'''
+/* FIN ESTILOS HASTA 480px */'''
 
-# Esta función define el valor del código del nav de nuestra pagina.
+    return base
+
+#Funcion que define el codigo Css del archivo nav.css
+
 def navStylesCss():
     
     # Definimos el valor de la variable navCss con el código css.
@@ -155,3 +249,12 @@ def navStylesCss():
 '''
 
     return navCss
+
+
+def crearCssBase():
+
+    crearArchivo(footerStylesCss(), ".\\docs\\cssStyles", "footer", "css")
+    crearArchivo(headerStylesCss(), ".\\docs\\cssStyles", "header", "css")
+    crearArchivo(baseStylesCss(), ".\\docs\\cssStyles", "base", "css")
+    crearArchivo(navStylesCss(), ".\\docs\\cssStyles", "nav", "css")
+
