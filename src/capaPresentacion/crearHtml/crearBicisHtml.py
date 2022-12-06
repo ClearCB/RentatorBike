@@ -1,19 +1,19 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearFooter
 from src.capaNegocio.crearArchivos import crearArchivo
-from src.capaDatos.listarDatosMongo import respuestaText, listarBicis
-from src.capaDatos.peticionMongo import conseguirRespuestaDatos, mongoKey, mongoUrl
 
 # En este módulo vamos a crear funciones que van a crear un archivo "bicis.html"
 
 # En primer lugar, creamos una función que devuelva el valor del body del bicis.html
 def crearBodyBicis(listaBicis):
 
+    # Definimos parte del body html
     bicisBodyHtml ='''
         <h3 class="titleBicis"> Bicis disponibles </h3>
         <hr>
         <section>
             <div id="contenedorPadre">'''
-    for bici in listaBicis:
+    
+    for bici in listaBicis: # Recorremos la lista de las bicis para conseguir los valores que queremos
 
         tipo = bici["type"]
         estado = bici["state"]
@@ -29,7 +29,8 @@ def crearBodyBicis(listaBicis):
             strComplementos += (complemento+" ")
         rental = bici["where"][0]["company_name"]
 
-        bicisBodyHtml+=f'''
+        # Definimos la parte final del body html
+        bicisBodyHtml+=f'''  
                 <div class="container">
                     <div class="img">
                         <a href="./bicissolitarias/bicissolitaria{bici["_idbike"]}.html"><img src="{imagenBici}" alt="bicicleta de la marca {marca} y tipo {tipo}"></a>
@@ -52,6 +53,7 @@ def crearBodyBicis(listaBicis):
                         </div>
                     </div>
                 </div>'''
+    
     bicisBodyHtml+='''
             </div>
         </section>'''
@@ -59,8 +61,10 @@ def crearBodyBicis(listaBicis):
 
     return bicisBodyHtml
 
+# Funcion que crear el html de bicis.html
 def bicisHtml(listaBicis):
 
+    # Vamos a unificar el html
     bicis=''''''
     bicis += crearHtmlHead("Bicis disponibles", "Página donde aparecen todas las bicicletas disponibles", "bicicletas, disponible, up, down alquilar, rental, bike","../cssStyles/","bicis")
     bicis += crearHeader("../","")
