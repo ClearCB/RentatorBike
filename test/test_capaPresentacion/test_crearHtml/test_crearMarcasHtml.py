@@ -1,7 +1,10 @@
-from src.capaPresentacion.crearHtml.crearMarcasHtml import crearBodyMarcas, marcasHtml
+from src.capaPresentacion.crearHtml.crearMarcasHtml import crearBodyMarcas, crearMarcasHtml
 import pytest
 import os
 
+# Estos test se encargan de comprobar que el body se crea correctamente y de comprobar que el archivo marcas.html existe
+
+# Comprueba que el body se crea correctamente
 @pytest.mark.test_crearBodyMarcas
 def test_crearBodyMarcas():
 
@@ -19,8 +22,10 @@ def test_crearBodyMarcas():
 
     assert crearBodyMarcas() == body
 
-@pytest.mark.test_crearMarcasHtml()
+# Comprueba que el archivo marcas.html se crea correctamente
+@pytest.mark.test_crearMarcasHtml
 def test_crearMarcasHtml():
 
-    marcasHtml()
-    assert os.path.isfile("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\marcas.html") == True
+    crearMarcasHtml()
+    ruta = os.path.relpath(".\\docs\\second_pages\\marcas.html")
+    assert os.path.isfile(ruta) == True

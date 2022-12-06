@@ -5,19 +5,19 @@
     <head>
         <!-- La etiqueta meta la hemos obviado ya que en el footer hemos incluido una licencia de Creative Commons, sin embargo esta sería su sintaxis:  
         <meta name="copyright" content="Licencia de la empresa RentatorSL, propiedad de Gema Marquinez y Abel Casas"-->
-        <title>Marcas disponibles</title>
+        <title>Tipos de bicicletas</title>
         <base target="_blank">
         <meta charset="UTF-8">
         <meta name="author" content="Gema Marquinez y Abel Casas">
-        <meta name="description" content="Página donde aparecen un link a todas las marcas disponibles">
+        <meta name="description" content="Página donde aparecen las definiciones de los principales tipos de bicicletas">
         <meta name="generator" content="Visual Studio Code">
-        <meta name="keywords" content="cube, specialized, giant, cannondale, marca, brand, alquilar, rental, bike">
+        <meta name="keywords" content="bicicletas, tipos, mtb, carretera, electrica, ciudad, alquilar, rental, bike">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../cssStyles/footer.css">
         <link rel="stylesheet" type="text/css" href="../cssStyles/header.css">
         <link rel="stylesheet" type="text/css" href="../cssStyles/base.css">
         <link rel="stylesheet" type="text/css" href="../cssStyles/nav.css">
-        <link rel="stylesheet" type="text/css" href="../cssStyles/marcas.css">
+        <link rel="stylesheet" type="text/css" href="../cssStyles/tipos.css">
     </head>
     <body>
         <header>
@@ -59,14 +59,73 @@
         <div  class="volverArriba">
             <a href="#nav" target="_self"><img class="flechaSubir" alt="flecha_arriba" src="/public_html/imagenes/iconos/flecha_arriba.png"></a>
         </div>
-        <section>
-            <h3 class="titleBike">Marcas de bicicletas</h3>
-            <hr>
-            <div id="container">
-                <a href="bicispormarca.html#cube"><div class="box"> Cube</div></a>
-                <a href="bicispormarca.html#specialized"><div class="box"> Specialized</div></a>
-                <a href="bicispormarca.html#giant"><div class="box"> Giant</div></a>
-                <a href="bicispormarca.html#cannondale"><div class="box"> Cannondale</div></a>
+        <h3 class="titleBicis">Tipos de bicicletas</h3><hr>
+        <section id="tiposbici">
+            <div class="tiposbici_container">
+                <h4>MTB</h4>
+                 <div class="flex-container">
+                <div class="flex-item" >
+                        <a href="biciscategoria.html#mtb"><img src="{imagenBici}" alt="una imagen de una bicicleta con la categoria {categoria} de la marca {marca}" ></a>
+                </div>
+                <div class="flex-item">
+                    <p></p>
+                </div>
+                </div>
+            </div>
+            <div class="tiposbici_container">
+                <h4>MTB electrica</h4>
+                 <div class="flex-container">
+                <div class="flex-item" >
+                    <a href="biciscategoria.html#emtb"><img src="{imagenBici}" alt="una imagen de una bicicleta con la categoria {categoria} de la marca {marca}" ></a>
+                </div>
+                <div class="flex-item">
+                    <p></p>
+                </div>
+                </div>
+            </div>
+            <div class="tiposbici_container">
+                <h4>Bici de carretera</h4>
+                 <div class="flex-container">
+                <div class="flex-item" >
+                    <a href="biciscategoria.html#carretera"><img src="{imagenBici}" alt="una imagen de una bicicleta con la categoria {categoria} de la marca {marca}" ></a>
+                </div>
+                <div class="flex-item">
+                    <p></p>
+                </div>
+                </div>
+            </div>
+            <div class="tiposbici_container">
+                <h4>Bici de carretera electrica</h4>
+                 <div class="flex-container">
+                <div class="flex-item" >
+                    <a href="biciscategoria.html#ecarretera"><img src="{imagenBici}" alt="una imagen de una bicicleta con la categoria {categoria} de la marca {marca}" ></a>
+                </div>
+                <div class="flex-item">
+                    <p></p>
+                </div>
+                </div>
+            </div>
+            <div class="tiposbici_container">
+                <h4>Bici de ciudad</h4>
+                 <div class="flex-container">
+                <div class="flex-item" >
+                    <a href="biciscategoria.html#ciudad"><img src="{imagenBici}" alt="una imagen de una bicicleta con la categoria {categoria} de la marca {marca}" ></a>
+                </div>
+                <div class="flex-item">
+                    <p></p>
+                </div>
+                </div>
+            </div>
+            <div class="tiposbici_container">
+                <h4>Bici de ciudad electrica</h4>
+                 <div class="flex-container">
+                <div class="flex-item" >
+                    <a href="biciscategoria.html#eciudad"><img src="{imagenBici}" alt="una imagen de una bicicleta con la categoria {categoria} de la marca {marca}" ></a>
+                </div>
+                <div class="flex-item">
+                    <p></p>
+                </div>
+                </div>
             </div>
         </section>
         <footer id="footer">
