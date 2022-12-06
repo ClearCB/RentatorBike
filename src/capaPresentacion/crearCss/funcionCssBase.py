@@ -60,8 +60,8 @@ footer {
 }
 /* FIN ESTILOS PARA dispositivos móviles, iPads, tabletas, iPads, tabletas */'''
    
-   
     return footer
+
 
 #Funcion que define el codigo css del archivo header.css
 def headerStylesCss():
@@ -145,6 +145,7 @@ def headerStylesCss():
 
     return header
 
+
 #Funcion que define el codigo css del archivo base.css
 def baseStylesCss():
     
@@ -178,6 +179,7 @@ form{
 /* FIN ESTILOS HASTA 480px */'''
 
     return base
+
 
 #Funcion que define el codigo css del archivo nav.css
 def navStylesCss():
@@ -248,6 +250,7 @@ def navStylesCss():
 '''
 
     return navCss
+
 
 #Funcion que crea el archivo base.css en la ruta indicada.
 def crearCssBase():
