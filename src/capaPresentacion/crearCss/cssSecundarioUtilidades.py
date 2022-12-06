@@ -50,7 +50,8 @@ h2, h5 {
 '''
 
 def biciSolitariaStylesCss():
-    return  '''.titleBicis{
+    biciSolitaria =  '''
+.titleBicis{
     text-align:center;
     font-size: 50px;
     color: rgb(56, 146, 46);
@@ -86,9 +87,9 @@ td {
     align-content: center; 
     padding: 10px 10px 10px 10px;
     background-color: rgb(238, 238, 238);
-}
-'''
-
+}'''
+  
+  return biciSolitaria
 
 
 

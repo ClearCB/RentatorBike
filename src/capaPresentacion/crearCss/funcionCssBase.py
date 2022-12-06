@@ -3,7 +3,7 @@ from src.capaNegocio.crearArchivos import crearArchivo
 #Funcion que define el codigo Css del archivo footer.css
 def footerStylesCss():
   
-     # Definimos el valor de la variable css con el código css
+     #Definimos el valor de la variable css con el código css
     footer =  '''
 footer {
   display: flex;
