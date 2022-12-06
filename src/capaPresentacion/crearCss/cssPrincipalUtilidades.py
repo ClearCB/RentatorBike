@@ -78,11 +78,11 @@ def headerStylesCss():
   text-transform: uppercase;
 }
 .header__logo h1 {
-  font-size: 2.5rem;
+  font-size: 3.6rem;
   margin-bottom: 5px;
 }
 .header__logo h2 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .header__nav {
   position: absolute;
@@ -111,7 +111,7 @@ def headerStylesCss():
   cursor: pointer;
   display: inline-block;
   font-family: arial;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin: 15px 60px 0 -200px;
   text-align: center;
