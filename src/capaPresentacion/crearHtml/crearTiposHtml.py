@@ -7,7 +7,7 @@ from src.capaNegocio.crearArchivos import crearArchivo
 def crearBodyTipos():
 
     bodyTipos ='''
-<h3 class="titleBicis">Tipos de bicicletas</h3><hr>
+        <h3 class="titleBicis">Tipos de bicicletas</h3><hr>
         <section id="tiposbici">
             <div class="tiposbici_container">
                 <h4>MTB</h4>
