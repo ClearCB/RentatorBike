@@ -131,4 +131,3 @@ def crearBiciSolitariaHtml(listaBicis):
         bicisolitaria = biciSolitariaHtml(bici)
         crearArchivo(bicisolitaria,".\\docs\\second_pages\\bicissolitarias\\",f"bicissolitaria{id}","html")
 
-crearBiciSolitariaHtml(listarBicis(respuestaText(conseguirRespuestaDatos( mongoKey(), mongoUrl()))))

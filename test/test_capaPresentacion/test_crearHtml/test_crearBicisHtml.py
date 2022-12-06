@@ -8,11 +8,10 @@ import os
 def test_crearBodyBicis():
 
     body ='''
-                <h3 class="titleBicis"> Bicis disponibles </h3>
+        <h3 class="titleBicis"> Bicis disponibles </h3>
         <hr>
         <section>
             <div id="contenedorPadre">
-                
                 <div class="container">
                     <div class="img">
                         <a href="./bicissolitarias/bicissolitariaPA0101.html"><img src="http://imgfz.com/i/0bzEH63.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>

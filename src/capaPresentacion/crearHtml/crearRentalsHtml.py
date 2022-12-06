@@ -67,3 +67,8 @@ def rentalsHtml(listaRentals):
 def crearRentalsHtml(listaRentals):
 
     crearArchivo(rentalsHtml(listaRentals),".\\docs\\second_pages","rentals","html")
+
+from src.capaDatos.listarDatosMongo import listarRentals, respuestaText
+from src.capaDatos.peticionMongo import conseguirRespuestaDatos, mongoKey ,mongoUrl
+
+crearRentalsHtml(listarRentals(respuestaText(conseguirRespuestaDatos(mongoKey(),mongoUrl()))))

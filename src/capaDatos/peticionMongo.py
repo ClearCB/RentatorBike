@@ -53,3 +53,8 @@ def conseguirRespuestaDatos(key,url):
 
     except: # En el caso de que no se consiga establecer la conexión con mongoDb se devuelve un error
         print("La conexión con el servidor ha tenido un problema, asegurese que los datos son correctos y vuelva a intentarlo.")
+
+# Funcion que combia las funciones anteriores y devuelve la respuesta de mongo
+def respuestaMongo():
+
+    return conseguirRespuestaDatos(mongoKey(),mongoUrl())
