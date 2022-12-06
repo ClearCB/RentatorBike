@@ -74,7 +74,7 @@ def gitCommit():
 def gitMerge():
 
     try: # Comprobamos que el comando se puede ejecutar sin problema
-        comandoMerge = f"git merge develop"
+        comandoMerge = f"git merge main"
         subprocess.run(comandoMerge)
         print("Comando git merge ejecutado correctamente.")
 

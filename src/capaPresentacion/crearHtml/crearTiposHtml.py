@@ -80,6 +80,7 @@ def crearBodyTipos():
 
 # Función que construye el tipos.html y lo devuelve en una variable
 def tiposHtml():
+   
 
     tipos = ''''''
     # Añadimos cada parte del código independientemente 

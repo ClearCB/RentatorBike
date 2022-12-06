@@ -119,7 +119,33 @@ def biciSolitariaHtml(bici):
                         </table>
                     </div>
             </div>
-        </section>'''
+        </section>
+        <footer id="footer">
+            <div class="soporte_links">
+                <ul>
+                    <li><a href="#">Contacto: 971621612 / rentatorsl@company.eu<br><br></a></li>
+                    <li><a href="#">Soporte<br><br></a></li>
+                    <li>
+                        <a href="https://twitter.com/topbici"><img class="icono_red" src="http://imgfz.com/i/j9If6lw.png" alt="icono de twitter" width="20" height="20"></a>
+                        <a href="https://www.instagram.com/sansebikes/?hl=es"><img class="icono_red" src="http://imgfz.com/i/4YfLF68.png" alt="icono de instagram" width="20" height="20"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright_footer">
+                
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                    <div class="footer__license__description">
+                        <p>Este obra está bajo una licencia de Creative Commons Reconocimiento-Compartir. Igual 4.0 Internacional.</p>
+                    </div>
+
+                    <div class="footer__license__img">
+                        <img class="copyright_img" alt="Licencia de Creative Commons" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png">
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>'''
     return htmlBiciSolitaria
 
 

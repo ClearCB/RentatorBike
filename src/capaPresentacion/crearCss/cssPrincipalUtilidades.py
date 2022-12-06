@@ -78,11 +78,11 @@ def headerStylesCss():
   text-transform: uppercase;
 }
 .header__logo h1 {
-  font-size: 2.5rem;
+  font-size: 3.6rem;
   margin-bottom: 5px;
 }
 .header__logo h2 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .header__nav {
   position: absolute;
@@ -111,7 +111,7 @@ def headerStylesCss():
   cursor: pointer;
   display: inline-block;
   font-family: arial;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin: 15px 60px 0 -200px;
   text-align: center;
@@ -187,13 +187,13 @@ def navStylesCss():
 #nav ul li a:hover {
     background: #f0b967;
   }
-  .bicisfiltroboton{
+.bicisfiltroboton{
     display: block;
     padding: 20px;
     color: #fff;
     text-decoration: none;
   }
-  .bicisfiltroboton ul{ 
+.bicisfiltroboton ul{ 
     
     display:none;
     position:absolute;
@@ -202,25 +202,17 @@ def navStylesCss():
     background:#54aa51;
     padding:0;
    }
-  .bicisfiltroboton:hover > ul{ 
+.bicisfiltroboton:hover > ul{ 
     display: flex;
     flex-direction: column;
     position:absolute;
     left: 7%;
   }
-  .volverarriba {
+.volverArriba .flechaSubir{
+    height: 53px;
+    width: 49px;
     position: fixed;
-    left: 80%;
-    padding: 0px 32px 0px 32px;
-    top: 90%;
-    height: 48px;
-    background-color: #8EDD65;
-    color: white;
-    z-index: 1;
-  }
-.volverarriba:hover {
-    background-position: center;
-    background: #00BB31 radial-gradient(circle, transparent 1%, #00BB31 1%) center/15000%;
-    z-index: 1;
-  }
+    right: 25px;
+    bottom: 20%;
+}
 '''

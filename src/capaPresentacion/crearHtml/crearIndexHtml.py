@@ -10,8 +10,8 @@ def crearBodyIndex():
         <hr>
         <section class="contenido">
             <div class="video_background">
-                <video autoplay muted>
-                    <source src="videos/production_ID_4277525.mp4" type="video/mp4">
+                <video autoplay muted loop>
+                    <source src="https://drive.google.com/uc?export=download&id=1tJ2jny-F1gMKFEGqffhfk14_zcT5UbWg" type='video/mp4'>
                 </video>
             </div> 
             <div class="contenedorinfo" id="rutasFamosas">
@@ -33,6 +33,7 @@ def crearBodyIndex():
 
 # Función que construye el index.html y lo devuelve en una variable
 def indexHtml():
+
 
     index = ''''''
     # Añadimos cada parte del código independientemente 

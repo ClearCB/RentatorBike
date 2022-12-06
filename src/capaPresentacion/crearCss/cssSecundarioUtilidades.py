@@ -130,6 +130,7 @@ def rentalsStylesCss():
     justify-content: space-between;
     border: 1px solid green;
     padding: 15px;
+    margin-bottom:30px;
 }
 .rentals__titulo__logo {
     display: flex;
@@ -149,6 +150,7 @@ def rentalsStylesCss():
     flex-direction: column;
     width: 90%;
     row-gap: 16px;
+    margin-top: 10px;
 }
 .rentals__img__location {
     flex-basis: 33%;
@@ -423,12 +425,6 @@ def indexStylesCss():
     font-size: 30px;
     margin-left: 30px;
     color: black;
-}
-.volverArriba .flechaSubir{
-    height: 53px;
-    width: 49px;
-    position: fixed;
-    right: 25px;
 }
 /* 280px — 480px: dispositivos móviles */
 @media (min-width: 280px) and (max-width: 480px) {
