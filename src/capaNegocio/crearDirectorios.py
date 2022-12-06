@@ -13,3 +13,18 @@ def creacionDirectorios(ruta,nombreDirectorio):
     except OSError: # En el caso de que no se pueda crear, el programa lanzará una excepción
         print(f"El directorio {nombreDirectorio} no ha podido crearse")
         return False
+
+# Definimos una función que nos crea los directorios que necesitamos para desplegar la página estática
+def crearRutasDocs():
+
+    #Asignamos la rutas de los directorios
+    pathVideos = ".\\docs\\videos"
+    pathBiciSolitarias = ".\\docs\\second_pages\\bicissolitarias"
+    pathPaginaSecundaria = ".\\docs\\second_pages"
+    pathCcsStyles = ".\\docs\\cssStyles"
+
+    # Creamos los directorios
+    creacionDirectorios(pathVideos, "videos")
+    creacionDirectorios(pathBiciSolitarias, "bicissolitarias")
+    creacionDirectorios(pathPaginaSecundaria, "second_pages")
+    creacionDirectorios(pathCcsStyles, "cssStyles")
