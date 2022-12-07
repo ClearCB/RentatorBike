@@ -28,10 +28,6 @@ def biciSolitariaHtml(bici):
     </head>
     <body>
         <header>
-            <div class="banner_social_network">
-                <a href="https://twitter.com/topbici"><img class="icono_red" src="http://imgfz.com/i/j9If6lw.png" alt="icono de twitter" width="20" height="20"></a>
-                <a href="https://www.instagram.com/sansebikes/?hl=es"><img class="icono_red" src="http://imgfz.com/i/4YfLF68.png" alt="icono de instagram" width="20" height="20"></a>
-            </div>
             <div class="header">
                 <div class="header__logo">
                     <h1>Rentator</h1>
@@ -85,7 +81,7 @@ def biciSolitariaHtml(bici):
 
     htmlBiciSolitaria+=f'''
         <section>
-            <h3>Informacion de la bici</h3>
+            <h3 class="titleBicis">Información de la bici seleccionada</h3>
             <div class="biciinformacion">
                     <div class="img" id =img-Bike>
                         <img src="{imagen}" alt="bicicleta de la marca {marca} y catergoria {tipo}" >
