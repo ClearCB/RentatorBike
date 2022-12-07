@@ -149,7 +149,7 @@ def biciCategoriaHtml(listaBicis):
     biciCategoria = ''''''
     # Añadimos cada parte del código independientemente 
     biciCategoria += crearHtmlHead("Bicicletas por categoría", "Página donde aparecen las bicicletas filtradas por su categoria", "bicicletas, tipos, mtb, carretera, electrica, ciudad, alquilar, rental, bike","../cssStyles/","bicisfiltro")
-    biciCategoria += crearHeader("..\\","")
+    biciCategoria += crearHeader("../","")
     biciCategoria += crearBodyBiciCategoria(listaBicis)
     biciCategoria += crearFooter()
 
