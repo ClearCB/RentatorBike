@@ -236,7 +236,7 @@ def biciCaracteristicaHtml(listaBicis):
     biciCaracteristica = ''''''
     # Añadimos cada parte del código independientemente 
     biciCaracteristica += crearHtmlHead("Bicicletas por caracteristica", "Página donde aparecen las bicicletas filtradas por sus caracteristica", "bicicletas, cuadro, talla, ruedas, tamaño, groupset","../cssStyles/","bicisfiltro")
-    biciCaracteristica += crearHeader("..\\","")
+    biciCaracteristica += crearHeader("../","")
     biciCaracteristica += crearBodyBiciCaracteristica(listaBicis)
     biciCaracteristica += crearFooter()
 

@@ -125,7 +125,7 @@ def biciMarcaHtml(listaBicis):
     biciMarca = ''''''
     # Añadimos cada parte del código independientemente 
     biciMarca += crearHtmlHead("Bicis por marca", "Página donde aparecen todas las bicicletas filtradas por su marca", "bicicletas, marcas, specialized, cannondale, giant, cube, alquilar, rental, bike","../cssStyles/","bicisfiltro")
-    biciMarca += crearHeader("..\\","")
+    biciMarca += crearHeader("../","")
     biciMarca += crearBodyBiciMarca(listaBicis)
     biciMarca += crearFooter()
 
