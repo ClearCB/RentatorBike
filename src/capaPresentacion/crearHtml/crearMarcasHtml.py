@@ -26,7 +26,7 @@ def marcasHtml():
 
     marcas = ''''''
     # Añadimos cada parte del código independientemente 
-    marcas += crearHtmlHead("Marcas disponibles", "Página donde aparecen un link a todas las marcas disponibles", "cube, specialized, giant, cannondale, marca, brand, alquilar, rental, bike","../cssStyles/","marcas","../../imagenes/favicon.png")
+    marcas += crearHtmlHead("Marcas disponibles", "Página donde aparecen un link a todas las marcas disponibles", "cube, specialized, giant, cannondale, marca, brand, alquilar, rental, bike","../cssStyles/","marcas")
     marcas += crearHeader("../","")
     marcas += crearBodyMarcas()
     marcas += crearFooter()

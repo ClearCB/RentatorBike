@@ -66,7 +66,7 @@ def bicisHtml(listaBicis):
 
     # Vamos a unificar el html
     bicis=''''''
-    bicis += crearHtmlHead("Bicis disponibles", "Página donde aparecen todas las bicicletas disponibles", "bicicletas, disponible, up, down alquilar, rental, bike","../cssStyles/","bicis","../../imagenes/favicon.png")
+    bicis += crearHtmlHead("Bicis disponibles", "Página donde aparecen todas las bicicletas disponibles", "bicicletas, disponible, up, down alquilar, rental, bike","../cssStyles/","bicis")
     bicis += crearHeader("../","")
     bicis += crearBodyBicis(listaBicis)
     bicis += crearFooter()

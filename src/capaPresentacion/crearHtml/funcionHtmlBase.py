@@ -4,7 +4,7 @@
 
 
 # Esta función a raiz de una serie de parámetros, va a devolver la variable head que contiene el código html de la parte head.
-def crearHtmlHead(titulo, descripcion, keywords, cssPath, cssLink,favLink):
+def crearHtmlHead(titulo, descripcion, keywords, cssPath, cssLink):
 
     head = f'''
 <!DOCTYPE html>
@@ -21,7 +21,6 @@ def crearHtmlHead(titulo, descripcion, keywords, cssPath, cssLink,favLink):
         <meta name="generator" content="Visual Studio Code">
         <meta name="keywords" content="{keywords}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="{favLink}">
         <link rel="stylesheet" type="text/css" href="{cssPath}footer.css">
         <link rel="stylesheet" type="text/css" href="{cssPath}header.css">
         <link rel="stylesheet" type="text/css" href="{cssPath}base.css">
