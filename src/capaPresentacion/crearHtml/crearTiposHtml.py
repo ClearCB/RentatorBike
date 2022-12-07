@@ -85,7 +85,7 @@ def tiposHtml():
     tipos = ''''''
     # Añadimos cada parte del código independientemente 
     tipos += crearHtmlHead("Tipos de bicicletas", "Página donde aparecen las definiciones de los principales tipos de bicicletas", "bicicletas, tipos, mtb, carretera, electrica, ciudad, alquilar, rental, bike","../cssStyles/","tipos")
-    tipos += crearHeader("..\\","")
+    tipos += crearHeader("../","")
     tipos += crearBodyTipos()
     tipos += crearFooter()
 
