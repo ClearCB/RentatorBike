@@ -6,13 +6,11 @@ from src.capaPresentacion.crearHtml.crearBicisHtml import crearBicisHtml
 from src.capaPresentacion.crearHtml.crearBiciSolitariaHtml import crearBiciSolitariaHtml
 from src.capaPresentacion.crearHtml.crearIndexHtml import crearIndexHtml
 from src.capaPresentacion.crearHtml.crearRentalsHtml import crearRentalsHtml
-from src.capaPresentacion.crearHtml.crearTiposHtml import crearTiposHtml
 from src.capaPresentacion.crearHtml.crearMarcasHtml import crearMarcasHtml
 from src.capaPresentacion.crearHtml.crearBiciCaractHtml import crearBiciCaracteristicaHtml
 from src.capaPresentacion.crearHtml.crearBiciCategHtml import crearBiciCategoriaHtml
 from src.capaPresentacion.crearHtml.crearBiciMarcaHtml import crearBiciMarcaHtml
 from src.capaPresentacion.crearCss.funcionCssBase import crearCssBase
-from src.capaPresentacion.crearCss.crearTiposCss import crearTiposCss
 from src.capaPresentacion.crearCss.crearRentalsCss import crearRentalsCss
 from src.capaPresentacion.crearCss.crearMarcasCss import crearMarcasCss
 from src.capaPresentacion.crearCss.crearIndexCss import crearIndexCss
@@ -35,8 +33,6 @@ def generarPáginasEstáticas(listaBicis,listaRentals):
     crearIndexCss()
     crearMarcasHtml()
     crearMarcasCss()
-    crearTiposHtml()
-    crearTiposCss()
     crearBicisHtml(listaBicis)
     crearBicisCss()
     crearBiciCaracteristicaHtml(listaBicis)
@@ -47,8 +43,8 @@ def generarPáginasEstáticas(listaBicis,listaRentals):
     crearRentalsCss()
     crearBiciSolitariaHtml(listaBicis)
     crearBiciSolitariaCss()
-    # guardarCambios()
-    # actualizarGitHubPagina()
+    guardarCambios()
+    actualizarGitHubPagina()
 
 generarPáginasEstáticas(listaBicis,listaRentals)
 

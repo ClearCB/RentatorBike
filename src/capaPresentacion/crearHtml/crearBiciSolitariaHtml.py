@@ -19,6 +19,7 @@ def biciSolitariaHtml(bici):
         <meta name="generator" content="Visual Studio Code">
         <meta name="keywords" content="bicicletas, disponible, up, down alquilar, rental, bike">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="https://i.ibb.co/ZNnGXHB/favicon.jpg">
         <link rel="stylesheet" type="text/css" href="../../cssStyles/footer.css">
         <link rel="stylesheet" type="text/css" href="../../cssStyles/header.css">
         <link rel="stylesheet" type="text/css" href="../../cssStyles/base.css">
@@ -53,7 +54,6 @@ def biciSolitariaHtml(bici):
                     </ul>
                 </li>
                 <li><a href="../marcas.html">Marcas</a></li>
-                <li><a href="../tipos.html">Tipos</a></li>
                 <li><a href="../rentals.html">Rentals</a></li>
             </ul>
         </nav>
