@@ -51,6 +51,9 @@ button:hover {
     border: solid 2px;
     text-align: center;
   }
+.flex-item p{
+    text-align: justify;
+}
 .flex-item-description {
     width: 100%;
     text-align: center;
