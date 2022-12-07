@@ -1,3 +1,4 @@
+
 #contenedorPadre {
      display: flex;
      justify-content: center;
@@ -33,23 +34,23 @@
  .img, .img img {
      width: 100%;
 }
- .img :hover {
+.img :hover {
      transform: scale(1.10);
 }
- .titleBicis{
+.titleBicis{
      text-align:center;
      font-size: 50px;
      color: rgb(56, 146, 46);
      margin-bottom: 20px;
 }
- .categorias{
+.categorias{
      display: flex;
      justify-content: space-around;
 }
- .categorias a{
+.categorias a{
      text-decoration: none;
 }
- .nombrecategorias{
+.nombrecategorias{
      background-color: rgb(122, 206, 127);
     color: white;
     border: 1px solid black;
@@ -62,16 +63,16 @@
     justify-content: center;
     align-items: center;
 }
- .nombrecategorias:hover{
+.nombrecategorias:hover{
      background-color: green;
 }
- .filtrotitulo {
+.filtrotitulo {
      font-size: 30px;
      width: 100%;
      margin-left: 8%;
      color: rgb(10, 63, 10);
 }
- .filtrocaract {
+.filtrocaract {
      font-size: 20px;
      width: 100%;
      color: rgb(4, 31, 14);

@@ -11,6 +11,14 @@ from src.capaPresentacion.crearHtml.crearMarcasHtml import crearMarcasHtml
 from src.capaPresentacion.crearHtml.crearBiciCaractHtml import crearBiciCaracteristicaHtml
 from src.capaPresentacion.crearHtml.crearBiciCategHtml import crearBiciCategoriaHtml
 from src.capaPresentacion.crearHtml.crearBiciMarcaHtml import crearBiciMarcaHtml
+from src.capaPresentacion.crearCss.funcionCssBase import crearCssBase
+from src.capaPresentacion.crearCss.crearTiposCss import crearTiposCss
+from src.capaPresentacion.crearCss.crearRentalsCss import crearRentalsCss
+from src.capaPresentacion.crearCss.crearMarcasCss import crearMarcasCss
+from src.capaPresentacion.crearCss.crearIndexCss import crearIndexCss
+from src.capaPresentacion.crearCss.crearBiciSolitariaCss import crearBiciSolitariaCss
+from src.capaPresentacion.crearCss.crearBicisFiltroCss import crearBicisFiltroCss
+from src.capaPresentacion.crearCss.crearBicisCss import crearBicisCss
 
 
 # Nombrar variables necesarias
@@ -22,24 +30,25 @@ listaRentals = listarRentals(datosMongo)
 def generarPáginasEstáticas(listaBicis,listaRentals):
 
     crearRutasDocs()
+    crearCssBase()
     crearIndexHtml()
+    crearIndexCss()
     crearMarcasHtml()
+    crearMarcasCss()
     crearTiposHtml()
+    crearTiposCss()
     crearBicisHtml(listaBicis)
+    crearBicisCss()
     crearBiciCaracteristicaHtml(listaBicis)
     crearBiciCategoriaHtml(listaBicis)
     crearBiciMarcaHtml(listaBicis)
+    crearBicisFiltroCss()
     crearRentalsHtml(listaRentals)
-<<<<<<< HEAD
+    crearRentalsCss()
     crearBiciSolitariaHtml(listaBicis)
+    crearBiciSolitariaCss()
     guardarCambios()
     actualizarGitHubPagina()
-=======
-    crearMainCss()
-    crearCssSecundario()
-    # guardarCambios()
-    # actualizarGitHubPagina()
->>>>>>> 701ac52184075093e0d0df20fad4aa4d85f80194
 
 generarPáginasEstáticas(listaBicis,listaRentals)
 

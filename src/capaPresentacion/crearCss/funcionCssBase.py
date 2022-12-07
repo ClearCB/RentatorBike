@@ -244,8 +244,10 @@ def navStylesCss():
     return navCss
 
 
-#Funcion que crea el archivo footer.css en la ruta indicada.
+
 def crearCssBase():
+
+    #Funcion que crea el archivo footer.css en la ruta indicada.
     crearArchivo(footerStylesCss(), ".\\docs\\cssStyles", "footer", "css")
 
     #Funcion que crea el archivo header.css en la ruta indicada.

@@ -1,3 +1,4 @@
+
 .contenedor{
   display: flex;
   align-items: center;
@@ -20,14 +21,13 @@
 #tiposbici h4 {
   font-size: 25px;
 }
-  .redirectionButton {
+.redirectionButton {
     display: inline-block;
     padding: 0px 32px 0px 32px;
     height: 48px;
     box-shadow: 0px 2px 0px #00BB31;
     background-color: #8EDD65;
-    color: white;
-    
+    color: white; 
   }
 .buttonBike{
     display: flex;
@@ -38,7 +38,7 @@ button:hover {
     background-position: center;
     background: #00BB31 radial-gradient(circle, transparent 1%, #00BB31 1%) center/15000%;
   }
-  .flex-item {
+.flex-item {
     width: 49%;
     border-radius: 3px;
     border: solid 2px;
@@ -48,7 +48,7 @@ button:hover {
     width: 100%;
     text-align: center;
   }
-  .titleBicis{
+.titleBicis{
     text-align:center;
     font-size: 50px;
     color: rgb(56, 146, 46);
@@ -58,7 +58,7 @@ button:hover {
   .flex-container {
     flex-direction: column;
   }
-  .flex-item {
+.flex-item {
     width: 100%;
   }
 }
@@ -67,7 +67,7 @@ button:hover {
   .flex-container {
     flex-direction: column;
   }
-  .flex-item {
+.flex-item {
     width: 100%;
   }
 }
