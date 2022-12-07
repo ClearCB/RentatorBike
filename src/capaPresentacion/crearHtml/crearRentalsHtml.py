@@ -26,14 +26,14 @@ def crearBodyRentals(listaRentals):
         bicisi=""
         for bici in bicisdisponibles:
 
-            bicisi += f" <a href='.\\bicissolitarias\\bicissolitaria{bici}.html'>{bici}</a> "
+            bicisi += f" <a href='./bicissolitarias/bicissolitaria{bici}.html'>{bici}</a> "
         
         bicino =""
         bicisnodisponibles = rental["bikes"]["bikes_down"]["_idbikes"]
 
         for bici in bicisnodisponibles:
 
-            bicino += f" <a href='.\\bicissolitarias\\bicissolitaria{bici}.html'>{bici}</a> "
+            bicino += f" <a href='./bicissolitarias/bicissolitaria{bici}.html'>{bici}</a> "
 
         fotoRental = rental["img"]
 

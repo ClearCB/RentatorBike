@@ -29,8 +29,8 @@ def test_crearRentalsHtml():
                             <li>Ubicacion: joan alcover n7  , palma (espana). 07006</li>
                             <li>Contacto: num(678598234) / email(bibike@contact.eu)</li>
                             <li>Redes sociales: instagram(@bibike) / twitter(@bibike)</li>
-                            <li>Bicis disponibles:['PA0101']</li>
-                            <li>Bicis no disponibles:['PA0102']</li>
+                            <li>Bicis disponibles: <a href='./bicissolitarias/bicissolitariaPA0101.html'>PA0101</a> </li>
+                            <li>Bicis no disponibles: <a href='./bicissolitarias/bicissolitariaPA0102.html'>PA0102</a> </li>
                         </ul>
                     </div>
                     <div class="rentals__img__location">
@@ -53,8 +53,8 @@ def test_crearRentalsHtml():
                             <li>Ubicacion: plaza de espana, palma (espana). 07005</li>
                             <li>Contacto: num(738912213) / email(rentbima@contact.eu)</li>
                             <li>Redes sociales: instagram(@rentbima) / twitter(@rentbima)</li>
-                            <li>Bicis disponibles:['PA0201']</li>
-                            <li>Bicis no disponibles:['PA0202']</li>
+                            <li>Bicis disponibles: <a href='./bicissolitarias/bicissolitariaPA0201.html'>PA0201</a> </li>
+                            <li>Bicis no disponibles: <a href='./bicissolitarias/bicissolitariaPA0202.html'>PA0202</a> </li>
                         </ul>
                     </div>
                     <div class="rentals__img__location">
@@ -77,8 +77,8 @@ def test_crearRentalsHtml():
                             <li>Ubicacion: sant joan n2, manacor (espana). 07500</li>
                             <li>Contacto: num(678523945) / email(habikemall@contact.eu)</li>
                             <li>Redes sociales: instagram(@habikemall) / twitter(@habikemall)</li>
-                            <li>Bicis disponibles:['MA0101']</li>
-                            <li>Bicis no disponibles:['MA0102']</li>
+                            <li>Bicis disponibles: <a href='./bicissolitarias/bicissolitariaMA0101.html'>MA0101</a> </li>
+                            <li>Bicis no disponibles: <a href='./bicissolitarias/bicissolitariaMA0102.html'>MA0102</a> </li>
                         </ul>
                     </div>
                     <div class="rentals__img__location">
@@ -101,8 +101,8 @@ def test_crearRentalsHtml():
                             <li>Ubicacion: carrer des sol n10, manacor (espana). 07500</li>
                             <li>Contacto: num(666554223) / email(rybm@contact.eu)</li>
                             <li>Redes sociales: instagram(@rybm) / twitter(@rybm)</li>
-                            <li>Bicis disponibles:['MA0201']</li>
-                            <li>Bicis no disponibles:['MA0202']</li>
+                            <li>Bicis disponibles: <a href='./bicissolitarias/bicissolitariaMA0201.html'>MA0201</a> </li>
+                            <li>Bicis no disponibles: <a href='./bicissolitarias/bicissolitariaMA0202.html'>MA0202</a> </li>
                         </ul>
                     </div>
                     <div class="rentals__img__location">
@@ -125,8 +125,8 @@ def test_crearRentalsHtml():
                             <li>Ubicacion: carrer de la creu n7, alcudia (espana). 07400</li>
                             <li>Contacto: num(897524645) / email(bikeandgo@contact.eu)</li>
                             <li>Redes sociales: instagram(@bikeandgo) / twitter(@bikeandgo)</li>
-                            <li>Bicis disponibles:['AL0101']</li>
-                            <li>Bicis no disponibles:['AL0102']</li>
+                            <li>Bicis disponibles: <a href='./bicissolitarias/bicissolitariaAL0101.html'>AL0101</a> </li>
+                            <li>Bicis no disponibles: <a href='./bicissolitarias/bicissolitariaAL0102.html'>AL0102</a> </li>
                         </ul>
                     </div>
                     <div class="rentals__img__location">
@@ -149,8 +149,8 @@ def test_crearRentalsHtml():
                             <li>Ubicacion: carrer de menorca n3, alcudia (espana). 07400</li>
                             <li>Contacto: num(689496982) / email(speedyrent@contact.eu)</li>
                             <li>Redes sociales: instagram(@speedyrent) / twitter(@speedyrent)</li>
-                            <li>Bicis disponibles:['AL0201']</li>
-                            <li>Bicis no disponibles:['AL0202']</li>
+                            <li>Bicis disponibles: <a href='./bicissolitarias/bicissolitariaAL0201.html'>AL0201</a> </li>
+                            <li>Bicis no disponibles: <a href='./bicissolitarias/bicissolitariaAL0202.html'>AL0202</a> </li>
                         </ul>
                     </div>
                     <div class="rentals__img__location">
@@ -173,8 +173,8 @@ def test_crearRentalsHtml():
                             <li>Ubicacion: av de asturias n10, soller (espana). 07100</li>
                             <li>Contacto: num(987166998) / email(energylegs@contact.eu)</li>
                             <li>Redes sociales: instagram(@energylegs) / twitter(@energylegs)</li>
-                            <li>Bicis disponibles:['SO0101']</li>
-                            <li>Bicis no disponibles:['SO0102']</li>
+                            <li>Bicis disponibles: <a href='./bicissolitarias/bicissolitariaSO0101.html'>SO0101</a> </li>
+                            <li>Bicis no disponibles: <a href='./bicissolitarias/bicissolitariaSO0102.html'>SO0102</a> </li>
                         </ul>
                     </div>
                     <div class="rentals__img__location">
@@ -197,8 +197,8 @@ def test_crearRentalsHtml():
                             <li>Ubicacion: cami des curat n9, soller (espana). 07100</li>
                             <li>Contacto: num(213245685) / email(rentingmanakia@contact.eu)</li>
                             <li>Redes sociales: instagram(@rentingmanakia) / twitter(@rentingmanakia)</li>
-                            <li>Bicis disponibles:['SO0201']</li>
-                            <li>Bicis no disponibles:['SO0202']</li>
+                            <li>Bicis disponibles: <a href='./bicissolitarias/bicissolitariaSO0201.html'>SO0201</a> </li>
+                            <li>Bicis no disponibles: <a href='./bicissolitarias/bicissolitariaSO0202.html'>SO0202</a> </li>
                         </ul>
                     </div>
                     <div class="rentals__img__location">
@@ -221,8 +221,8 @@ def test_crearRentalsHtml():
                             <li>Ubicacion: avinguda des capdella n10, calvia (espana). 07011</li>
                             <li>Contacto: num(987987987) / email(touristbike@contact.eu)</li>
                             <li>Redes sociales: instagram(@touristbike) / twitter(@touristbike)</li>
-                            <li>Bicis disponibles:['CA0101']</li>
-                            <li>Bicis no disponibles:['CA0102']</li>
+                            <li>Bicis disponibles: <a href='./bicissolitarias/bicissolitariaCA0101.html'>CA0101</a> </li>
+                            <li>Bicis no disponibles: <a href='./bicissolitarias/bicissolitariaCA0102.html'>CA0102</a> </li>
                         </ul>
                     </div>
                     <div class="rentals__img__location">
@@ -245,8 +245,8 @@ def test_crearRentalsHtml():
                             <li>Ubicacion: carrer serral n5, calvia (espana). 07013</li>
                             <li>Contacto: num(687875483) / email(rentalride@contact.eu)</li>
                             <li>Redes sociales: instagram(@rybrentalridem) / twitter(@rentalride)</li>
-                            <li>Bicis disponibles:['CA0201']</li>
-                            <li>Bicis no disponibles:['CA0202']</li>
+                            <li>Bicis disponibles: <a href='./bicissolitarias/bicissolitariaCA0201.html'>CA0201</a> </li>
+                            <li>Bicis no disponibles: <a href='./bicissolitarias/bicissolitariaCA0202.html'>CA0202</a> </li>
                         </ul>
                     </div>
                     <div class="rentals__img__location">

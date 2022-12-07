@@ -78,7 +78,7 @@ def test_crearHeaderIndex():
                 </form>
         </div>
         <div  class="volverArriba">
-            <a href="#nav" target="_self"><img class="flechaSubir" alt="flecha_arriba" src="/public_html/imagenes/iconos/flecha_arriba.png"></a>
+            <a href="#nav" target="_self"><img class="flechaSubir" alt="flecha_arriba" src="http://imgfz.com/i/63T0IuS.png"></a>
         </div>'''
 
     assert crearHeader("", "second_pages/") ==  header
@@ -126,7 +126,7 @@ def test_crearHeaderSecondPages():
                 </form>
         </div>
         <div  class="volverArriba">
-            <a href="#nav" target="_self"><img class="flechaSubir" alt="flecha_arriba" src="/public_html/imagenes/iconos/flecha_arriba.png"></a>
+            <a href="#nav" target="_self"><img class="flechaSubir" alt="flecha_arriba" src="http://imgfz.com/i/63T0IuS.png"></a>
         </div>'''
 
     assert crearHeader("../","") ==  header
