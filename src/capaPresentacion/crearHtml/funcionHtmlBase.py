@@ -61,7 +61,6 @@ def crearHeader(indexPath, path):
                     </ul>
                 </li>
                 <li><a href="{path}marcas.html">Marcas</a></li>
-                <li><a href="{path}tipos.html">Tipos</a></li>
                 <li><a href="{path}rentals.html">Rentals</a></li>
             </ul>
         </nav>

@@ -53,7 +53,6 @@ def biciSolitariaHtml(bici):
                     </ul>
                 </li>
                 <li><a href="../marcas.html">Marcas</a></li>
-                <li><a href="../tipos.html">Tipos</a></li>
                 <li><a href="../rentals.html">Rentals</a></li>
             </ul>
         </nav>

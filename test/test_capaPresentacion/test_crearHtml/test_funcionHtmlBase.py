@@ -67,7 +67,6 @@ def test_crearHeaderIndex():
                     </ul>
                 </li>
                 <li><a href="second_pages/marcas.html">Marcas</a></li>
-                <li><a href="second_pages/tipos.html">Tipos</a></li>
                 <li><a href="second_pages/rentals.html">Rentals</a></li>
             </ul>
         </nav>
@@ -115,7 +114,6 @@ def test_crearHeaderSecondPages():
                     </ul>
                 </li>
                 <li><a href="marcas.html">Marcas</a></li>
-                <li><a href="tipos.html">Tipos</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
             </ul>
         </nav>
