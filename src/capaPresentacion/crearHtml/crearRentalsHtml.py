@@ -69,7 +69,7 @@ def crearBodyRentals(listaRentals):
 def rentalsHtml(listaRentals):
 
     rentals = ''''''
-    rentals += crearHtmlHead("Rentals cercanos", "Página donde aparecen todos los rental de bikes cercanos", "bicicletas, alquilar, rental, bike, ubicacion, contacto, redes, sociales","../cssStyles/","rentals")
+    rentals += crearHtmlHead("Rentals cercanos", "Página donde aparecen todos los rental de bikes cercanos", "bicicletas, alquilar, rental, bike, ubicacion, contacto, redes, sociales","../cssStyles/","rentals","../../imagenes/favicon.png")
     rentals += crearHeader("../","")
     rentals += crearBodyRentals(listaRentals)
     rentals += crearFooter()
