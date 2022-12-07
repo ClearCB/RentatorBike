@@ -23,7 +23,18 @@ def crearBodyRentals(listaRentals):
         redesInsta = rental["social_media"]["instagram"]
         redesTwitter = rental["social_media"]["twitter"]
         bicisdisponibles = rental["bikes"]["bikes_up"]["_idbikes"]
+        bicisi=""
+        for bici in bicisdisponibles:
+
+            bicisi += f" <a href='.\\bicissolitarias\\bicissolitaria{bici}.html'>{bici}</a> "
+        
+        bicino =""
         bicisnodisponibles = rental["bikes"]["bikes_down"]["_idbikes"]
+
+        for bici in bicisnodisponibles:
+
+            bicino += f" <a href='.\\bicissolitarias\\bicissolitaria{bici}.html'>{bici}</a> "
+
         fotoRental = rental["img"]
 
         bodyRentals += f'''
@@ -42,8 +53,8 @@ def crearBodyRentals(listaRentals):
                             <li>Ubicacion: {direccionCalle}, {direccionCiudad} ({direccionPais}). {direccionZip}</li>
                             <li>Contacto: num({contactoNum}) / email({contactoEmail})</li>
                             <li>Redes sociales: instagram({redesInsta}) / twitter({redesTwitter})</li>
-                            <li>Bicis disponibles:{bicisdisponibles}</li>
-                            <li>Bicis no disponibles:{bicisnodisponibles}</li>
+                            <li>Bicis disponibles:{bicisi}</li>
+                            <li>Bicis no disponibles:{bicino}</li>
                         </ul>
                     </div>
                     <div class="rentals__img__location">

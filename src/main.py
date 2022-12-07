@@ -31,8 +31,8 @@ def generarPáginasEstáticas(listaBicis,listaRentals):
     crearBiciMarcaHtml(listaBicis)
     crearRentalsHtml(listaRentals)
     crearBiciSolitariaHtml(listaBicis)
-    guardarCambios()
-    actualizarGitHubPagina()
+    # guardarCambios()
+    # actualizarGitHubPagina()
 
 generarPáginasEstáticas(listaBicis,listaRentals)
 
