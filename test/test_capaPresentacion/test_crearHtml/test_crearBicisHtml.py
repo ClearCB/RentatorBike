@@ -459,5 +459,6 @@ def test_crearBodyBicis():
 @pytest.mark.test_crearBicisHtml
 def test_crearBicisHtml():
 
+    ruta = os.path.relpath(".\\docs\\second_pages\\bicis.html")
     bicisHtml(listarBicis(respuestaText(conseguirRespuestaDatos( mongoKey(), mongoUrl()))))
-    assert os.path.isfile("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\docs\\second_pages\\bicis.html") == True
+    assert os.path.isfile(ruta) == True

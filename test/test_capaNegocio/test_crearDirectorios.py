@@ -6,25 +6,24 @@ import os
 # y lanza las excepciones.
 
 # Nombramos las rutas de los directorios
-pathVideos = ".\\dirTest\\videos"
-pathBiciSolitarias = ".\\dirTest\\second_pages\\bicissolitarias"
-pathPaginaSecundaria = ".\\dirTest\\second_pages"
-pathCcsStyles = ".\\dirTest\\cssStyles"
+pathBiciSolitarias = os.path.relpath(".\\dirTest\\second_pages\\bicissolitarias")
+pathPaginaSecundaria = os.path.relpath(".\\dirTest\\second_pages")
+pathCcsStyles = os.path.relpath(".\\dirTest\\cssStyles")
 
 # Comprobamos que se crean correctamente
 @pytest.mark.test_creacionDirectorios
 def test_creacionDirectoriosVideos():
 
-    creacionDirectorios(pathVideos, "videos") # Creamos el directorio
-    assert os.path.exists(pathVideos) != False # La ruta existe
-    assert os.path.isdir(pathVideos) == True # En la ruta existe un directorio
+    creacionDirectorios(pathCcsStyles, "cssStyles") # Creamos el directorio
+    assert os.path.exists(pathCcsStyles) != False # La ruta existe
+    assert os.path.isdir(pathCcsStyles) == True # En la ruta existe un directorio
 
 # Comprobamos que si no puede crearse un directorio, lanza error y termina la ejecución
 @pytest.mark.test_errorCreacionDirectorios
 def test_errorCreacionDirectorios():
 
-
-    with open("C:\\Users\\abelc\\Desktop\\github\\RentatorBike\\dirTest\\second_pages", "w") as file: # Abrimos un archivo para generar un error
+    ruta = os.path.relpath("./dirTest/second_pages")
+    with open(ruta, "w") as file: # Abrimos un archivo para generar un error
         file.write("Este texto es de prueba")
         print("El archivo second_pages creado correctamente")
 
