@@ -30,9 +30,16 @@ def generarPáginasEstáticas(listaBicis,listaRentals):
     crearBiciCategoriaHtml(listaBicis)
     crearBiciMarcaHtml(listaBicis)
     crearRentalsHtml(listaRentals)
+<<<<<<< HEAD
     crearBiciSolitariaHtml(listaBicis)
     guardarCambios()
     actualizarGitHubPagina()
+=======
+    crearMainCss()
+    crearCssSecundario()
+    # guardarCambios()
+    # actualizarGitHubPagina()
+>>>>>>> 701ac52184075093e0d0df20fad4aa4d85f80194
 
 generarPáginasEstáticas(listaBicis,listaRentals)
 

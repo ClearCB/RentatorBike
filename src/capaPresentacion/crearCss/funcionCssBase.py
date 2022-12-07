@@ -1,5 +1,11 @@
+from src.capaNegocio.crearArchivos import crearArchivo
+
+#Funcion que define el codigo Css del archivo footer.css
 def footerStylesCss():
-    return  '''footer {
+  
+     #Definimos el valor de la variable css con el código css
+    footerCss =  '''
+footer {
   display: flex;
   background-color: grey;
   position: relative;
@@ -52,11 +58,17 @@ def footerStylesCss():
     width: 100%;
    }
 }
-/* FIN ESTILOS PARA dispositivos móviles, iPads, tabletas, iPads, tabletas */
-'''
+/* FIN ESTILOS PARA dispositivos móviles, iPads, tabletas, iPads, tabletas */'''
+   
+    return footerCss
 
+
+#Funcion que define el codigo css del archivo header.css
 def headerStylesCss():
-    return  '''.header {
+
+     #Definimos el valor de la variable headerCss con el código css
+    headerCss =  '''
+.header {
   background: #edeebc;
   overflow: hidden;
   position: relative;
@@ -129,11 +141,17 @@ def headerStylesCss():
 }
 /* 1025px — 1200px*/
 @media (min-width: 1025px) and (max-width: 1200px) {
-}
-'''
+}'''
 
+    return headerCss
+
+
+#Funcion que define el codigo css del archivo base.css
 def baseStylesCss():
-    return  '''body {
+    
+     #Definimos el valor de la variable base con el código css
+    baseCss =  '''
+body {
      margin: 0;
      background-color:rgb(255, 255, 255);
 }
@@ -158,11 +176,17 @@ form{
         width: 90%;
     }
 }
-/* FIN ESTILOS HASTA 480px */
-'''
+/* FIN ESTILOS HASTA 480px */'''
 
+    return baseCss
+
+
+#Funcion que define el codigo css del archivo nav.css
 def navStylesCss():
-    return  '''#nav {
+    
+    #Definimos el valor de la variable nav con el código css
+    navCss =  '''
+    #nav {
     display: block;
     background: #54aa51;
     width: 100%;
@@ -216,3 +240,20 @@ def navStylesCss():
     bottom: 20%;
 }
 '''
+
+    return navCss
+
+
+#Funcion que crea el archivo footer.css en la ruta indicada.
+def crearCssBase():
+    crearArchivo(footerStylesCss(), ".\\docs\\cssStyles", "footer", "css")
+
+    #Funcion que crea el archivo header.css en la ruta indicada.
+    crearArchivo(headerStylesCss(), ".\\docs\\cssStyles", "header", "css")
+
+    #Funcion que crea el archivo base.css en la ruta indicada.
+    crearArchivo(baseStylesCss(), ".\\docs\\cssStyles", "base", "css")
+
+    #Funcion que crea el archivo nav.css en la ruta indicada.
+    crearArchivo(navStylesCss(), ".\\docs\\cssStyles", "nav", "css")
+
