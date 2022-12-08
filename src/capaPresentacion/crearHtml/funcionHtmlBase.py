@@ -21,6 +21,7 @@ def crearHtmlHead(titulo, descripcion, keywords, cssPath, cssLink):
         <meta name="generator" content="Visual Studio Code">
         <meta name="keywords" content="{keywords}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="https://i.ibb.co/ZNnGXHB/favicon.jpg">
         <link rel="stylesheet" type="text/css" href="{cssPath}footer.css">
         <link rel="stylesheet" type="text/css" href="{cssPath}header.css">
         <link rel="stylesheet" type="text/css" href="{cssPath}base.css">
