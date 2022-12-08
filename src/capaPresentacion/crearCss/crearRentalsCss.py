@@ -54,20 +54,7 @@ def rentalsStylesCss():
     height:100px;
     display: flex;
 }
-/* 280px — 480px: dispositivos móviles */
-@media (min-width: 280px) and (max-width: 480px) {
-   .rentals__container {
-    flex-direction: column;
-    row-gap: 15px;
-}
-}
-/* 481px — 768px*/
-@media (min-width: 481px) and (max-width: 768px) {
-    .rentals__container {
-    flex-direction: column;
-    row-gap: 15px;
-}
-}'''
+'''
     
     return rentalsCss
 

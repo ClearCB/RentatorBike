@@ -61,15 +61,3 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-/* 320px — 480px: dispositivos móviles */
-@media (min-width: 320px) and (max-width: 480px) {
-}
-/* 481px — 768px */
-@media (min-width: 481px) and (max-width: 768px) {
-}
-/* 769px — 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
-}
-/* 1025px — 1200px*/
-@media (min-width: 1025px) and (max-width: 1200px) {
-}
