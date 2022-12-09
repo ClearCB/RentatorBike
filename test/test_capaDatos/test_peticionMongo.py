@@ -1,4 +1,4 @@
-from src.capaDatos.peticionMongo import conseguirRespuestaDatos, mongoKey, mongoUrl
+from src.capaDatos.peticionMongo import conseguirRespuestaDatos, mongoKey, mongoUrl, respuestaMongo
 import pytest
 
 # Este test va a comprobar que si la funcion peticionMongo obtiene la respuesta adecuada
@@ -18,3 +18,9 @@ def test_conseguirRespuestaDatosKeyError():
 def test_conseguirRespuestaDatosConexionError():
 
     assert conseguirRespuestaDatos("keyerror","https://datacom/app/data-exlmr/endpoint/data/v1/action/aggregate") == None
+
+# Este test comprueba si se unen correctamente
+@pytest.mark.test_respuestaMongo
+def test_respuestaMongo():
+
+    assert str(respuestaMongo()) == "<Response [200]>"
