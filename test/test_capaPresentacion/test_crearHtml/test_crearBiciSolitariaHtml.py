@@ -1,4 +1,45 @@
+from src.capaPresentacion.crearHtml.crearBiciSolitariaHtml import biciSolitariaHtml
+import pytest
 
+# Test que comprueba que la funcion, se ejecuta correctamente y genera una variable con código html
+# de una bicicleta en concreto
+@pytest.mark.test_biciSolitariaHtml
+def test_biciSolitariaHtml():
+
+    bici =  {
+    '_id': 'ObjectId("63850e0400b41044eddde3c7")',
+    '_idbike': 'PA0101',
+    'state': 'up',
+    'type': 'bici de ciudad',
+    'techinfo': { 'groupset': 'kask', 'size': 'x', 'wheels': '29', 'brand': 'cube' },
+    'complements': [
+      'casco',
+      'luz',
+      'bomba',
+      'guardabarros',
+      'candado',
+      'potenciometro'
+    ],
+    'prize_euros_days': '15',
+    'where': [
+{
+"_idrental":"PA01",
+"company_name":"bibike",
+"address":{
+"zip":"07006","street":"joan alcover n7  ","country":"espana","town":"palma"},
+"social_media":{
+"twitter":"@bibike","instagram":"@bibike"},
+"contact":{
+"num":"678598234","email":"bibike@contact.eu"},
+"promotions":"15% descuento",
+"stock":"2",
+'bikes': {'bikes_up':{'_idbikes': [ 'PA0101' ]},
+        'bikes_down':{'_idbikes':['PA0102']}},
+'img':"http://imgfz.com/i/2sS6E8d.jpeg",
+'icono':'http://imgfz.com/i/x1Re2Mf.png'}],
+    'img':'http://imgfz.com/i/CiZJnhA.jpeg'}
+
+    htmlBici ='''
 <!DOCTYPE html>
 <!-- Hemos añadido el atributo lang en la etiqueta html en lugar de hacerlo en meta porque el validador nos daba problemas -->
 <html lang="es" dir="ltr">
@@ -61,7 +102,7 @@
             <h3 class="titleBicis">Información de la bici seleccionada</h3>
             <div class="biciinformacion">
                     <div class="img" id =img-Bike>
-                        <img src="http://imgfz.com/i/7VOlN5y.jpeg" alt="bicicleta de la marca cube y catergoria bici de ciudad electrica" >
+                        <img src="http://imgfz.com/i/CiZJnhA.jpeg" alt="bicicleta de la marca cube y catergoria bici de ciudad" >
                     </div>
                     <div class="descripcion">
                         <table> 
@@ -78,16 +119,16 @@
                                 <th>Ubicacion</th>
                             </tr>
                             <tr>
-                                <td>CA0101</td>
+                                <td>PA0101</td>
                                 <td>up</td>
                                 <td>cube</td>
-                                <td>bici de ciudad electrica</td>
-                                <td>kona</td>
-                                <td>26</td>
-                                <td>l</td>
-                                <td>casco  luz  bomba  guardabarros  candado  potenciometro  sillita de bebe  </td>
-                                <td>18</td>
-                                <td>touristbike</td>
+                                <td>bici de ciudad</td>
+                                <td>kask</td>
+                                <td>29</td>
+                                <td>x</td>
+                                <td>casco  luz  bomba  guardabarros  candado  potenciometro  </td>
+                                <td>15</td>
+                                <td>bibike</td>
                             </tr>
                         </table>
                     </div>
@@ -118,4 +159,6 @@
             </div>
         </footer>
     </body>
-</html>
+</html>'''
+
+    biciSolitariaHtml(bici) == htmlBici

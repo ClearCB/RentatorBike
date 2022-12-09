@@ -58,7 +58,7 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicissolitariaPA0201.html"><img src="http://imgfz.com/i/kaSt31V.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaPA0201.html"><img src="http://imgfz.com/i/rBA18ZL.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>e-mtb</h5>
@@ -80,7 +80,7 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicissolitariaPA0202.html"><img src="http://imgfz.com/i/bn1AQ2q.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaPA0202.html"><img src="http://imgfz.com/i/yxr1LVT.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>e-mtb</h5>
@@ -124,7 +124,7 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicissolitariaMA0102.html"><img src="http://imgfz.com/i/PjOVTLa.jpeg" alt="bicicleta de la marca giant y tipo e-mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaMA0102.html"><img src="http://imgfz.com/i/i649ZwL.jpeg" alt="bicicleta de la marca giant y tipo e-mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>e-mtb</h5>
@@ -278,7 +278,7 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicissolitariaSO0101.html"><img src="http://imgfz.com/i/NvAWrJi.jpeg" alt="bicicleta de la marca cannondale y tipo e-mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaSO0101.html"><img src="http://imgfz.com/i/DYxBSaC.jpeg" alt="bicicleta de la marca cannondale y tipo e-mtb"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>e-mtb</h5>
@@ -322,10 +322,10 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicissolitariaSO0201.html"><img src="http://imgfz.com/i/2eNLWgp.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaSO0201.html"><img src="http://imgfz.com/i/pMB1Qkq.jpeg" alt="bicicleta de la marca giant y tipo bici de carretera"></a>
                     </div>
                     <div class="contenedor_info">
-                        <h5>mtb</h5>
+                        <h5>bici de carretera</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: up</li> 
@@ -366,7 +366,7 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicissolitariaCA0101.html"><img src="http://imgfz.com/i/u3NH9RI.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad electrica"></a>
+                        <a href="./bicissolitarias/bicissolitariaCA0101.html"><img src="http://imgfz.com/i/7VOlN5y.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad electrica"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>bici de ciudad electrica</h5>
@@ -388,10 +388,10 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicissolitariaCA0102.html"><img src="http://imgfz.com/i/Gtuk9Ah.jpeg" alt="bicicleta de la marca giant y tipo mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaCA0102.html"><img src="http://imgfz.com/i/U8Mt6wR.jpeg" alt="bicicleta de la marca giant y tipo bici de carretera electrica"></a>
                     </div>
                     <div class="contenedor_info">
-                        <h5>mtb</h5>
+                        <h5>bici de carretera electrica</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: down</li> 
@@ -410,10 +410,10 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicissolitariaCA0201.html"><img src="http://imgfz.com/i/nfUeIZh.jpeg" alt="bicicleta de la marca cannondale y tipo mtb"></a>
+                        <a href="./bicissolitarias/bicissolitariaCA0201.html"><img src="http://imgfz.com/i/tXK4M06.jpeg" alt="bicicleta de la marca cannondale y tipo bici de carretera electrica"></a>
                     </div>
                     <div class="contenedor_info">
-                        <h5>mtb</h5>
+                        <h5>bici de carretera electrica</h5>
                         <div class="infoBike">
                             <ul> 
                                 <li>Estado: up</li> 
@@ -432,7 +432,7 @@ def test_crearBodyBicis():
                 </div>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicissolitariaCA0202.html"><img src="http://imgfz.com/i/8bkws5n.jpeg" alt="bicicleta de la marca cube y tipo bici de carretera"></a>
+                        <a href="./bicissolitarias/bicissolitariaCA0202.html"><img src="http://imgfz.com/i/edw4hMz.jpeg" alt="bicicleta de la marca cube y tipo bici de carretera"></a>
                     </div>
                     <div class="contenedor_info">
                         <h5>bici de carretera</h5>

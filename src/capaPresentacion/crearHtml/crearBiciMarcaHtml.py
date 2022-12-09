@@ -24,7 +24,7 @@ def esFiltro(bici,marcaBici):
         rental = bici["where"][0]["company_name"]
 
         # Generamos la nueva bici que va a ser añadida al body
-        nuevaBici = f''' 
+        nuevaBici = f'''
                 <div class="container">
                     <div class="img">
                         <a href="./bicissolitarias/bicissolitaria{bici["_idbike"]}.html"><img src="{imagenBici}" alt="bicicleta de la marca {marca} y tipo {tipo}"></a>
