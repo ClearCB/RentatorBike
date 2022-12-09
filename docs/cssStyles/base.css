@@ -17,11 +17,3 @@ form{
     margin-bottom: 2em;
     margin-top: 2rem;
 }
-/* INICIO ESTILOS HASTA 480px */
-@media (max-width:1080px)  { 
-    .video_background video {
-        margin: 0 auto;
-        width: 90%;
-    }
-}
-/* FIN ESTILOS HASTA 480px */

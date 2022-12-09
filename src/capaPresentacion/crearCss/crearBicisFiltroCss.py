@@ -84,17 +84,7 @@ def bicisfiltroStylesCss():
      color: rgb(4, 31, 14);
      text-align:center;
 }
- /* INICIO 320px — 560px: estilos para los botones de navegacion bicis característica  */
-@media (min-width: 320px) and (max-width: 560px) {
-    .categorias {
-          display: flex;
-          justify-content: space-around;
-          flex-direction: column;
-          width: 195px;
-          margin: 0 auto;
-    }
-}
-/* FIN  320px — 560px: estilos para los botones de navegacion bicis característica  */'''
+'''
 
     return bicisFiltroCss
 
