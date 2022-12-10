@@ -7,14 +7,20 @@ import os
 # Definimos en el entorno la variable de entorno MONGO_KEY que utilizaremos en la peticion. Por seguridad
 def mongoKey():
 
-    MONGO_KEY = os.environ['MONGO_KEY'] # Con el modulo os conseguimos llamar el valor de nuestra v. entorno
-
+    try:
+        MONGO_KEY = os.environ['MONGO_KEY'] # Con el modulo os conseguimos llamar el valor de nuestra v. entorno
+    except KeyError:
+        print("La variable de entorno MONGO_KEY no se ha podido encontrar, por favor, corrige el error y vuelve a intentarlo")
+        
     return MONGO_KEY
 
 # Definimos en el entorno la variable de entorno MONGO_URL que utilizaremos en la peticion. Por seguridad
 def mongoUrl():
 
-    MONGO_URL = os.environ['MONGO_URL'] # Con el modulo os conseguimos llamar el valor de nuestra v. entorno
+    try:
+        MONGO_URL = os.environ['MONGO_URL'] # Con el modulo os conseguimos llamar el valor de nuestra v. entorno
+    except KeyError:
+        print("La variable de entorno MONGO_URL no se ha podido encontrar, por favor, corrige el error y vuelve a intentarlo")
 
     return MONGO_URL
 
