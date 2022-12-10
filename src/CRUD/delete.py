@@ -13,13 +13,13 @@ def deleteUnoMongoDB(inputId):
 
     keyMongo = key() # Clave api de mongo
     
-    filter = {"_idbike":inputId}
+    filtro = {"_idbike":inputId}
 
     payload = json.dumps({
         "collection": "bikes_data",
         "database": "rentatorsl",
         "dataSource": "Cluster0",
-        "filter": filter
+        "filter": filtro
     }) # Esta variable es en la cual introducimos toda la información que va a ser utilizada por mongo para devolvernos la respuesta
 
     headers = {
@@ -54,13 +54,13 @@ def deleteVariosMongoDB(inputId):
 
     keyMongo = key() # Clave api de mongo
     
-    filter = {"_idbike":inputId}
+    filtro = {"_idbike":inputId}
 
     payload = json.dumps({
         "collection": "bikes_data",
         "database": "rentatorsl",
         "dataSource": "Cluster0",
-        "filter": filter
+        "filter": filtro
     }) # Esta variable es en la cual introducimos toda la información que va a ser utilizada por mongo para devolvernos la respuesta
 
     headers = {
@@ -83,7 +83,8 @@ def deleteVariosMongoDB(inputId):
             separacion()
 
         else: # En caso de que no sea el código que necesitamos, enviamos una excepción
-            raise ConnectionError("La conexión con el servidor ha fallado, vuelva a intentarlo en unos instantes")
+            print("La conexión con el servidor ha fallado, vuelva a intentarlo en unos instantes")
+            raise ConnectionError
 
     except: # En el caso de que no se consiga establecer la conexión con mongoDb se devuelve un error
         print("La conexión con el servidor ha tenido un problema, asegurese que los datos son correctos y vuelva a intentarlo.")
