@@ -52,3 +52,11 @@ Has seleccionado {opcion}.
     print(eleccion)
 
 
+# Este mensaje anuncia al usuario que tiene que rellenar la informacion necesaria para completar la funcion elegida
+def mensajeRellenarInfo():
+
+    time.sleep(1)
+    rellenarInfo='''
+Necesitaremos una serie de datos 
+para continuar con la operación.'''
+    separacion()

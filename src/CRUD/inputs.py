@@ -13,4 +13,17 @@ def preguntarCantidad():
     cantidad = input("¿Con cuantos documentos quieres interactuar? Uno o varios: ")
     return cantidad
 
+# Esta funcion nos devolverá el/los documento/s que se insertará/n en la base de datos
+def rellenarDocumentosCrear():
 
+    print("Que bici quieres")
+
+# Esta funcion nos pedirá la identificación de la bicicleta que el usuario quiere buscar
+def identificadorBici():
+
+    print("Que bici quieres")
+
+# Esta funcion nos devolverá el campo y la modificación que se hará a los documentos seleccionados
+def actualizarCampo():
+
+    print("Que bici quieres")

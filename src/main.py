@@ -17,6 +17,7 @@ from src.capaPresentacion.crearCss.crearIndexCss import crearIndexCss
 from src.capaPresentacion.crearCss.crearBiciSolitariaCss import crearBiciSolitariaCss
 from src.capaPresentacion.crearCss.crearBicisFiltroCss import crearBicisFiltroCss
 from src.capaPresentacion.crearCss.crearBicisCss import crearBicisCss
+from src.CRUD.crud import CRUD
 
 
 # Nombrar variables necesarias
@@ -27,6 +28,7 @@ listaRentals = listarRentals(datosMongo)
 # Funcion principal
 def generarPáginasEstáticas(listaBicis,listaRentals):
 
+    CRUD()
     crearRutasDocs()
     crearCssBase()
     crearIndexHtml()
