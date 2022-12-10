@@ -50,7 +50,7 @@ def conseguirRespuestaDatos(key,url):
         response = requests.request("POST", url, headers=headers, data=payload)    
         codigoRespuesta = response.status_code
 
-        if codigoRespuesta == 200: # Comprobamos que el código enviado es el correcto y devolvemos el valor de la respuesta
+        if codigoRespuesta == 200: # Comprobamos que el código enviado es el correcto y devolvemos el valor de la respuesta. 200 = Conexion establecida
             print("Conexion con el servidor establecida, respuesta recibida")
             return response
 
