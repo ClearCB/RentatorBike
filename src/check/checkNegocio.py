@@ -1,0 +1,1 @@
+# En este modulo vamos a comprobar y poner una barricada de la capa Negocio.
