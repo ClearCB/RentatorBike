@@ -96,3 +96,15 @@ def checkRentalModelo(listaRentals):
             return False
 
     return True
+
+# Comprueba que los datos pasan los checks para ejecutar el programa
+def checkGeneralDatos(respuestaMongo,listaBicis,listaRentals):
+
+    if respuestaCorrecta(respuestaMongo) == False:
+        return False
+    if respuestaEsModelo(listaBicis) == False:
+        return False
+    if checkBiciModelo(listaBicis) == False:
+        return False
+    if checkRentalModelo(listaRentals) == False:
+        return False
