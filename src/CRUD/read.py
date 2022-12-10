@@ -26,15 +26,11 @@ def findAllMongoDB():
     'api-key': keyMongo, 
     } # Esta variable es en la cual introducimos toda la información que va a ser utilizada por mongo para devolvernos la respuesta
 
-    response = requests.request("POST", url, headers=headers, data=payload)
-    response = response.text
-    response = json.loads(response)
-
     try: # Probamos que la respuesta se puede ejecutar sin problemas
         response = requests.request("POST", url, headers=headers, data=payload)    
         codigoRespuesta = response.status_code
 
-        if codigoRespuesta == 200: # Comprobamos que el código enviado es el correcto y devolvemos el valor de la respuesta
+        if codigoRespuesta == 200: # Comprobamos que el código enviado es el correcto y devolvemos el valor de la respuesta. 200 = lectura ejecutada correctamente
 
             print("Conexion con el servidor establecida, respuesta recibida")
             response = response.text
@@ -51,7 +47,7 @@ def findAllMongoDB():
     except: # En el caso de que no se consiga establecer la conexión con mongoDb se devuelve un error
         print("La conexión con el servidor ha tenido un problema, asegurese que los datos son correctos y vuelva a intentarlo.")
 
-# Esta función se encargará de encontrar una bicicleta enconcreto
+# Esta función se encargará de encontrar una bicicleta en concreto
 def findUnoMongoDB(inputId):
 
     url = actionSintax("find") # Url que determinara la acción ejecutada por mongo
@@ -73,10 +69,6 @@ def findUnoMongoDB(inputId):
     'Access-Control-Request-Headers': '*',
     'api-key': keyMongo, 
     } # Esta variable es en la cual introducimos toda la información que va a ser utilizada por mongo para devolvernos la respuesta
-
-    response = requests.request("POST", url, headers=headers, data=payload)
-    response = response.text
-    response = json.loads(response)
 
     try: # Probamos que la respuesta se puede ejecutar sin problemas
         response = requests.request("POST", url, headers=headers, data=payload)    

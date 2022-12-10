@@ -27,8 +27,6 @@ def createUnoMongoDB(documento):
     'api-key': keyMongo, 
     } # Esta variable es en la cual introducimos toda la información que va a ser utilizada por mongo para devolvernos la respuesta
 
-    response = requests.request("POST", url, headers=headers, data=payload)
-
     try: # Probamos que la respuesta se puede ejecutar sin problemas
         response = requests.request("POST", url, headers=headers, data=payload)    
         codigoRespuesta = response.status_code
@@ -68,8 +66,6 @@ def createVariosMongoDB(documentos):
     'Access-Control-Request-Headers': '*',
     'api-key': keyMongo, 
     } # Esta variable es en la cual introducimos toda la información que va a ser utilizada por mongo para devolvernos la respuesta
-
-    response = requests.request("POST", url, headers=headers, data=payload)
 
     try: # Probamos que la respuesta se puede ejecutar sin problemas
         response = requests.request("POST", url, headers=headers, data=payload)    
