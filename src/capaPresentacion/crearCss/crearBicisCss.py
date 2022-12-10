@@ -5,7 +5,7 @@ def bicisStylesCss():
    
   #Definimos el valor de la variable bicisCss con el código css
     bicisCss =  '''
-  #contenedorPadre {
+#contenedorPadre {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -53,8 +53,7 @@ def rentalsStylesCss():
     width:100px;
     height:100px;
     display: flex;
-}
-'''
+}'''
     
     return rentalsCss
 
