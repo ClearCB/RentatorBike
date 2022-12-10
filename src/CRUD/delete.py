@@ -88,3 +88,14 @@ def deleteVariosMongoDB(inputId):
 
     except: # En el caso de que no se consiga establecer la conexión con mongoDb se devuelve un error
         print("La conexión con el servidor ha tenido un problema, asegurese que los datos son correctos y vuelva a intentarlo.")
+
+# Elegir que funcion usaremos
+def unoOVariosDelete(numero, documento):
+
+    if numero.lower() == "uno":
+
+        deleteUnoMongoDB(documento)
+    
+    if numero.lower() == "varios":
+
+        deleteVariosMongoDB(documento)
