@@ -82,5 +82,3 @@ def CRUD():
 
     bienvenidaCRUD()
     elegirFunción()
-
-CRUD()
