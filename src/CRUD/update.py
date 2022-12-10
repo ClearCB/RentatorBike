@@ -101,12 +101,12 @@ def updateVariosMongoDB(inputId, inputModificacionCampo, inputModificacionDato):
         print("La conexión con el servidor ha tenido un problema, asegurese que los datos son correctos y vuelva a intentarlo.")
 
 # Elegir que funcion usaremos
-def unoOVariosUpdate(numero, documento):
+def unoOVariosUpdate(numero, identificadorBici, campoElegido, campoModificado):
 
     if numero.lower() == "uno":
 
-        updateUnoMongoDB(documento)
+        updateUnoMongoDB(identificadorBici, campoElegido, campoModificado)
     
     if numero.lower() == "varios":
 
-        updateVariosMongoDB(documento)
+        updateVariosMongoDB(identificadorBici, campoElegido, campoModificado)

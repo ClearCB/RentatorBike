@@ -93,12 +93,12 @@ def findUnoMongoDB(inputId):
         print("La conexión con el servidor ha tenido un problema, asegurese que los datos son correctos y vuelva a intentarlo.")
         
 # Elegir que funcion usaremos
-def unoOVariosRead(numero, documento):
+def unoOVariosRead(numero, identificadorBici):
 
     if numero.lower() == "uno":
 
-        findUnoMongoDB(documento)
+        findUnoMongoDB(identificadorBici)
     
-    if numero.lower() == "varios":
+    elif numero.lower() == "varios":
 
-        findAllMongoDB(documento)
+        findAllMongoDB()

@@ -90,12 +90,12 @@ def deleteVariosMongoDB(inputId):
         print("La conexión con el servidor ha tenido un problema, asegurese que los datos son correctos y vuelva a intentarlo.")
 
 # Elegir que funcion usaremos
-def unoOVariosDelete(numero, documento):
+def unoOVariosDelete(numero, identificadorBici):
 
     if numero.lower() == "uno":
 
-        deleteUnoMongoDB(documento)
+        deleteUnoMongoDB(identificadorBici)
     
     if numero.lower() == "varios":
 
-        deleteVariosMongoDB(documento)
+        deleteVariosMongoDB(identificadorBici)

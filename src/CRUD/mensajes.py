@@ -30,7 +30,7 @@ en nuestra base de datos. \n'''
 def mensajeOpcion():
 
     elegir = '''
-Primero elige qué quieres hacer:
+Qué quieres hacer:
 
 0- Continuar con el programa
 1- Crear un documento
