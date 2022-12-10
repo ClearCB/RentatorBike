@@ -100,6 +100,7 @@ def test_rentalModelo():
     "contact": { "num": '687875483', "email": 'rentalride@contact.eu' },
     "promotions": '5% descuento',
     "stock": '1',
+    "bikes":"ha",
     "img": 'http://imgfz.com/i/Rg3dPDb.jpeg',
     "icono": 'http://imgfz.com/i/I5K98Hz.png'
   }
@@ -116,6 +117,7 @@ def test_rentalModelo():
     "contact": { "num": '687875483', "email": 'rentalride@contact.eu' },
     "promotions": '5% descuento',
     "stock": '1',
+    "bikes":"ha",
     "img": 'http://imgfz.com/i/Rg3dPDb.jpeg',
     "icono": 'http://imgfz.com/i/I5K98Hz.png'
   }
