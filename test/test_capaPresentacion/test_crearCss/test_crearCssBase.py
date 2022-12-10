@@ -1,10 +1,13 @@
-from src.capaNegocio.crearArchivos import crearArchivo
+from src.capaPresentacion.crearCss.funcionCssBase import footerStylesCss, headerStylesCss, navStylesCss, baseStylesCss
+import pytest
 
-#Funcion que define el codigo Css del archivo footer.css
-def footerStylesCss():
-  
-     #Definimos el valor de la variable css con el código css
-    footerCss =  '''
+# Este test comprueba que las funciones que devuelven una variable con el código css de las partes header, base, nav y footer.
+
+# Este test comprueba que se devuelve correctamente el código de la parte footercss
+@pytest.mark.test_crearFooterCss
+def test_crearFooterCss():
+
+    footerCss = '''
 footer {
   display: flex;
   background-color: grey;
@@ -29,15 +32,14 @@ footer {
 .soporte_links a{
   text-decoration: none;
 }'''
-   
-    return footerCss
 
+    assert footerStylesCss() == footerCss
 
-#Funcion que define el codigo css del archivo header.css
-def headerStylesCss():
+# Este test comprueba que se devuelve correctamente el código de la parte headercss
+@pytest.mark.test_crearHeaderCss
+def test_crearHeaderCss():
 
-     #Definimos el valor de la variable headerCss con el código css
-    headerCss =  '''
+    headerCss = '''
 .header {
   background: #edeebc;
   overflow: hidden;
@@ -129,41 +131,13 @@ def headerStylesCss():
     
 }'''
 
-    return headerCss
+    assert headerStylesCss() == headerCss
 
+# Este test comprueba que se devuelve correctamente el código de la parte navcss
+@pytest.mark.test_crearNavCss
+def test_crearNavCss():
 
-#Funcion que define el codigo css del archivo base.css
-def baseStylesCss():
-    
-     #Definimos el valor de la variable base con el código css
-    baseCss =  '''
-body {
-     margin: 0;
-     background-color:rgb(255, 255, 255);
-}
-#search {
-    border: 2px solid;
-    border-radius: 15px;
-    font-size: 16px;
-    height: 45px;
-    outline: none;
-    padding: 0 8px;
-    width: 50%;
-}
-form{
-    text-align: center;
-    margin-bottom: 2em;
-    margin-top: 2rem;
-}'''
-
-    return baseCss
-
-
-#Funcion que define el codigo css del archivo nav.css
-def navStylesCss():
-    
-    #Definimos el valor de la variable nav con el código css
-    navCss =  '''
+    navCss = '''
 #nav {
     display: block;
     background: #54aa51;
@@ -236,21 +210,30 @@ def navStylesCss():
     }
 }'''
 
-    return navCss
+    assert navStylesCss() == navCss
 
+# Este test comprueba que se devuelve correctamente el código de la parte basecss
+@pytest.mark.test_crearBaseCss
+def test_crearBaseCss():
 
+    baseCss = '''
+body {
+     margin: 0;
+     background-color:rgb(255, 255, 255);
+}
+#search {
+    border: 2px solid;
+    border-radius: 15px;
+    font-size: 16px;
+    height: 45px;
+    outline: none;
+    padding: 0 8px;
+    width: 50%;
+}
+form{
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 2rem;
+}'''
 
-def crearCssBase():
-
-    #Funcion que crea el archivo footer.css en la ruta indicada.
-    crearArchivo(footerStylesCss(), ".\\docs\\cssStyles", "footer", "css")
-
-    #Funcion que crea el archivo header.css en la ruta indicada.
-    crearArchivo(headerStylesCss(), ".\\docs\\cssStyles", "header", "css")
-
-    #Funcion que crea el archivo base.css en la ruta indicada.
-    crearArchivo(baseStylesCss(), ".\\docs\\cssStyles", "base", "css")
-
-    #Funcion que crea el archivo nav.css en la ruta indicada.
-    crearArchivo(navStylesCss(), ".\\docs\\cssStyles", "nav", "css")
-
+    assert baseStylesCss() == baseCss

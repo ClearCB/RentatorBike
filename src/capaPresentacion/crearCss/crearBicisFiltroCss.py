@@ -83,8 +83,7 @@ def bicisfiltroStylesCss():
      width: 100%;
      color: rgb(4, 31, 14);
      text-align:center;
-}
-'''
+}'''
 
     return bicisFiltroCss
 
