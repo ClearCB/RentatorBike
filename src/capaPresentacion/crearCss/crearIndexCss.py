@@ -81,6 +81,16 @@ body{
     width: 49px;
     position: fixed;
     right: 25px;
+}
+/* Inicio de media-queries para dispositivo "Samsung Galaxy S8+" en modo vertical:  píxeles 360x740 */
+@media (min-width: 360px) and (max-width: 740px) {
+.contenedorinfo {
+     width: 92%;
+    }
+.volverArriba .flechaSubir {
+    height: 25px;
+    width: 25px;
+    }
 }'''
 
     return indexCss
