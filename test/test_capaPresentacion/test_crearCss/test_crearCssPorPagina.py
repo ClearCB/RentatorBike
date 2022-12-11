@@ -146,7 +146,22 @@ def test_crearBiciFiltroCss():
      width: 100%;
      color: rgb(4, 31, 14);
      text-align:center;
+}
+
+/* Inicio de media-queries para dispositivo "Samsung Galaxy S8+" en modo vertical:  píxeles 360x740 */
+@media (min-width: 360px) and (max-width: 740px) {
+.categorias {
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     width: 195px;
+     margin: 0 auto;
+}
+.container {
+margin-bottom: 5%;
+}
 }'''
+
     assert bicisfiltroStylesCss() == biciFiltroCss
 
 # Este test comprueba que se crea correctamente el codigo css de la pagina bicisolitaria.html
@@ -274,6 +289,16 @@ body{
     width: 49px;
     position: fixed;
     right: 25px;
+}
+/* Inicio de media-queries para dispositivo "Samsung Galaxy S8+" en modo vertical:  píxeles 360x740 */
+@media (min-width: 360px) and (max-width: 740px) {
+.contenedorinfo {
+     width: 92%;
+    }
+.volverArriba .flechaSubir {
+    height: 25px;
+    width: 25px;
+    }
 }'''
     assert indexStylesCss() == indexCss
 
@@ -363,5 +388,18 @@ def test_crearRentalsCss():
     width:100px;
     height:100px;
     display: flex;
+}
+
+/* Inicio de media-queries para dispositivo "Samsung Galaxy S8+" en modo vertical:  píxeles 360x740 */
+@media (min-width: 360px) and (max-width: 740px) {
+  
+.rentals__container {
+    flex-direction: column;
+    row-gap: 15px;
+}
+.fotoRental {
+    display: flex;
+    width: 100%;
+}
 }'''
     assert rentalsStylesCss() == rentalsCss
