@@ -83,6 +83,20 @@ def bicisfiltroStylesCss():
      width: 100%;
      color: rgb(4, 31, 14);
      text-align:center;
+}
+
+/* Inicio de media-queries para dispositivo "Samsung Galaxy S8+" en modo vertical:  píxeles 360x740 */
+@media (min-width: 360px) and (max-width: 740px) {
+.categorias {
+     display: flex;
+     justify-content: space-around;
+     flex-direction: column;
+     width: 195px;
+     margin: 0 auto;
+}
+.container {
+margin-bottom: 5%;
+}
 }'''
 
     return bicisFiltroCss
