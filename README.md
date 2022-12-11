@@ -2,24 +2,26 @@
 
 ## Contenido del Proyecto R.B
 
-* **Introducción**
-* **Requisitos**
-* **Funcionamiento**
-* **Tecnologías**
-* **Arquitectura**
-* **Diagrama de componentes**
-* **Base de datos**
-* **Git**
-* **Metodología de trabajo**
-* **Conclusión**
+* [**Introducción**](#introduccion)
+* [**Requisitos**](#requisitos)
+* [**Funcionamiento**](#funcionamiento)
+* [**Tecnologías**](#tecnologías)
+* [**Arquitectura**](#arquitectura)
+* [**Diagrama de componentes**](#diagrama-de-componentes)
+* [**Base de datos**](#base-de-datos)
+* [**Git**](#git)
+* [**Metodología de trabajo**](#metodología-de-trabajo)
+* [**Conclusión**](#conclusión)
 
-## INTRODUCCIÓN
+## INTRODUCCION
 
 ---
 
 Este proyecto nace con la idea de conseguir una movilidad sostenible, está enfocado al alquiler de bicicletas además añadiendo así, valor a la red cicloturística.
 
 Facilitando una completa y sencilla adapatacion al mundo del ciclismo, hemos creado un generador de paginas estáticas que nos permite garantizar al usuario una interfaz amigable en la cual pueda encontrar la bici adaptada a sus necesidades.
+
+![RentatorFrontPage](./imagenesDocumentos/rentator.png)
 
 ## REQUISITOS
 
@@ -52,7 +54,11 @@ Además, contamos con un generador de páginas web estáticas, que grácias a un
 
 Por último contamos con una amplia variedad de casos test con los cuales podremos comprobar que nuestra aplicación continúa funcionando correctamente.
 
+![Pytest](./imagenesDocumentos/test.png)
+
 Grácias a pytest y coverage, hemos sido capaces de ir comprobando que nuestra aplicación funcionaba correctamente y de la manera en la que se esperaba.
+
+![Coverage](./imagenesDocumentos/coverage.png)
 
 Para comprobar el funcionamiento de dicha aplicación simplemente sería necesario ejecutar el archivo main.py en el directorio del programa y seguir las instrucciones del mismo.
 
@@ -77,7 +83,7 @@ Con los cuales hemos sido capaces de unir todas las piezas para que un usuario f
 
 La arquitectura de nuestro pequeño software es la siguiente:
 
-(LINK DE LA FOTO ARQUITECTURA)
+![ArquitecturaProyecto](./imagenesDocumentos/Arquitectura.png)
 
 En la foto vemos que contamos con 3 capas:
 
@@ -91,7 +97,7 @@ En la foto vemos que contamos con 3 capas:
 
 Además de un pequeño vistazo a la arquitectura de nuestro programa, vamos a hacer una pequeña explicación de todos los componentes que forman nuestra aplicación:
 
-(LINK DE LA FOTO COMPONENTES)
+![DiagramaDeComponentes](./imagenesDocumentos/Diagrama-de-componentes.png)
 
 Como ya comentamos antes, nuestro proyecto está divido en capas. En el diagrama de componentes podemos ver que todo se ejecuta desde un programa "main.py".
 
@@ -103,7 +109,7 @@ Grácias a la "capa de negocio", podemos ubicar correctamente los archivos y dir
 
 Posteriormente, cuando conseguimos los datos y tenemos creados los directorios, nuestro paquete de "capa de presentación" se encargará de mediante los datos conseguidos de MongoDB generar los archivos HTML y CSS para que sean desplegados por GitHub Pages.
 
-Finalmente, nuestro paquete de "check" confirmaremos que los datos y directorios son creados y manipulados correctamente para que el programa consiga ejecutar correctamente la aplicación.
+Finalmente, con nuestro paquete "check" confirmaremos que los datos y directorios son creados y manipulados correctamente para que el programa consiga ejecutar correctamente la aplicación.
 
 ## BASE DE DATOS
 
@@ -113,13 +119,27 @@ Contamos con un cluster de MongoDB Atlas, que utilizando su servicio gratuito en
 
 Nuestra base de datos tiene un esquema un poco complejo asi que os dejaremos un ejemplo de un documento con el cual nuestro programa interactua.
 
-(Código del esquema de base de datos)
+    {_idbike: 'PA0101',
+    state: 'up',
+    type: 'bici de ciudad',
+    techinfo: { groupset: 'kask', size: 'x', wheels: '29', brand: 'cube' },
+    complements: [
+        'casco',
+        'luz',
+        'bomba',
+        'guardabarros',
+        'candado',
+        'potenciometro'],
+    prize_euros_days: '15',
+    where:{ _idrental: 'PA01' },
+    img:'http://imgfz.com/i/CiZJnhA.jpeg'
+    }
 
 ## GIT
 
 ---
 
-Hemos implementado [GIT]() para asi poder trabajar con nuestro compañero en remoto y para poder tener un seguimiento del progreso de nuestro proyecto.
+Hemos implementado Git para asi poder trabajar con nuestro compañero en remoto y para poder tener un seguimiento del progreso de nuestro proyecto.
 
 Para poder colaborar correctamente con nuestro compañero, hemos decidido trabajar con varias ramas, para evitar malos entendidos y problemas a la hora de desarrollar funcionalidades en nuestra aplicación.
 
@@ -131,6 +151,8 @@ Hemos utilizado 3 ramas base para nuestra correcta elaboración del producto:
 
 Y finalmente, utilizábamos una rama "feature" con la cual implementábamos en la rama develop todas las nuevas funcionalidades y, correcciones de bugs.
 
+![FotoGitBRanching](./imagenesDocumentos/git-branch.png)
+
 ## METODOLOGÍA DE TRABAJO
 
 ---
@@ -141,14 +163,16 @@ En el desarrollo del programa se han implementado las siguientes metodologias.
 * Sesiones de Pair Programming: sesiones de programación en pareja para garantizar un correcto funcionamiento del equipo.
 * Trabajo Remoto: grácias a git hemos podido trabajar en remoto y poder comunicar nuestro trabajo.
 * Division del Trabajo: división del trabajo por ramas/tareas con las cuales cada uno podía codificar una nueva funcionalidad sin problema.
+* TDD: hemos intentado desarrollar la aplicación mediante la técnica de desarrollo "test driven development".
+* SRP y OCP: mientras creábamos la estructura del programa hemos tenido en cuenta los dos primero principios SOLID.
 
 ## CLOCKIFY
 
 ---
 
-En el desarrollo del programa hemos utilizado [Clockify]() para llevar un seguimiento de las horas de trabajo independiente de cada miembro del equipo. Consiguiendo así una pequeña valoración de nuestro tiempo invertido en el proyecto.
+En el desarrollo del programa hemos utilizado Clockify para llevar un seguimiento de las horas de trabajo independiente de cada miembro del equipo. Consiguiendo así una pequeña valoración de nuestro tiempo invertido en el proyecto.
 
-(foto del timepo)
+![ClockifyTiempo](./imagenesDocumentos/clockifytime.png)
 
 Tras un pequeño análisis a posteriori, llegamos a la conclusión de que hemos invertido mucho más tiempo del esperado en funcionalidades para generar el código html, así como el diseño de las páginas y su estructura html/css.
 
