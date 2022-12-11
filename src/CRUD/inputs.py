@@ -35,7 +35,7 @@ def rellenarDocumentosCrear(cantidad):
         marca = input("Escribe la marca: ")
         complementos = input("Escribe los complementos con el siguiente formato (sillita de bebe','casco','bomba): ")
         precio = input("Escribe el precio por día de la bicicleta: ")
-        ubicacion = input("Escribe la ubicación de la bicicleta con el siguiente formato [MAA01]: ")
+        ubicacion = input("Escribe la ubicación de la bicicleta con el siguiente formato [MA01]: ")
         imagen = input("Escribe la direccion de la imagen: ")
 
         documento = { "_idbike": idBike,
