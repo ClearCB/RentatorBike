@@ -53,6 +53,19 @@ def rentalsStylesCss():
     width:100px;
     height:100px;
     display: flex;
+}
+
+/* Inicio de media-queries para dispositivo "Samsung Galaxy S8+" en modo vertical:  píxeles 360x740 */
+@media (min-width: 360px) and (max-width: 740px) {
+  
+.rentals__container {
+    flex-direction: column;
+    row-gap: 15px;
+}
+.fotoRental {
+    display: flex;
+    width: 100%;
+}
 }'''
     
     return rentalsCss
