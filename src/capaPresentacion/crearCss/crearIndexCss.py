@@ -81,8 +81,7 @@ body{
     width: 49px;
     position: fixed;
     right: 25px;
-}
-'''
+}'''
 
     return indexCss
 

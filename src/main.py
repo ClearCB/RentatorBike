@@ -17,6 +17,9 @@ from src.capaPresentacion.crearCss.crearIndexCss import crearIndexCss
 from src.capaPresentacion.crearCss.crearBiciSolitariaCss import crearBiciSolitariaCss
 from src.capaPresentacion.crearCss.crearBicisFiltroCss import crearBicisFiltroCss
 from src.capaPresentacion.crearCss.crearBicisCss import crearBicisCss
+from src.CRUD.crud import CRUD
+from src.check.checkDatos import checkGeneralDatos
+from src.check.checkNegocio import checkDirectorios
 
 
 # Nombrar variables necesarias
@@ -24,10 +27,16 @@ datosMongo = respuestaText(respuestaMongo())
 listaBicis = listarBicis(datosMongo)
 listaRentals = listarRentals(datosMongo)
 
+
 # Funcion principal
 def generarPáginasEstáticas(listaBicis,listaRentals):
 
+    if checkGeneralDatos(respuestaMongo(),listaBicis,listaRentals) == False:
+        raise Exception("Los datos no son correctos, revisa el programa y vuelve a ejecutarlo para evitar problemas")
+    CRUD()
     crearRutasDocs()
+    if checkDirectorios() == False:
+        raise Exception("Los directorios no existe, por favor, revisa los datos y vuelve a ejecutar el programa para evitar problemas.")
     crearCssBase()
     crearIndexHtml()
     crearIndexCss()
