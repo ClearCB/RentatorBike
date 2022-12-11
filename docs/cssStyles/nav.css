@@ -54,19 +54,16 @@
 }
 
 /* Inicio de media-queries para dispositivo "Samsung Galaxy S8+" en modo vertical:  píxeles 360x740 */
+@media (min-width: 360px) and (max-width: 740px) {
 
-@media only screen and (min-width: 350px) 
-    and (max-width:800px) 
-    and (orientation: portrait) {
+#nav{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
+}
 
-    #nav{
-        display: flex;
-        width: auto;
-        justify-content: space-between;
-        margin: 0px 0px 0px 0px;
-    }
-
-    #nav ul li{
+#nav ul li{
         font-size: 10px;
-    }
+}
 }
