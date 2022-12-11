@@ -250,7 +250,7 @@ def navStylesCss():
 }
 
 #nav ul li{
-        font-size: 10px;
+        font-size: 12px;
 }
 }'''
 
