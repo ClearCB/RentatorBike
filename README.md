@@ -13,7 +13,7 @@
 * [**Metodología de trabajo**](#metodología-de-trabajo)
 * [**Conclusión**](#conclusión)
 
-## INTRODUCCION
+## INTRODUCCIÓN
 
 ---
 
@@ -192,4 +192,4 @@ Como principal defecto a nuestro proyecto, consideramos que está demasiado arra
 
 Como ya nombramos antes, hemos tenido varios problemas para implementar correctamente el funcionamiento de git y gitflow, ya que tuvimos que ir aprendiendo a base de errores.
 
-También, por nuestra falta de conocimientos y experiencia, hemos tenido que ir lidiando con errores constantes y teniendo que corregir nuestro própios errores que nos han hecho ir perdiendo timepo útil que podríamos haber invertido en otras cosas.
+También, por nuestra falta de conocimientos y experiencia, hemos tenido que ir lidiando con errores constantes y teniendo que corregir nuestro própios errores que nos han hecho ir perdiendo tiempo útil que podríamos haber invertido en otras cosas.
