@@ -23,7 +23,7 @@ def ejecucionOperacion(operacion):
     if int(operacion) == 0:
 
         mensajeElegido(opciones[0])
-        print("Continuando con la generación de páginas estáticas sin ninguna modificación en la base de datos")
+        print("Continuando con la generación de páginas estáticas")
 
     elif int(operacion) == 1:
 
