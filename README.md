@@ -2,7 +2,7 @@
 
 ## Contenido del Proyecto R.B
 
-* [**Introducción**](#introduccion)
+* [**Introducción**](#introducción)
 * [**Requisitos**](#requisitos)
 * [**Funcionamiento**](#funcionamiento)
 * [**Tecnologías**](#tecnologías)
