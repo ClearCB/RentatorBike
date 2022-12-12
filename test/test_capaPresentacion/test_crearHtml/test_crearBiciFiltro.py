@@ -67,27 +67,6 @@ def test_crearBodyBiciMarca():
                 <h4 class="filtrotitulo" id="cube"> Cube </h4>
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicissolitariaPA0101.html"><img src="http://imgfz.com/i/CiZJnhA.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
-                    </div>
-                    <div class="contenedor_info">
-                        <div class="infoBike">
-                            <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: x</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
-                            </ul>
-                        </div>
-                        <div class="ubicationShow">
-                            <p>Se ubica en bibike</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="img">
                         <a href="./bicissolitarias/bicissolitariaMA0201.html"><img src="http://imgfz.com/i/A4W1wGp.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
                     </div>
                     <div class="contenedor_info">
@@ -188,6 +167,27 @@ def test_crearBodyBiciMarca():
                         </div>
                         <div class="ubicationShow">
                             <p>Se ubica en rentalride</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0101.html"><img src="http://imgfz.com/i/CiZJnhA.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: x</li> 
+                                <li>Tamaño de ruedas: 29</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bibike</p>
                         </div>
                     </div>
                 </div>
@@ -1231,27 +1231,6 @@ def test_crearBodyBiciCaract():
                 <h5 class="filtrocaract"> Talla 29'</h5> 
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicissolitariaPA0101.html"><img src="http://imgfz.com/i/CiZJnhA.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
-                    </div>
-                    <div class="contenedor_info">
-                        <div class="infoBike">
-                            <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: x</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
-                            </ul>
-                        </div>
-                        <div class="ubicationShow">
-                            <p>Se ubica en bibike</p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="container">
-                    <div class="img">
                         <a href="./bicissolitarias/bicissolitariaPA0202.html"><img src="http://imgfz.com/i/yxr1LVT.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
                     </div>
                     <div class="contenedor_info">
@@ -1310,6 +1289,27 @@ def test_crearBodyBiciCaract():
                         </div>
                         <div class="ubicationShow">
                             <p>Se ubica en rentalride</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0101.html"><img src="http://imgfz.com/i/CiZJnhA.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: x</li> 
+                                <li>Tamaño de ruedas: 29</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bibike</p>
                         </div>
                     </div>
                 </div>
@@ -1820,27 +1820,6 @@ def test_crearBodyBiciCateg():
                 <h4 class="filtrotitulo" id="ciudad"> Bici de ciudad</h4> 
                 <div class="container">
                     <div class="img">
-                        <a href="./bicissolitarias/bicissolitariaPA0101.html"><img src="http://imgfz.com/i/CiZJnhA.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
-                    </div>
-                    <div class="contenedor_info">
-                        <div class="infoBike">
-                            <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: x</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
-                            </ul>
-                        </div>
-                        <div class="ubicationShow">
-                            <p>Se ubica en bibike</p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="container">
-                    <div class="img">
                         <a href="./bicissolitarias/bicissolitariaMA0201.html"><img src="http://imgfz.com/i/A4W1wGp.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
                     </div>
                     <div class="contenedor_info">
@@ -1899,6 +1878,27 @@ def test_crearBodyBiciCateg():
                         </div>
                         <div class="ubicationShow">
                             <p>Se ubica en rentingmanakia</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0101.html"><img src="http://imgfz.com/i/CiZJnhA.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li>Estado: up</li> 
+                                <li>Marca: cube</li> 
+                                <li>Groupset: kask</li> 
+                                <li>Talla: x</li> 
+                                <li>Tamaño de ruedas: 29</li> 
+                                <li>Precio por dia: 15</li> 
+                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bibike</p>
                         </div>
                     </div>
                 </div>
