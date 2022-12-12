@@ -13,14 +13,13 @@ footer {
 }
 .copyright_footer a{
   text-decoration: none;
-  color: white;
+  color:white;
 }
 .soporte_links ul {
   padding-left: 0px;
 }
 .soporte_links ul, li{
   list-style: none;
-  color:white;
 }
 .soporte_links a{
   text-decoration: none;
