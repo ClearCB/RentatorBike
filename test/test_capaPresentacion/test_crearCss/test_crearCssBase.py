@@ -22,6 +22,7 @@ footer {
 }
 .copyright_footer a{
   text-decoration: none;
+  color:white;
 }
 .soporte_links ul {
   padding-left: 0px;
@@ -31,6 +32,7 @@ footer {
 }
 .soporte_links a{
   text-decoration: none;
+  color:white;
 }
 
 /* Inicio de media-queries para dispositivo "Samsung Galaxy S8+" en modo vertical:  píxeles 360x740 */
@@ -237,7 +239,7 @@ def test_crearBaseCss():
     baseCss = '''
 body {
      margin: 0;
-     background-color:rgb(255, 255, 255);
+     background-color:rgb(225, 251, 244);
 }
 #search {
     border: 2px solid;
