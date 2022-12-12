@@ -42,7 +42,7 @@ def rellenarDocumentosCrear(cantidad):
         "state": estado,
         "type": tipo,
         "techinfo": { "groupset": groupset, "size": tamaño, "wheels": ruedas, "brand": marca },
-        "complements": [complementos],
+        "complements": complementos,
         "prize_euros_days": precio,
         "where": { "_idrental": ubicacion },
         "img": imagen
