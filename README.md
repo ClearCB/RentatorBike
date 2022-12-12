@@ -188,10 +188,10 @@ A pesar de todos los obstáculos mientras desarrollábamos esta aplicación, con
 
 ### **Mejoras**
 
-Como principal defecto a nuestro proyecto, consideramos que está demasiado arraigado a nuestra base de datos, todo esta muy encasillado a un esquema en concreto y nos habría gustado implementar un generador más general con el cual poder adaptarlo a cualquier base de datos, sin embargo, por la falta de tiempo no hemos podido desarrollarlo de esta manera. Además, nos habría gustado implementar typer, y otras librerías que habrían hecho de nuestra aplicación un poco más agradable.
+Como principal defecto a nuestro proyecto, consideramos que está arraigado a nuestra base de datos, todo esta muy encasillado a un esquema en concreto, nos habría gustado implementar un generador más general que fuese adaptable a cualquier base de datos. Sin embargo, por falta de tiempo el programa esta desarrollado de la manera aplicada. Además, nos habría gustado implementar typer, y otras librerías que habrían hecho de nuestra aplicación un poco más agradable.
 
 ### **Dificultades**
 
-Como ya nombramos antes, hemos tenido varios problemas para implementar correctamente el funcionamiento de git y gitflow, ya que tuvimos que ir aprendiendo a base de errores.
+A raiz del crecimiento del programa, hemos tenido varios problemas para implementar correctamente el funcionamiento de Git y Gitflow, ya que tuvimos que ir aprendiendo a base de prueba y error.
 
-También, por nuestra falta de conocimientos y experiencia, hemos tenido que ir lidiando con errores constantes y teniendo que corregir nuestro própios errores que nos han hecho ir perdiendo tiempo útil que podríamos haber invertido en otras cosas.
+Por nuestra falta de conocimientos y experiencia, hemos tenido que ir lidiando con errores constantes y a su vez corregir nuestro própios errores que nos han hecho ir perdiendo tiempo útil que podríamos haber invertido en otras cosas.
