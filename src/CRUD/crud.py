@@ -20,6 +20,8 @@ def bienvenidaCRUD():
 # Esta funcionalidad comprueba que operacion realizara el programa
 def ejecucionOperacion(operacion):
 
+    mensajeOpcion()
+    
     if int(operacion) == 0:
 
         mensajeElegido(opciones[0])
