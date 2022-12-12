@@ -32,13 +32,13 @@ def esFiltro(bici,marcaBici):
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: {estado}</li> 
-                                <li>Marca: {marca}</li> 
-                                <li>Groupset: {groupset}</li> 
-                                <li>Talla: {talla}</li> 
-                                <li>Tamaño de ruedas: {ruedas}</li> 
-                                <li>Precio por dia: {precio}</li> 
-                                <li>Complementos disponibles: {strComplementos}</li> 
+                                <li><b>Estado</b>: {estado}</li> 
+                                <li><b>Marca</b>: {marca}</li> 
+                                <li><b>Groupset</b>: {groupset}</li> 
+                                <li><b>Talla</b>: {talla}</li> 
+                                <li><b>Tamaño de ruedas</b>: {ruedas}</li> 
+                                <li><b>Precio por dia</b>: {precio}</li> 
+                                <li><b>Complementos disponibles</b>: {strComplementos}</li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">

@@ -39,13 +39,13 @@ def test_esFiltro():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: x</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: x</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -72,13 +72,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -93,13 +93,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -114,13 +114,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -135,13 +135,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kona</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kona</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -156,13 +156,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kona</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kona</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -177,13 +177,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: x</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: x</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -199,13 +199,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: s</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: s</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -220,13 +220,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -241,13 +241,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -262,13 +262,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -283,13 +283,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -304,13 +304,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -326,13 +326,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -347,13 +347,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -368,13 +368,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -389,13 +389,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -410,13 +410,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -431,13 +431,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -453,13 +453,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cannondale</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: </li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cannondale</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: </li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -474,13 +474,13 @@ def test_crearBodyBiciMarca():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cannondale</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cannondale</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -514,13 +514,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -535,13 +535,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -556,13 +556,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kona</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kona</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -578,13 +578,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: s</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: s</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -600,13 +600,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -621,13 +621,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -642,13 +642,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -663,13 +663,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -684,13 +684,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cannondale</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cannondale</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -706,13 +706,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -727,13 +727,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -748,13 +748,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -769,13 +769,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -790,13 +790,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -811,13 +811,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kona</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kona</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -833,13 +833,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -854,13 +854,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -875,13 +875,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -898,13 +898,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: s</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: s</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -919,13 +919,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -940,13 +940,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -961,13 +961,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -982,13 +982,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1003,13 +1003,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1024,13 +1024,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1045,13 +1045,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cannondale</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: </li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cannondale</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: </li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1066,13 +1066,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1087,13 +1087,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kona</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kona</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1108,13 +1108,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1130,13 +1130,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1151,13 +1151,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1172,13 +1172,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1193,13 +1193,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1214,13 +1214,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kona</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kona</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1236,13 +1236,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1257,13 +1257,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1278,13 +1278,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cannondale</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cannondale</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1299,13 +1299,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: x</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: x</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1323,13 +1323,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1344,13 +1344,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1365,13 +1365,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1386,13 +1386,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1407,13 +1407,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cannondale</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cannondale</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1429,13 +1429,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kona</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kona</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1450,13 +1450,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kona</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kona</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1472,13 +1472,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1493,13 +1493,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1514,13 +1514,13 @@ def test_crearBodyBiciCaract():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1548,13 +1548,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1569,13 +1569,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1590,13 +1590,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1611,13 +1611,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1633,13 +1633,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1654,13 +1654,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1675,13 +1675,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1696,13 +1696,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cannondale</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: </li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cannondale</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: </li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1717,13 +1717,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1739,13 +1739,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 14</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 14</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1760,13 +1760,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kona</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kona</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1782,13 +1782,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: giant</li> 
-                                <li>Groupset: giro</li> 
-                                <li>Talla: xs</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 17</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: giant</li> 
+                                <li><b>Groupset</b>: giro</li> 
+                                <li><b>Talla</b>: xs</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 17</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1803,13 +1803,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cannondale</li> 
-                                <li>Groupset: specialized</li> 
-                                <li>Talla: m</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cannondale</li> 
+                                <li><b>Groupset</b>: specialized</li> 
+                                <li><b>Talla</b>: m</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1825,13 +1825,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1846,13 +1846,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1867,13 +1867,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: orbea</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 27</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: orbea</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 27</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1888,13 +1888,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: x</li> 
-                                <li>Tamaño de ruedas: 29</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: x</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1910,13 +1910,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: s</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 15</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: s</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1931,13 +1931,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: down</li> 
-                                <li>Marca: specialized</li> 
-                                <li>Groupset: kask</li> 
-                                <li>Talla: xl</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 16</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: xl</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 16</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">
@@ -1952,13 +1952,13 @@ def test_crearBodyBiciCateg():
                     <div class="contenedor_info">
                         <div class="infoBike">
                             <ul> 
-                                <li>Estado: up</li> 
-                                <li>Marca: cube</li> 
-                                <li>Groupset: kona</li> 
-                                <li>Talla: l</li> 
-                                <li>Tamaño de ruedas: 26</li> 
-                                <li>Precio por dia: 18</li> 
-                                <li>Complementos disponibles: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kona</li> 
+                                <li><b>Talla</b>: l</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 18</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro sillita de bebe </li> 
                             </ul>
                         </div>
                         <div class="ubicationShow">

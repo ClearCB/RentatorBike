@@ -11,10 +11,10 @@ def crearBodyMarcas():
             <h3 class="titleBike">Marcas de bicicletas</h3>
             <hr>
             <div id="container">
-                <a href="bicispormarca.html#cube"><div class="box"> Cube</div></a>
-                <a href="bicispormarca.html#specialized"><div class="box"> Specialized</div></a>
-                <a href="bicispormarca.html#giant"><div class="box"> Giant</div></a>
-                <a href="bicispormarca.html#cannondale"><div class="box"> Cannondale</div></a>
+                <a href="bicispormarca.html#cube"><div class="box"> <img src="http://imgfz.com/i/hex2z4u.png" width="200" height="200" alt="logo cube"></div></a>
+                <a href="bicispormarca.html#specialized"><div class="box"><img src="http://imgfz.com/i/uDo52nq.png" width="200" height="200" alt="logo specialized"></div></a>
+                <a href="bicispormarca.html#giant"><div class="box"><img src="http://imgfz.com/i/PmJ14L8.png" width="200" height="200" alt="logo giant"></div></a>
+                <a href="bicispormarca.html#cannondale"><div class="box"><img src="http://imgfz.com/i/Cp5nJfo.jpeg" width="200" height="200" alt="logo cannondale"></div></a>
             </div>
         </section>'''
     
