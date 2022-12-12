@@ -33,7 +33,7 @@ def rellenarDocumentosCrear(cantidad):
         tamaño = input("Escribe el tamaño del marco: ")
         ruedas = input("Escribe el tamaño de las ruedas: ")
         marca = input("Escribe la marca: ")
-        complementos = input("Escribe los complementos con el siguiente formato (sillita de bebe','casco','bomba): ")
+        complementos = input("Escribe los complementos con el siguiente formato ['sillita','casco']: ")
         precio = input("Escribe el precio por día de la bicicleta: ")
         ubicacion = input("Escribe la ubicación de la bicicleta con el siguiente formato [MA01]: ")
         imagen = input("Escribe la direccion de la imagen: ")
@@ -42,7 +42,7 @@ def rellenarDocumentosCrear(cantidad):
         "state": estado,
         "type": tipo,
         "techinfo": { "groupset": groupset, "size": tamaño, "wheels": ruedas, "brand": marca },
-        "complements": ['"',complementos,'"'],
+        "complements": [complementos],
         "prize_euros_days": precio,
         "where": { "_idrental": ubicacion },
         "img": imagen
