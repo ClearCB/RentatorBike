@@ -62,6 +62,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 90%;
+    border: 3px solid black;
 }
 .contenedorinfo iframe{
     margin-top: 30px;
