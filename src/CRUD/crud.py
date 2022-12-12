@@ -15,13 +15,11 @@ opciones = {0:"Continuar con el programa",1:"Crear un documento",2:"Encontrar un
 def bienvenidaCRUD():
 
     mensajeBienvenida()
-    mensajeOpcion()
 
 # Esta funcionalidad comprueba que operacion realizara el programa
 def ejecucionOperacion(operacion):
 
-    mensajeOpcion()
-    
+
     if int(operacion) == 0:
 
         mensajeElegido(opciones[0])
@@ -68,6 +66,7 @@ def ejecucionOperacion(operacion):
 # Esta funcionalidad permite al usuario elegir una operación
 def elegirFunción():
 
+    mensajeOpcion()
     funcion = ejecucionOperacion(inputOperacion())
 
     if funcion == 0:
@@ -76,6 +75,7 @@ def elegirFunción():
     if funcion == 5:
         sys.exit()
 
+    mensajeOpcion()
     while ejecucionOperacion(inputOperacion()) != 0:
         mensajeOpcion()
 
