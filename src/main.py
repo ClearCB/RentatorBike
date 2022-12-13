@@ -44,8 +44,8 @@ def generarPáginasEstáticas(listaBicis,listaRentals):
     crearRentalsCss()
     crearBiciSolitariaHtml(listaBicis)
     crearBiciSolitariaCss()
-    guardarCambios()
-    actualizarGitHubPagina()
+    # guardarCambios()
+    # actualizarGitHubPagina()
 
 CRUD()
 datosMongo = respuestaText(respuestaMongo())

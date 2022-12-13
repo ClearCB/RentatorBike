@@ -75,9 +75,9 @@ def elegirFunción():
     if funcion == 5:
         sys.exit()
 
-    mensajeOpcion()
-    while ejecucionOperacion(inputOperacion()) != 0:
+    while funcion != 0:
         mensajeOpcion()
+        funcion = ejecucionOperacion(inputOperacion())
 
 # Esta es la función principal del CRUD
 def CRUD():
