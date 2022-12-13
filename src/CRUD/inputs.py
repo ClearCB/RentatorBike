@@ -1,3 +1,4 @@
+from src.CRUD.mensajes import mensajeOpcion
 import time
 # En este modulo vamos a implementar todos los inputs que vamos a necesitar
 # en el módulo crud y sus funcionalidades
@@ -5,6 +6,7 @@ import time
 # Esta funcion define la operacion que va a ejecutar el programa
 def inputOperacion():
 
+    mensajeOpcion()
     operacion = input("Escribe un número del 0 al 5: ")
     return operacion
 

@@ -1,4 +1,4 @@
-from src.CRUD.mensajes import separacion, mensajeBienvenida, mensajeOpcion, mensajeElegido, mensajeRellenarInfo
+from src.CRUD.mensajes import separacion, mensajeBienvenida, mensajeElegido, mensajeRellenarInfo
 from src.CRUD.inputs import inputOperacion, preguntarCantidad, rellenarDocumentosCrear, identificadorBici, elegirCambio, elegirCampo
 from src.CRUD.read import unoOVariosRead
 from src.CRUD.create import unoOVariosCreate
@@ -66,7 +66,6 @@ def ejecucionOperacion(operacion):
 # Esta funcionalidad permite al usuario elegir una operación
 def elegirFunción():
 
-    mensajeOpcion()
     funcion = ejecucionOperacion(inputOperacion())
 
     if funcion == 0:
@@ -76,7 +75,6 @@ def elegirFunción():
         sys.exit()
 
     while funcion != 0:
-        mensajeOpcion()
         funcion = ejecucionOperacion(inputOperacion())
 
 # Esta es la función principal del CRUD
