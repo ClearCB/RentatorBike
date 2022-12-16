@@ -1,4 +1,5 @@
-from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearFooter
+from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead
+from src.capaPresentacion.variables.variablesHtml import footer
 from src.capaNegocio.crearArchivos import crearArchivo
 
 # En este módulo vamos a crear funciones que van a crear un archivo "bicipormarca.html"
@@ -127,7 +128,7 @@ def biciMarcaHtml(listaBicis):
     biciMarca += crearHtmlHead("Bicis por marca", "Página donde aparecen todas las bicicletas filtradas por su marca", "bicicletas, marcas, specialized, cannondale, giant, cube, alquilar, rental, bike","../cssStyles/","bicisfiltro")
     biciMarca += crearHeader("../","")
     biciMarca += crearBodyBiciMarca(listaBicis)
-    biciMarca += crearFooter()
+    biciMarca += footer
 
     return biciMarca # Devolvemos la variable biciMarcas que contiene el código del archivo bicipormarca.html
 
