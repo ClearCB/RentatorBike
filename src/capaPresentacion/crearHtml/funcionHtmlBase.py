@@ -91,6 +91,8 @@ def crearCodigoHtml(head, header, body, footer):
 # Funcion que determina el html de una bici en solitario
 def biciSolitariaHtml(htmlBiciSolitaria, bici):
 
+    assert isinstance(bici,dict) == True
+    
     # Definimos las variables que queremos implementar en el html de la bici en solitario
     imagen = bici["img"]
     marca = bici["techinfo"]["brand"]
