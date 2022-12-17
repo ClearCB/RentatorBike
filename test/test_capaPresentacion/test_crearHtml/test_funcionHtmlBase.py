@@ -30,3 +30,7 @@ def test_crearContenedorRental():
 def test_crearCodigoHtml():
 
     assert crearCodigoHtml(headTestCambiado, headerTestCambiado, contenedorRentalTest, footerTest) == codigoHtmlTest
+
+
+
+

@@ -10,7 +10,7 @@ listaBicis = listarBicis(datosMongo)
 listaRentals = listarRentals(datosMongo)
 
 # Función que devuelve el valor del body del rentals.html
-def crearBodyRentals(listaRentals):
+def bodyRentals(listaRentals):
 
     # Definimos parte del body de rentals
     bodyRentals = '''
@@ -29,3 +29,7 @@ def crearBodyRentals(listaRentals):
         </section>'''
 
     return bodyRentals
+
+def crearBodyRentals():
+
+    return bodyRentals(listaRentals)
