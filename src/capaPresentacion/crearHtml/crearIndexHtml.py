@@ -1,6 +1,7 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader
 from src.capaPresentacion.variables.variablesHtml import bodyIndex, footer, head, header
 from src.capaNegocio.crearArchivos import crearArchivo
+import os
 
 # En este módulo vamos a crear funciones que van a crear un archivo "index.html"
 
