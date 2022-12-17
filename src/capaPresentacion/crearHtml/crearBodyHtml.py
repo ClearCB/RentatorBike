@@ -1,6 +1,7 @@
 from src.capaDatos.listarDatosMongo import listarBicis, listarRentals, respuestaText
 from src.capaDatos.peticionMongo import respuestaMongo
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearContenedorRental
+from src.capaPresentacion.crearHtml.crearBiciSolitariaHtml import crearBiciSolitariaHtml
 # En este modulo vamos a poner todos los "body" de las funciones que
 # creen un body
 

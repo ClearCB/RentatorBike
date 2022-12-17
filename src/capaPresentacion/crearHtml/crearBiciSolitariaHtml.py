@@ -15,8 +15,3 @@ def crearBiciSolitariaHtml(lista):
         id = bici["_idbike"]
         bicisolitaria = biciSolitariaHtml(htmlBiciSolitaria, bici) # Creamos un html con los datos de la bici en concreto
         crearArchivo(bicisolitaria,".\\docs\\second_pages\\bicissolitarias\\",f"bicissolitaria{id}","html")
-
-# Definimos la funcion que crea cada html en solitario de todas las bicis que llegan de la respuesta de mongoDB
-def todasBiciSolitariasHtml():
-
-    crearBiciSolitariaHtml(listaBicis)
