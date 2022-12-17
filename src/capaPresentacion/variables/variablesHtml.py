@@ -106,7 +106,7 @@ bodyIndex ='''
                 <video autoplay muted loop>
                     <source src="https://thumbs-eu-west-1.myalbum.io/video/1k0_h264/8f0ee98f-a7e7-4463-9bb3-2b27b648d0c1.mp4" type='video/mp4'>
                 </video>
-            </div> 
+            </div>
             <div class="contenedorinfo" id="rutasFamosas">
                 <article class="rutas">
                     <h3>Rutas mas famosas de mallorca</h3>
