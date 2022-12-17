@@ -1,5 +1,5 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearCodigoHtml
-from src.capaPresentacion.crearHtml.crearyBodyHtml import bodyRentalsHtml
+from src.capaPresentacion.crearHtml.crearBodyHtml import bodyRentalsHtml
 from src.variables.variablesHtml import footerBase, headBase, headerBase
 from src.capaNegocio.crearArchivos import crearArchivo
 

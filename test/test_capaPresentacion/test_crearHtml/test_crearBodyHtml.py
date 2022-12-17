@@ -1,4 +1,4 @@
-from src.capaPresentacion.crearHtml.crearyBodyHtml import crearBodyRentals
+from src.capaPresentacion.crearHtml.crearBodyHtml import crearBodyRentals
 from src.variables.variablesHtmlTest import listaRentalsTest, rentalBodyTest
 import pytest
 

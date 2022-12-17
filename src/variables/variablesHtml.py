@@ -98,7 +98,7 @@ headerBase ='''
 
 # -------crearIndexHtml-------
 
-# Variable que define el código html del body del index.html
+# Variable que define el código html del body de index.html
 bodyIndex ='''
         <hr>
         <section class="contenido">
@@ -117,5 +117,20 @@ bodyIndex ='''
             <div class="contenedorinfo">
                 <h3>Noticias mas recientes del mundo del ciclismo</h3>
                     <iframe src="https://www.esciclismo.com/actualidad/"></iframe>
+            </div>
+        </section>'''
+
+# -------crearMarcasHtml-------
+
+# Variable que define el código del body de marcas.html
+bodyMarcas ='''
+        <section>
+            <h3 class="titleBike">Marcas de bicicletas</h3>
+            <hr>
+            <div id="container">
+                <a href="bicispormarca.html#cube"><div class="box"> <img src="http://imgfz.com/i/hex2z4u.png" width="200" height="200" alt="logo cube"></div></a>
+                <a href="bicispormarca.html#specialized"><div class="box"><img src="http://imgfz.com/i/uDo52nq.png" width="200" height="200" alt="logo specialized"></div></a>
+                <a href="bicispormarca.html#giant"><div class="box"><img src="http://imgfz.com/i/PmJ14L8.png" width="200" height="200" alt="logo giant"></div></a>
+                <a href="bicispormarca.html#cannondale"><div class="box"><img src="http://imgfz.com/i/Cp5nJfo.jpeg" width="200" height="200" alt="logo cannondale"></div></a>
             </div>
         </section>'''

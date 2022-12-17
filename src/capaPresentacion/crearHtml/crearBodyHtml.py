@@ -29,8 +29,6 @@ def crearBodyRentals(lista):
 
     return bodyRentals
 
-
-
 # Devuelve la variable del codigo html del body de rentals.html
 def bodyRentalsHtml():
 
