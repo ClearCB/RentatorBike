@@ -1,5 +1,4 @@
-from src.capaDatos.listarDatosMongo import listarBicis, listarRentals, respuestaText
-from src.capaDatos.peticionMongo import respuestaMongo
+
 from src.capaNegocio.comandosGit import guardarCambios, actualizarGitHubPagina
 from src.capaNegocio.crearDirectorios import crearRutasDocs
 from src.capaPresentacion.crearHtml.crearBicisHtml import crearBicisHtml
@@ -22,34 +21,31 @@ from src.check.checkDatos import checkGeneralDatos
 from src.check.checkNegocio import checkDirectorios
 
 # Funcion principal
-def generarPáginasEstáticas(listaBicis,listaRentals):
+def generarPáginasEstáticas():
 
-    if checkGeneralDatos(respuestaMongo(),listaBicis,listaRentals) == False:
-        raise Exception("Los datos no son correctos, revisa el programa y vuelve a ejecutarlo para evitar problemas")
-    crearRutasDocs()
-    if checkDirectorios() == False:
-        raise Exception("Los directorios no existe, por favor, revisa los datos y vuelve a ejecutar el programa para evitar problemas.")
+    # if checkGeneralDatos(respuestaMongo()) == False:
+    #     raise Exception("Los datos no son correctos, revisa el programa y vuelve a ejecutarlo para evitar problemas")
+    # crearRutasDocs()
+    # if checkDirectorios() == False:
+    #     raise Exception("Los directorios no existe, por favor, revisa los datos y vuelve a ejecutar el programa para evitar problemas.")
     crearCssBase()
     crearIndexHtml()
     crearIndexCss()
     crearMarcasHtml()
     crearMarcasCss()
-    crearBicisHtml(listaBicis)
+    crearBicisHtml()
     crearBicisCss()
-    crearBiciCaracteristicaHtml(listaBicis)
-    crearBiciCategoriaHtml(listaBicis)
-    crearBiciMarcaHtml(listaBicis)
+    crearBiciCaracteristicaHtml()
+    crearBiciCategoriaHtml()
+    crearBiciMarcaHtml()
     crearBicisFiltroCss()
-    crearRentalsHtml(listaRentals)
+    crearRentalsHtml()
     crearRentalsCss()
-    crearBiciSolitariaHtml(listaBicis)
+    crearBiciSolitariaHtml()
     crearBiciSolitariaCss()
     guardarCambios()
     actualizarGitHubPagina()
 
 CRUD()
-datosMongo = respuestaText(respuestaMongo())
-listaBicis = listarBicis(datosMongo)
-listaRentals = listarRentals(datosMongo)
-generarPáginasEstáticas(listaBicis,listaRentals)
+generarPáginasEstáticas()
 

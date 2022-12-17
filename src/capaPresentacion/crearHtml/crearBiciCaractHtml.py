@@ -1,5 +1,5 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead
-from src.capaPresentacion.variables.variablesHtml import footer
+from src.capaPresentacion.variables.variablesHtml import footerBase
 from src.capaNegocio.crearArchivos import crearArchivo
 
 # En este módulo vamos a crear funciones que van a crear un archivo "bicicaracteristica.html"
@@ -239,7 +239,7 @@ def biciCaracteristicaHtml(listaBicis):
     biciCaracteristica += crearHtmlHead("Bicicletas por caracteristica", "Página donde aparecen las bicicletas filtradas por sus caracteristica", "bicicletas, cuadro, talla, ruedas, tamaño, groupset","../cssStyles/","bicisfiltro")
     biciCaracteristica += crearHeader("../","")
     biciCaracteristica += crearBodyBiciCaracteristica(listaBicis)
-    biciCaracteristica += footer
+    biciCaracteristica += footerBase
 
     return biciCaracteristica # Devolvemos la variable biciCaracteristica que contiene el código del archivo bicicaracteristica.html
 
