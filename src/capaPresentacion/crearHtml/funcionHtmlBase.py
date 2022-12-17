@@ -1,6 +1,3 @@
-# En este modulo vamos a definir todas las funcionalidades que van a definir y 
-# estan relacionadas con la estructura común de nuestros html: "head", "header", "footer" y "nav"
-# que serán llamadas desde otro modulo para printar el contenido en un archivo ".html"
 
 # Esta función a raiz de una serie de parámetros, va a devolver la variable head que contiene el código html de la parte head.
 def crearHtmlHead(head, titulo, descripcion, keywords, cssPath, cssLink):
@@ -91,3 +88,34 @@ def crearCodigoHtml(head, header, body, footer):
 
     return codigoHtml # Devolvemos la variable que contiene el código del archivo .html
 
+# Funcion que determina el html de una bici en solitario
+def biciSolitariaHtml(htmlBiciSolitaria, bici):
+
+    # Definimos las variables que queremos implementar en el html de la bici en solitario
+    imagen = bici["img"]
+    marca = bici["techinfo"]["brand"]
+    tipo = bici["type"]
+    id = bici["_idbike"]
+    estado = bici["state"]
+    groupset = bici["techinfo"]["groupset"]
+    rueda = bici["techinfo"]["wheels"]
+    cuadro = bici["techinfo"]["size"]
+    complementos = ""
+    for complemento in bici["complements"]:
+        complementos += complemento+"  "
+    precio = bici["prize_euros_days"]
+    ubicacion = bici["where"][0]["company_name"]
+
+    htmlBiciSolitaria = htmlBiciSolitaria.replace("-imagen-",imagen)
+    htmlBiciSolitaria = htmlBiciSolitaria.replace("-marca-",marca)
+    htmlBiciSolitaria = htmlBiciSolitaria.replace("-tipo-",tipo)
+    htmlBiciSolitaria = htmlBiciSolitaria.replace("-id-",id)
+    htmlBiciSolitaria = htmlBiciSolitaria.replace("-estado-",estado)
+    htmlBiciSolitaria = htmlBiciSolitaria.replace("-groupset-",groupset)
+    htmlBiciSolitaria = htmlBiciSolitaria.replace("-rueda-",rueda)
+    htmlBiciSolitaria = htmlBiciSolitaria.replace("-cuadro-",cuadro)
+    htmlBiciSolitaria = htmlBiciSolitaria.replace("-complementos-",complementos)
+    htmlBiciSolitaria = htmlBiciSolitaria.replace("-ubicacion-",ubicacion)
+    htmlBiciSolitaria = htmlBiciSolitaria.replace("-precio-",precio)
+
+    return htmlBiciSolitaria

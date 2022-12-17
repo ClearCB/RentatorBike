@@ -1,5 +1,6 @@
-from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader, crearContenedorRental, crearCodigoHtml
-from src.variables.variablesHtmlTest import headTest, headTestCambiado, headerTest, headerTestCambiado, rentalsTest, contenedorRentalTest, footerTest, codigoHtmlTest
+from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader, crearContenedorRental, crearCodigoHtml, biciSolitariaHtml
+from src.variables.variablesHtmlTest import headTest, headTestCambiado, headerTest, headerTestCambiado, rentalsTest, contenedorRentalTest, footerTest, codigoHtmlTest,  htmlBiciSolitaria, biciTest
+from src.variables.variablesHtmlTest import htmlBiciSolitariaCambiado
 import pytest
 
 # Vamos a realizar los test de las funcionalidades del modulo htmlBase para comprobar
@@ -31,6 +32,10 @@ def test_crearCodigoHtml():
 
     assert crearCodigoHtml(headTestCambiado, headerTestCambiado, contenedorRentalTest, footerTest) == codigoHtmlTest
 
+# Comprobamos que la funcion biciSolitaria susitituye correctamente los valores deseados en la plantilla de bici solitaria html
+@pytest.mark.test_biciSolitariaHtml
+def test_biciSolitariaHtml():
 
+    assert biciSolitariaHtml(htmlBiciSolitaria, biciTest) == htmlBiciSolitariaCambiado
 
 
