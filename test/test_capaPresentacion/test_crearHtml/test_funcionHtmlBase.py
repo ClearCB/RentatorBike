@@ -1,6 +1,6 @@
-from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader, crearContenedorRental, crearCodigoHtml, biciSolitariaHtml, crearContenedorBici
+from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader, crearContenedorRental, crearCodigoHtml, biciSolitariaHtml, crearContenedorBici, esFiltro
 from src.variables.variablesHtmlTest import headTest, headTestCambiado, headerTest, headerTestCambiado, rentalsTest, contenedorRentalTest, footerTest, codigoHtmlTest,  htmlBiciSolitaria, biciTest
-from src.variables.variablesHtmlTest import htmlBiciSolitariaCambiado, biciTest, contenedorBici
+from src.variables.variablesHtmlTest import htmlBiciSolitariaCambiado, biciTest, contenedorBici, biciFiltrada
 import pytest
 
 # Vamos a realizar los test de las funcionalidades del modulo htmlBase para comprobar
@@ -43,3 +43,13 @@ def test_biciSolitariaHtml():
 def test_contenedorBici():
 
     assert crearContenedorBici(biciTest) == contenedorBici
+
+# Comprueba que la función ejecuta correctamente el filtro e inserta las bicis correspondientes.
+@pytest.mark.test_esFiltro
+def test_esFiltro():
+
+    assert esFiltro(biciTest,"marca","cube") == biciFiltrada
+    assert esFiltro(biciTest,"caracteristicaRueda","29") == biciFiltrada
+    assert esFiltro(biciTest,"caracteristicaMarco","x") == biciFiltrada
+    assert esFiltro(biciTest,"caracteristicaGroup","kask") == biciFiltrada
+    assert esFiltro(biciTest,"categoria","bici de ciudad") == biciFiltrada

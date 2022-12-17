@@ -125,6 +125,7 @@ def biciSolitariaHtml(htmlBiciSolitaria, bici):
 # Funcion que crea el contenedor del codigo html de una bicicleta
 def crearContenedorBici(bici):
 
+
     # Definimos las variables que vamos a implementar
     tipo = bici["type"]
     estado = bici["state"]
@@ -165,3 +166,74 @@ def crearContenedorBici(bici):
                 </div>
             </div>'''
     return biciBodyHtml
+
+# Definimos una función que nos comprueba si la bici cumple la condicion para ser añadida en el body o no.
+def esFiltro(bici,campoBici, campoObjetivo):
+
+    filtroCaractRueda = bici["techinfo"]["wheels"]
+    filtroCaractGroup = bici["techinfo"]["groupset"]
+    filtroCaractMarco = bici["techinfo"]["size"]
+    filtroCateg = bici["type"]
+    filtroMarca = bici["techinfo"]["brand"]
+
+    if campoBici == "marca":
+        filtro = filtroMarca
+
+    elif campoBici == "categoria":
+        filtro = filtroCateg
+
+    elif campoBici == "caracteristicaRueda":
+        filtro = filtroCaractRueda
+
+    elif campoBici == "caracteristicaMarco":
+        filtro = filtroCaractMarco
+
+    elif campoBici == "caracteristicaGroup":
+        filtro = filtroCaractGroup
+
+
+    # Comprobamos que la bici cumple la condicion
+    if campoObjetivo == filtro:
+
+        tipo = bici["type"]
+        estado = bici["state"]
+        groupset = bici["techinfo"]["groupset"]
+        talla = bici["techinfo"]["size"]
+        ruedas = bici["techinfo"]["wheels"]
+        precio = bici["prize_euros_days"]
+        complementos = bici["complements"]
+        imagenBici = bici["img"]
+        marca = bici["techinfo"]["brand"]
+        strComplementos = ""
+        for complemento in complementos:
+            strComplementos += (complemento+" ")
+        rental = bici["where"][0]["company_name"]
+
+        # Generamos la nueva bici que va a ser añadida al body
+        nuevaBici = f'''
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitaria{bici["_idbike"]}.html"><img src="{imagenBici}" alt="bicicleta de la marca {marca} y tipo {tipo}"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li><b>Estado</b>: {estado}</li> 
+                                <li><b>Marca</b>: {marca}</li> 
+                                <li><b>Groupset</b>: {groupset}</li> 
+                                <li><b>Talla</b>: {talla}</li> 
+                                <li><b>Tamaño de ruedas</b>: {ruedas}</li> 
+                                <li><b>Precio por dia</b>: {precio}</li> 
+                                <li><b>Complementos disponibles</b>: {strComplementos}</li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en {rental}</p>
+                        </div>
+                    </div>
+                </div>'''
+
+        return nuevaBici
+
+    else: # En el caso de que no cumpla la condición no ocurrirá nada.
+        pass

@@ -616,6 +616,31 @@ contenedorBici='''
                 </div>
             </div>'''
 
+# Variable biciFiltrada
+biciFiltrada ='''
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0101.html"><img src="http://imgfz.com/i/CiZJnhA.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li><b>Estado</b>: up</li> 
+                                <li><b>Marca</b>: cube</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: x</li> 
+                                <li><b>Tamaño de ruedas</b>: 29</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bibike</p>
+                        </div>
+                    </div>
+                </div>'''
+
+
 # -------crearBodyHtml-------
 
 # Lista rentals para el test de crear Rentalshtml
@@ -725,7 +750,6 @@ bicisBodyTest='''
             </div>
             </div>
         </section>'''
-
 
 
 # --------crearBiciSolitaria-------
