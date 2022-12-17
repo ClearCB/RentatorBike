@@ -1,5 +1,5 @@
-from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader, crearContenedorRental
-from src.capaPresentacion.variables.variablesHtmlTest import headTest, headTestCambiado, headerTest, headerTestCambiado, listaRentalsTest, contenedorRentalTest
+from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader, crearContenedorRental, crearCodigoHtml
+from src.capaPresentacion.variables.variablesHtmlTest import headTest, headTestCambiado, headerTest, headerTestCambiado, listaRentalsTest, contenedorRentalTest, footerTest, codigoHtmlTest
 import pytest
 
 # Vamos a realizar los test de las funcionalidades del modulo htmlBase para comprobar
@@ -24,3 +24,9 @@ def test_crearHeader():
 def test_crearContenedorRental():
 
     assert crearContenedorRental(listaRentalsTest) == contenedorRentalTest
+
+# Comprobamos que la función crea correctamente el codigo html esperado
+@pytest.mark.test_crearCodigoHtml
+def test_crearCodigoHtml():
+
+    assert crearCodigoHtml(headTestCambiado, headerTestCambiado, contenedorRentalTest, footerTest) == codigoHtmlTest

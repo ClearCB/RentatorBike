@@ -1,7 +1,9 @@
-# En este modulo vamos a localizar todas las variables con código Htmlç
+# En este modulo vamos a localizar todas las variables con código Html que vamos a utilizar
 
-# Variable que define el código html del footer
-footer ='''
+# -------funcionHtmlBase-------
+
+# Variable que define el código html del footer base
+footerBase ='''
         <footer id="footer">
             <div class="soporte_links">
                 <ul>
@@ -14,12 +16,10 @@ footer ='''
                 </ul>
             </div>
             <div class="copyright_footer">
-                
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
                     <div class="footer__license__description">
                         <p>Este obra está bajo una licencia de Creative Commons Reconocimiento-Compartir. Igual 4.0 Internacional.</p>
                     </div>
-
                     <div class="footer__license__img">
                         <img class="copyright_img" alt="Licencia de Creative Commons" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png">
                     </div>
@@ -29,30 +29,8 @@ footer ='''
     </body>
 </html>'''
 
-bodyIndex ='''
-        <hr>
-        <section class="contenido">
-            <div class="video_background">
-                <video autoplay muted loop>
-                    <source src="https://thumbs-eu-west-1.myalbum.io/video/1k0_h264/8f0ee98f-a7e7-4463-9bb3-2b27b648d0c1.mp4" type='video/mp4'>
-                </video>
-            </div> 
-            <div class="contenedorinfo" id="rutasFamosas">
-                <article class="rutas">
-                    <h3>Rutas mas famosas de mallorca</h3>
-                    <p> Mallorca es una lugar con unos paisajes increibles, ultimamente el ciclismo se está convirtiendo en una de las formas más agradables de visitar nuestra hermosa isla. Si quieres conocer más sobre nuestro pequeño hogar, te recomendamos que visites esta página donde aparecen rutas para bicicletas y que puedas pasar un dia estupendo. ¡Estamos ansiosos por conocerte!</p>
-                    
-                        <div class="linkpagina"><a href="https://mallorca-touristguide.com/las-mejores-rutas-ciclistas-de-mallorca">Ir a la pagina</a></div>
-                    
-                </article>
-            </div>
-            <div class="contenedorinfo">
-                <h3>Noticias mas recientes del mundo del ciclismo</h3>
-                    <iframe src="https://www.esciclismo.com/actualidad/"></iframe>
-            </div>
-        </section>'''
-
-head = '''
+# Variable que define el código html del head base
+headBase = '''
 <!DOCTYPE html>
 <!-- Hemos añadido el atributo lang en la etiqueta html en lugar de hacerlo en meta porque el validador nos daba problemas -->
 <html lang="es" dir="ltr">
@@ -75,7 +53,8 @@ head = '''
         <link rel="stylesheet" type="text/css" href="-csspath--csslink-.css">
     </head>'''
 
-header ='''
+# Variable que define el código html del header base
+headerBase ='''
     <body>
         <header>
             <div class="header">
@@ -115,3 +94,28 @@ header ='''
         <div  class="volverArriba">
             <a href="#nav" target="_self"><img class="flechaSubir" alt="flecha_arriba" src="http://imgfz.com/i/63T0IuS.png"></a>
         </div>'''
+
+
+# -------crearIndexHtml-------
+
+# Variable que define el código html del body del index.html
+bodyIndex ='''
+        <hr>
+        <section class="contenido">
+            <div class="video_background">
+                <video autoplay muted loop>
+                    <source src="https://thumbs-eu-west-1.myalbum.io/video/1k0_h264/8f0ee98f-a7e7-4463-9bb3-2b27b648d0c1.mp4" type='video/mp4'>
+                </video>
+            </div> 
+            <div class="contenedorinfo" id="rutasFamosas">
+                <article class="rutas">
+                    <h3>Rutas mas famosas de mallorca</h3>
+                    <p> Mallorca es una lugar con unos paisajes increibles, ultimamente el ciclismo se está convirtiendo en una de las formas más agradables de visitar nuestra hermosa isla. Si quieres conocer más sobre nuestro pequeño hogar, te recomendamos que visites esta página donde aparecen rutas para bicicletas y que puedas pasar un dia estupendo. ¡Estamos ansiosos por conocerte!</p>
+                        <div class="linkpagina"><a href="https://mallorca-touristguide.com/las-mejores-rutas-ciclistas-de-mallorca">Ir a la pagina</a></div>
+                </article>
+            </div>
+            <div class="contenedorinfo">
+                <h3>Noticias mas recientes del mundo del ciclismo</h3>
+                    <iframe src="https://www.esciclismo.com/actualidad/"></iframe>
+            </div>
+        </section>'''

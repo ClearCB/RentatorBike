@@ -21,7 +21,7 @@ def crearHeader(header, indexPath, path):
 
     return header
 
-# Esta funcion se encargará de crear los contenedores de información de una lista de "rentals"
+# Esta funcion se encargará de crear el contenedor de información de un "rental"
 def crearContenedorRental(rental):
 
     nombreRental = rental["company_name"]
@@ -77,3 +77,11 @@ def crearContenedorRental(rental):
             </div>'''
 
     return bodyRental
+
+# Esta función nos creará el código html de los archivos .html, le pasamos parámetros de las partes del codigo
+def crearCodigoHtml(head, header, body, footer):
+
+    # Unimos las partes
+    codigoHtml = head+header+body+footer
+
+    return codigoHtml # Devolvemos la variable que contiene el código del archivo .html

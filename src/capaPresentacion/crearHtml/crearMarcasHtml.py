@@ -1,5 +1,5 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead
-from src.capaPresentacion.variables.variablesHtml import footer
+from src.capaPresentacion.variables.variablesHtml import footerBase
 from src.capaNegocio.crearArchivos import crearArchivo
 
 # En este módulo vamos a crear funciones que van a crear un archivo "marcas.html"
@@ -30,7 +30,7 @@ def marcasHtml():
     marcas += crearHtmlHead("Marcas disponibles", "Página donde aparecen un link a todas las marcas disponibles", "cube, specialized, giant, cannondale, marca, brand, alquilar, rental, bike","../cssStyles/","marcas")
     marcas += crearHeader("../","")
     marcas += crearBodyMarcas()
-    marcas += footer
+    marcas += footerBase
 
     return marcas # Devolvemos la variable marcas que contiene el código del archivo marcas.html
 
