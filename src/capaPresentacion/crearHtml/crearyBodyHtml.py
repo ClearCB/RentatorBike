@@ -1,16 +1,15 @@
-from src.capaPresentacion.crearHtml.funcionHtmlBase import crearContenedorRental
 from src.capaDatos.listarDatosMongo import listarBicis, listarRentals, respuestaText
 from src.capaDatos.peticionMongo import respuestaMongo
+from src.capaPresentacion.crearHtml.funcionHtmlBase import crearContenedorRental
 # En este modulo vamos a poner todos los "body" de las funciones que
 # creen un body
 
+respuesta = respuestaText(respuestaMongo()) 
+listaBicis = listarBicis(respuesta)
+listaRentals = listarRentals(respuesta)
 
-datosMongo = respuestaText(respuestaMongo())
-listaBicis = listarBicis(datosMongo)
-listaRentals = listarRentals(datosMongo)
-
-# Función que devuelve el valor del body del rentals.html
-def bodyRentals(listaRentals):
+# Función que construye el body del rentals.html
+def crearBodyRentals(lista):
 
     # Definimos parte del body de rentals
     bodyRentals = '''
@@ -20,7 +19,7 @@ def bodyRentals(listaRentals):
             <div id="contenedorPadre">'''
 
     # Recorremos la lista de los rentals para determinar los valores que queremos en el contenedor
-    for rental in listaRentals:
+    for rental in lista:
 
         bodyRentals+=crearContenedorRental(rental)
 
@@ -30,6 +29,9 @@ def bodyRentals(listaRentals):
 
     return bodyRentals
 
-def crearBodyRentals():
 
-    return bodyRentals(listaRentals)
+
+# Devuelve la variable del codigo html del body de rentals.html
+def bodyRentalsHtml():
+
+    return crearBodyRentals(listaRentals)

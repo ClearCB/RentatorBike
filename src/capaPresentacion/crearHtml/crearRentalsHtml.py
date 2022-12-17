@@ -1,6 +1,6 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHeader, crearHtmlHead, crearCodigoHtml
-from src.capaPresentacion.crearHtml.crearyBodyHtml import crearBodyRentals
-from src.capaPresentacion.variables.variablesHtml import footerBase, headBase, headerBase
+from src.capaPresentacion.crearHtml.crearyBodyHtml import bodyRentalsHtml
+from src.variables.variablesHtml import footerBase, headBase, headerBase
 from src.capaNegocio.crearArchivos import crearArchivo
 
 # En este módulo vamos a crear funciones que van a crear un archivo "rentals.html" con el contenido html correcto
@@ -14,6 +14,4 @@ headerRentals = crearHeader(headerBase, "../","")
 # Definimos una función que ejecuta la función necesaria para crear el archivo correctamente.
 def crearRentalsHtml():
 
-    crearArchivo(crearCodigoHtml(headRentals,headerRentals,crearBodyRentals(),footerBase),".\\docs\\second_pages","rentals","html")
-
-crearRentalsHtml()
+    crearArchivo(crearCodigoHtml(headRentals,headerRentals,bodyRentalsHtml(),footerBase),".\\docs\\second_pages","rentals","html")
