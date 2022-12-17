@@ -53,3 +53,4 @@ def test_esFiltro():
     assert esFiltro(biciTest,"caracteristicaMarco","x") == biciFiltrada
     assert esFiltro(biciTest,"caracteristicaGroup","kask") == biciFiltrada
     assert esFiltro(biciTest,"categoria","bici de ciudad") == biciFiltrada
+    assert esFiltro(biciTest,"categoria","hello") == None
