@@ -591,6 +591,31 @@ biciTest =  {
     "img": 'http://imgfz.com/i/CiZJnhA.jpeg'
   }
 
+# contenedorBici
+contenedorBici='''
+            <div class="container">
+                <div class="img">
+                    <a href="./bicissolitarias/bicissolitariaPA0101.html"><img src="http://imgfz.com/i/CiZJnhA.jpeg" alt="bicicleta de la marca cube y tipo bici de ciudad"></a>
+                </div>
+                <div class="contenedor_info">
+                    <h5>bici de ciudad</h5>
+                    <div class="infoBike">
+                        <ul> 
+                            <li><b>Estado</b>: up</li> 
+                            <li><b>Marca</b>: cube</li> 
+                            <li><b>Groupset</b>: kask</li> 
+                            <li><b>Talla</b>: x</li> 
+                            <li><b>Tamaño de ruedas</b>: 29</li> 
+                            <li><b>Precio por dia</b>: 15</li> 
+                            <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
+                        </ul>
+                    </div>
+                    <div class="ubicationShow">
+                        <p>Se ubica en bibike</p>
+                    </div>
+                </div>
+            </div>'''
+
 # -------crearBodyHtml-------
 
 # Lista rentals para el test de crear Rentalshtml
@@ -647,6 +672,61 @@ rentalBodyTest='''
             </div>
             </div>
         </section>'''
+
+# Ejemplo de body bicis.html test
+bicisBodyTest='''
+        <h3 class="titleBicis"> Bicis disponibles </h3>
+        <hr>
+        <section>
+            <div id="contenedorPadre">
+            <div class="container">
+                <div class="img">
+                    <a href="./bicissolitarias/bicissolitariaPA0102.html"><img src="http://imgfz.com/i/YaJj6u9.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
+                </div>
+                <div class="contenedor_info">
+                    <h5>bici de ciudad electrica</h5>
+                    <div class="infoBike">
+                        <ul> 
+                            <li><b>Estado</b>: down</li> 
+                            <li><b>Marca</b>: specialized</li> 
+                            <li><b>Groupset</b>: kask</li> 
+                            <li><b>Talla</b>: s</li> 
+                            <li><b>Tamaño de ruedas</b>: 26</li> 
+                            <li><b>Precio por dia</b>: 15</li> 
+                            <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
+                        </ul>
+                    </div>
+                    <div class="ubicationShow">
+                        <p>Se ubica en bibike</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="img">
+                    <a href="./bicissolitarias/bicissolitariaPA0201.html"><img src="http://imgfz.com/i/rBA18ZL.jpeg" alt="bicicleta de la marca specialized y tipo e-mtb"></a>
+                </div>
+                <div class="contenedor_info">
+                    <h5>e-mtb</h5>
+                    <div class="infoBike">
+                        <ul> 
+                            <li><b>Estado</b>: up</li> 
+                            <li><b>Marca</b>: specialized</li> 
+                            <li><b>Groupset</b>: specialized</li> 
+                            <li><b>Talla</b>: l</li> 
+                            <li><b>Tamaño de ruedas</b>: 27</li> 
+                            <li><b>Precio por dia</b>: 14</li> 
+                            <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
+                        </ul>
+                    </div>
+                    <div class="ubicationShow">
+                        <p>Se ubica en rentbima</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>'''
+
+
 
 # --------crearBiciSolitaria-------
 

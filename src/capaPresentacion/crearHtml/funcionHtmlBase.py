@@ -121,3 +121,47 @@ def biciSolitariaHtml(htmlBiciSolitaria, bici):
     htmlBiciSolitaria = htmlBiciSolitaria.replace("-precio-",precio)
 
     return htmlBiciSolitaria
+
+# Funcion que crea el contenedor del codigo html de una bicicleta
+def crearContenedorBici(bici):
+
+    # Definimos las variables que vamos a implementar
+    tipo = bici["type"]
+    estado = bici["state"]
+    groupset = bici["techinfo"]["groupset"]
+    talla = bici["techinfo"]["size"]
+    ruedas = bici["techinfo"]["wheels"]
+    precio = bici["prize_euros_days"]
+    complementos = bici["complements"]
+    imagenBici = bici["img"]
+    marca = bici["techinfo"]["brand"]
+    strComplementos = ""
+    for complemento in complementos:
+        strComplementos += (complemento+" ")
+    rental = bici["where"][0]["company_name"]
+
+    # Definimos la parte final del body html
+    biciBodyHtml=f'''
+            <div class="container">
+                <div class="img">
+                    <a href="./bicissolitarias/bicissolitaria{bici["_idbike"]}.html"><img src="{imagenBici}" alt="bicicleta de la marca {marca} y tipo {tipo}"></a>
+                </div>
+                <div class="contenedor_info">
+                    <h5>{tipo}</h5>
+                    <div class="infoBike">
+                        <ul> 
+                            <li><b>Estado</b>: {estado}</li> 
+                            <li><b>Marca</b>: {marca}</li> 
+                            <li><b>Groupset</b>: {groupset}</li> 
+                            <li><b>Talla</b>: {talla}</li> 
+                            <li><b>Tamaño de ruedas</b>: {ruedas}</li> 
+                            <li><b>Precio por dia</b>: {precio}</li> 
+                            <li><b>Complementos disponibles</b>: {strComplementos}</li> 
+                        </ul>
+                    </div>
+                    <div class="ubicationShow">
+                        <p>Se ubica en {rental}</p>
+                    </div>
+                </div>
+            </div>'''
+    return biciBodyHtml

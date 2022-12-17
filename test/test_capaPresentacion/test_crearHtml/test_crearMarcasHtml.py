@@ -11,3 +11,4 @@ def test_crearMarcasHtml():
     crearMarcasHtml()
     ruta = os.path.relpath(".\\docs\\second_pages\\marcas.html")
     assert os.path.isfile(ruta) == True
+    os.remove(ruta)

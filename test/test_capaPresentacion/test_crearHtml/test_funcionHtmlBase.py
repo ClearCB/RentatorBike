@@ -1,6 +1,6 @@
-from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader, crearContenedorRental, crearCodigoHtml, biciSolitariaHtml
+from src.capaPresentacion.crearHtml.funcionHtmlBase import crearHtmlHead, crearHeader, crearContenedorRental, crearCodigoHtml, biciSolitariaHtml, crearContenedorBici
 from src.variables.variablesHtmlTest import headTest, headTestCambiado, headerTest, headerTestCambiado, rentalsTest, contenedorRentalTest, footerTest, codigoHtmlTest,  htmlBiciSolitaria, biciTest
-from src.variables.variablesHtmlTest import htmlBiciSolitariaCambiado
+from src.variables.variablesHtmlTest import htmlBiciSolitariaCambiado, biciTest, contenedorBici
 import pytest
 
 # Vamos a realizar los test de las funcionalidades del modulo htmlBase para comprobar
@@ -38,4 +38,8 @@ def test_biciSolitariaHtml():
 
     assert biciSolitariaHtml(htmlBiciSolitaria, biciTest) == htmlBiciSolitariaCambiado
 
+# Comprobamos la funcionalidad que crea los contenedores de las bicis
+@pytest.mark.test_contenedorBici
+def test_contenedorBici():
 
+    assert crearContenedorBici(biciTest) == contenedorBici

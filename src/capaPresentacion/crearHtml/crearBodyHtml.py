@@ -1,7 +1,6 @@
 from src.capaDatos.listarDatosMongo import listarBicis, listarRentals, respuestaText
 from src.capaDatos.peticionMongo import respuestaMongo
-from src.capaPresentacion.crearHtml.funcionHtmlBase import crearContenedorRental
-from src.capaPresentacion.crearHtml.crearBiciSolitariaHtml import crearBiciSolitariaHtml
+from src.capaPresentacion.crearHtml.funcionHtmlBase import crearContenedorRental, crearContenedorBici
 # En este modulo vamos a poner todos los "body" de las funciones que
 # creen un body
 
@@ -30,7 +29,32 @@ def crearBodyRentals(lista):
 
     return bodyRentals
 
-# Devuelve la variable del codigo html del body de rentals.html
-def bodyRentalsHtml():
+# Devuelve una variable con el html del body de rentals.html
+def bodyRentals():
 
     return crearBodyRentals(listaRentals)
+
+# Creamos una función que devuelva el valor del body del bicis.html
+def crearBodyBicis(lista):
+
+    # Definimos parte del body html
+    bicisBodyHtml ='''
+        <h3 class="titleBicis"> Bicis disponibles </h3>
+        <hr>
+        <section>
+            <div id="contenedorPadre">'''
+    
+    for bici in lista: # Recorremos la lista de las bicis para conseguir los valores que queremos
+
+        bicisBodyHtml += crearContenedorBici(bici)
+    
+    bicisBodyHtml+='''
+            </div>
+        </section>'''
+
+    return bicisBodyHtml
+
+# Devuelve una variable con el html del body de bicis.html
+def bodyBicis():
+
+    return crearBodyBicis(listaBicis)

@@ -1,4 +1,4 @@
-from src.capaPresentacion.crearHtml.crearIndexHtml import crearIndexHtml
+from src.capaPresentacion.crearHtml.crearBicisHtml import crearBicisHtml
 import pytest
 import os
 
@@ -8,7 +8,7 @@ import os
 @pytest.mark.test_crearIndexHtml
 def test_crearIndexHtml():
 
-    crearIndexHtml()
-    ruta = os.path.relpath(".\\docs\\index.html")
+    crearBicisHtml()
+    ruta = os.path.relpath(".\\docs\\second_pages/bicis.html")
     assert os.path.isfile(ruta) == True
     os.remove(ruta)

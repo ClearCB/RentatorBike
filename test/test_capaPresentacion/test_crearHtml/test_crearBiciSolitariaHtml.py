@@ -30,5 +30,7 @@ def test_crearBicisSolitarias():
     assert crearBiciSolitariaHtml(listaBiciTest) == None
     ruta = os.path.relpath(".\\docs\\second_pages\\bicissolitarias/bicissolitariaPA0102.html")
     assert os.path.isfile(ruta) == True
+    os.remove(ruta)
     ruta = os.path.relpath(".\\docs\\second_pages\\bicissolitarias/bicissolitariaPA0201.html")
     assert os.path.isfile(ruta) == True
+    os.remove(ruta)
