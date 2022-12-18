@@ -567,6 +567,7 @@ htmlBiciSolitariaCambiado ='''
     </body>
 </html>'''
 
+# Bici usada de ejemplo en casos test
 biciTest =  {
     "_idbike": 'PA0101',
     "state": 'up',
@@ -750,7 +751,6 @@ bicisBodyTest='''
             </div>
             </div>
         </section>'''
-
 
 # --------crearBiciSolitaria-------
 
