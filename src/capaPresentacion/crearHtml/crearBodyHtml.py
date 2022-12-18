@@ -137,7 +137,7 @@ def crearBodyCaracteristica(lista):
                 <h5 class="filtrocaract"> Talla 27'</h5>'''
 
 
-    for bici in listaBicis:
+    for bici in lista:
         
         try:
             bodyBiciCaracteristica += esFiltro(bici,  "caracteristicaRueda", "27")
@@ -148,7 +148,7 @@ def crearBodyCaracteristica(lista):
                 <h5 class="filtrocaract"> Talla 29'</h5>'''
 
 
-    for bici in listaBicis:
+    for bici in lista:
         
         try:
             bodyBiciCaracteristica += esFiltro(bici,  "caracteristicaRueda", "29")
@@ -160,7 +160,7 @@ def crearBodyCaracteristica(lista):
                 <h5 class="filtrocaract"> Kask</h5>'''
     
 
-    for bici in listaBicis:
+    for bici in lista:
         
         try:
             bodyBiciCaracteristica += esFiltro(bici,  "caracteristicaGroup", "kask")
@@ -171,7 +171,7 @@ def crearBodyCaracteristica(lista):
                 <h5 class="filtrocaract"> Specialized </h5>'''
     
 
-    for bici in listaBicis:
+    for bici in lista:
         
         try:
             bodyBiciCaracteristica += esFiltro(bici,  "caracteristicaGroup", "specialized")
@@ -182,7 +182,7 @@ def crearBodyCaracteristica(lista):
                 <h5 class="filtrocaract"> Kona </h5>'''
     
 
-    for bici in listaBicis:
+    for bici in lista:
         
         try:
             bodyBiciCaracteristica += esFiltro(bici,  "caracteristicaGroup", "kona")
@@ -193,7 +193,7 @@ def crearBodyCaracteristica(lista):
                 <h5 class="filtrocaract"> Orbea </h5>'''
     
 
-    for bici in listaBicis:
+    for bici in lista:
         
         try:
             bodyBiciCaracteristica += esFiltro(bici,  "caracteristicaGroup", "orbea")
@@ -316,7 +316,7 @@ def crearBodyMarca(lista):
                 <h4 class="filtrotitulo" id="cube"> Cube </h4>'''
 
     # Recorremos la lista de las bicis
-    for bici in listaBicis:
+    for bici in lista:
         
         # Comprobamos que cunple la condicion y la añadimos si es "True"
         try:
@@ -329,7 +329,7 @@ def crearBodyMarca(lista):
                 <h4 class="filtrotitulo" id="specialized"> Specialized</h4>'''
 
     # Recorremos la lista de las bicis
-    for bici in listaBicis:
+    for bici in lista:
         
         # Comprobamos que cunple la condicion y la añadimos si es "True"
         try:
@@ -342,7 +342,7 @@ def crearBodyMarca(lista):
                 <h4 class="filtrotitulo" id="giant"> Giant</h4>'''
 
     # Recorremos la lista de las bicis
-    for bici in listaBicis:
+    for bici in lista:
         
         # Comprobamos que cunple la condicion y la añadimos si es "True"
         try:
@@ -355,7 +355,7 @@ def crearBodyMarca(lista):
                 <h4 class="filtrotitulo" id="cannondale"> Cannondale</h4>'''
 
     # Recorremos la lista de las bicis
-    for bici in listaBicis:
+    for bici in lista:
         
         # Comprobamos que cunple la condicion y la añadimos si es "True"
         try:

@@ -531,7 +531,7 @@ htmlBiciSolitariaCambiado ='''
                                 <td>bici de ciudad</td>
                                 <td>kask</td>
                                 <td>29</td>
-                                <td>x</td>
+                                <td>xl</td>
                                 <td>casco  luz  bomba  guardabarros  candado  potenciometro  </td>
                                 <td>15</td>
                                 <td>bibike</td>
@@ -572,7 +572,7 @@ biciTest =  {
     "_idbike": 'PA0101',
     "state": 'up',
     "type": 'bici de ciudad',
-    "techinfo": { "groupset": 'kask', "size": 'x', "wheels": '29', "brand": 'cube' },
+    "techinfo": { "groupset": 'kask', "size": 'xl', "wheels": '29', "brand": 'cube' },
     "complements": [
       'casco',
       'luz',
@@ -605,7 +605,7 @@ contenedorBici='''
                             <li><b>Estado</b>: up</li> 
                             <li><b>Marca</b>: cube</li> 
                             <li><b>Groupset</b>: kask</li> 
-                            <li><b>Talla</b>: x</li> 
+                            <li><b>Talla</b>: xl</li> 
                             <li><b>Tamaño de ruedas</b>: 29</li> 
                             <li><b>Precio por dia</b>: 15</li> 
                             <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
@@ -629,7 +629,7 @@ biciFiltrada ='''
                                 <li><b>Estado</b>: up</li> 
                                 <li><b>Marca</b>: cube</li> 
                                 <li><b>Groupset</b>: kask</li> 
-                                <li><b>Talla</b>: x</li> 
+                                <li><b>Talla</b>: xl</li> 
                                 <li><b>Tamaño de ruedas</b>: 29</li> 
                                 <li><b>Precio por dia</b>: 15</li> 
                                 <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
@@ -640,7 +640,6 @@ biciFiltrada ='''
                         </div>
                     </div>
                 </div>'''
-
 
 # -------crearBodyHtml-------
 
@@ -752,6 +751,189 @@ bicisBodyTest='''
             </div>
         </section>'''
 
+# Ejemplo de body biciPorMarca.html test
+bodyPorMarcaTest='''
+        <h3 class="titleBicis"> Bicis por marca </h3><hr>
+        <section>
+            <div id="contenedorPadre">
+                <h4 class="filtrotitulo" id="cube"> Cube </h4>
+                <h4 class="filtrotitulo" id="specialized"> Specialized</h4>
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0102.html"><img src="http://imgfz.com/i/YaJj6u9.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: s</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bibike</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="filtrotitulo" id="giant"> Giant</h4>
+                <h4 class="filtrotitulo" id="cannondale"> Cannondale</h4>
+            </div>
+        </section>'''
+
+# Ejemplo de body biciPorCaract.html test
+bodyPorCaractTest='''
+        <section>
+            <h3 class="titleBicis"> Bicis por caracteristica </h3>
+            <div class="categorias">
+                <a href="#cuadro" target="_self"><div class="nombrecategorias"><h4>Por tamaño del cuadro</h4></div></a>
+                <a href="#rueda" target="_self"><div class="nombrecategorias"><h4>Por tamaño de las ruedas</h4></div></a>
+                <a href="#groupset" target="_self"><div class="nombrecategorias"><h4>Por marca del groupset</h4></div></a>
+            </div><hr>
+            <div id="contenedorPadre">
+                    <h4 class="filtrotitulo"><span id="cuadro"></span>Tamaño del cuadro </h4>
+                    <h5 class="filtrocaract"> Talla XS</h5>
+                <h5 class="filtrocaract"> Talla S</h5>
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0102.html"><img src="http://imgfz.com/i/YaJj6u9.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: s</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bibike</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="filtrocaract"> Talla M</h5>
+                <h5 class="filtrocaract"> Talla L</h5>
+                <h5 class="filtrocaract"> Talla XL</h5>
+                <h4 class="filtrotitulo"> <span id="rueda"></span> Tamaño de la rueda </h4>
+                <h5 class="filtrocaract"> Talla 26'</h5>
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0102.html"><img src="http://imgfz.com/i/YaJj6u9.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: s</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bibike</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="filtrocaract"> Talla 27'</h5>
+                <h5 class="filtrocaract"> Talla 29'</h5>
+                <h4 class="filtrotitulo"> <span id="groupset"></span>Marca del groupset </h4>
+                <h5 class="filtrocaract"> Kask</h5>
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0102.html"><img src="http://imgfz.com/i/YaJj6u9.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: s</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bibike</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="filtrocaract"> Specialized </h5>
+                <h5 class="filtrocaract"> Kona </h5>
+                <h5 class="filtrocaract"> Orbea </h5>
+            </div>
+        </section>'''
+
+# Ejemplo de body biciPorCateg.html test
+bodyPorCategTest='''
+        <h3 class="titleBicis"> Bicis por categoria </h3>
+        <section><hr>
+            <div id="contenedorPadre">
+                <h4 class="filtrotitulo" id="mtb"> MTB</h4>
+                <h4 class="filtrotitulo" id="emtb"> e-MTB</h4>
+                <h4 class="filtrotitulo" id="carretera"> Carretera</h4>
+                <h4 class="filtrotitulo" id="ecarretera"> Carretera eléctrica</h4>
+                <h4 class="filtrotitulo" id="ciudad"> Bici de ciudad</h4>
+                <h4 class="filtrotitulo" id="eciudad"> Bici de ciudad eléctrica</h4>
+                <div class="container">
+                    <div class="img">
+                        <a href="./bicissolitarias/bicissolitariaPA0102.html"><img src="http://imgfz.com/i/YaJj6u9.jpeg" alt="bicicleta de la marca specialized y tipo bici de ciudad electrica"></a>
+                    </div>
+                    <div class="contenedor_info">
+                        <div class="infoBike">
+                            <ul> 
+                                <li><b>Estado</b>: down</li> 
+                                <li><b>Marca</b>: specialized</li> 
+                                <li><b>Groupset</b>: kask</li> 
+                                <li><b>Talla</b>: s</li> 
+                                <li><b>Tamaño de ruedas</b>: 26</li> 
+                                <li><b>Precio por dia</b>: 15</li> 
+                                <li><b>Complementos disponibles</b>: casco luz bomba guardabarros candado potenciometro </li> 
+                            </ul>
+                        </div>
+                        <div class="ubicationShow">
+                            <p>Se ubica en bibike</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>'''
+
+# Lista bici 
+listaFiltroTest = [{
+    "_idbike": 'PA0102',
+    "state": 'down',
+    "type": 'bici de ciudad electrica',
+    "techinfo": { "groupset": 'kask', "size": 's', "wheels": '26', "brand": 'specialized' },
+    "complements": [
+      'casco',
+      'luz',
+      'bomba',
+      'guardabarros',
+      'candado',
+      'potenciometro'
+    ],
+    "prize_euros_days": '15',
+    "where":[{'_idrental': 'PA01', 'company_name': 'bibike', 'address': {'zip': '07006', 'street': 'joan alcover n7  ', 'country': 'espana', 'town': 'palma'}, 
+    'social_media': {'twitter': '@bibike', 'instagram': '@bibike'}, 'contact': {'num': '678598234', 'email': 'bibike@contact.eu'}, 
+    'promotions': '15% descuento', 'stock': '2', 
+    'bikes': {'bikes_up': {'_idbikes': ['PA0101']}, 
+    'bikes_down': {'_idbikes': ['PA0102']}}, 
+    'img': 'http://imgfz.com/i/2sS6E8d.jpeg', 'icono': 'http://imgfz.com/i/x1Re2Mf.png'}],
+
+    "img": 'http://imgfz.com/i/YaJj6u9.jpeg'
+  }]
 # --------crearBiciSolitaria-------
 
 # Variable de un ejemplo de lista de bicicletas
