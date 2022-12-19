@@ -12,3 +12,4 @@ def crearArchivo(contenido, ruta, nombre, tipo):
             print(f"El archivo '{nombre}.{tipo}' creado correctamente.")
     except FileNotFoundError: # Captamos una excepción en caso de que no encuentre el directorio.
         print("El directorio no existe, ejecuta correctamente el programa y vuelve a intentarlo.")
+        return False

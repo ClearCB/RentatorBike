@@ -1,8 +1,10 @@
 from src.capaPresentacion.crearHtml.funcionHtmlBase import biciSolitariaHtml
 from src.capaPresentacion.crearHtml.crearBiciSolitariaHtml import crearBiciSolitariaHtml
 from src.variables.variablesHtmlTest import listaBiciTest, biciHtmlPA0102, biciHtmlPA0201, htmlBiciSolitaria
+from src.capaNegocio.crearDirectorios import creacionDirectorios
 import pytest
 import os
+import shutil
 
 # Este modulo comprobará que la funcion crearBiciSolitariahtml, creará correctamente 2 html individuales con los parámetros correctos.
 
@@ -27,10 +29,10 @@ def test_crearBiciSolitariaHtml():
 @pytest.mark.test_crearBicisSolitarias
 def test_crearBicisSolitarias():
 
+    creacionDirectorios(os.path.relpath(".\\docs\\second_pages/bicissolitarias"), "bicissolitarias")
     assert crearBiciSolitariaHtml(listaBiciTest) == None
     ruta = os.path.relpath(".\\docs\\second_pages\\bicissolitarias/bicissolitariaPA0102.html")
     assert os.path.isfile(ruta) == True
-    os.remove(ruta)
     ruta = os.path.relpath(".\\docs\\second_pages\\bicissolitarias/bicissolitariaPA0201.html")
     assert os.path.isfile(ruta) == True
-    os.remove(ruta)
+    shutil.rmtree(os.path.relpath(".\\docs\\second_pages/bicissolitarias"))
