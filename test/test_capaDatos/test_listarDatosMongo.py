@@ -17,14 +17,14 @@ def test_listarBicisUno():
 
 # Este test comprueba que si no se pueden listar correctamente los datos lanza un error
 @pytest.mark.test_listarRentalsErrorUno
-def test_listarRentalsUno():
+def test_listarRentalsErrorUno():
 
     doc = {"where":"hehe","docw":[{"where":[{"id_rental":"hehe"}]}]}
     assert listarRentals(doc) == False
 
 # Este test comprueba que se listan correctamente los datos
 @pytest.mark.test_listarBicisErrorUno
-def test_listarBicisUno():
+def test_listarBicisErrorUno():
 
     doc = {"hola":"hjaha", "docw":["2","3"]}
     assert listarBicis(doc) == False

@@ -5,24 +5,16 @@ import os
 # Este modulo se va a encargar de conseguir la petición de mongoDB
 
 # Definimos en el entorno la variable de entorno MONGO_KEY que utilizaremos en la peticion. Por seguridad
-def mongoKey():
+def mongoEnvVariable(variable):
 
+    
     try:
-        MONGO_KEY = os.environ['MONGO_KEY'] # Con el modulo os conseguimos llamar el valor de nuestra v. entorno
+        VARIABLE_MONGO = os.environ[f'MONGO_{variable}'] # Con el modulo os conseguimos llamar el valor de nuestra v. entorno
     except KeyError:
-        print("La variable de entorno MONGO_KEY no se ha podido encontrar, por favor, corrige el error y vuelve a intentarlo")
+        print(f"La variable de entorno MONGO_{variable} no se ha podido encontrar, por favor, corrige el error y vuelve a intentarlo")
+        return False
         
-    return MONGO_KEY
-
-# Definimos en el entorno la variable de entorno MONGO_URL que utilizaremos en la peticion. Por seguridad
-def mongoUrl():
-
-    try:
-        MONGO_URL = os.environ['MONGO_URL'] # Con el modulo os conseguimos llamar el valor de nuestra v. entorno
-    except KeyError:
-        print("La variable de entorno MONGO_URL no se ha podido encontrar, por favor, corrige el error y vuelve a intentarlo")
-
-    return MONGO_URL
+    return VARIABLE_MONGO
 
 # Esta función ejecuta la petición al servidor de mongoAtlas mediante la cual recibimos una respuesta
 def conseguirRespuestaDatos(key,url):
@@ -64,4 +56,4 @@ def conseguirRespuestaDatos(key,url):
 # Funcion que combia las funciones anteriores y devuelve la respuesta de mongo
 def respuestaMongo():
 
-    return conseguirRespuestaDatos(mongoKey(),mongoUrl())
+    return conseguirRespuestaDatos(mongoEnvVariable("KEY"),mongoEnvVariable("URL"))
