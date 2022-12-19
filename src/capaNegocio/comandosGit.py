@@ -26,7 +26,7 @@ def gitAd():
 # Definimos una función que ejecuta el comando gitcommit 
 def gitCommit():
 
-    comandoGit("git commit -m 'Actualizar Datos en GitHub pages. Re-lanzando la página web Rentator.'")
+    comandoGit("git commit -m 'Actualizar'")
 
 def gitPull():
 
