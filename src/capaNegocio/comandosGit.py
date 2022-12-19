@@ -8,7 +8,7 @@ import subprocess
 def comandoGit(comando):
 
     try:
-        comand = subprocess.run(comando)
+        comand = subprocess.run(comando, shell=True)
         if comand.returncode != 0 and comand.returncode != 1:
             raise Exception
         else:
