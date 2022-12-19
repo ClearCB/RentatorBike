@@ -54,5 +54,3 @@ def actualizarPages():
 
     guardarCambios()
     actualizarGitHubPagina()
-
-actualizarPages()
