@@ -17,6 +17,7 @@ def listarBicis(respuesta):
         listaBicis = respuesta["documents"]
     except KeyError:
         print("El documento no cumple las condiciones de uso")
+        return False
     else:
         return listaBicis
 
@@ -27,6 +28,7 @@ def listarRentals(respuesta):
         listaBicis = respuesta["documents"]
     except KeyError:
         print("El documento no cumple las condiciones de uso")
+        return False
     else:
         listaRentals = []
         for bici in listaBicis:
