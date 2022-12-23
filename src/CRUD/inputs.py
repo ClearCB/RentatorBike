@@ -102,8 +102,8 @@ en la base de datos''')
 
 # Esta funcion nos pedirá la identificación de la bicicleta que el usuario quiere buscar
 def identificadorBici():
-    
-    idBici = input("¿Quieres introducir el identificador de la bicicleta? Y/N   ")
+
+    idBici = input("Por favor, indique con Y o N si quiere introducir el identificador de la bicicleta:   ")
 
     if idBici.lower() == "y":
 
@@ -121,7 +121,13 @@ def identificadorBici():
     Elige alguna de las siguientes zonas:
 
     MA(manacor), PA(palma), SO(soller), AL(alcudia) O CA(calvia)''')
+
+        zonasCorrectas = ["ma","so","ca","al","pa"]
         zona=input("Zona: ")
+
+        while zona.lower() not in zonasCorrectas:
+
+            zona=input("Por favor introduzca correctamente las zonas correctamente: ")
 
         print("Ahora selecciona un rental: escribe 01 O 02")
         rental=input("Rental: ")
@@ -129,7 +135,7 @@ def identificadorBici():
         print("Por ultimo, seleciona una bici: 01 o 02")
         bici=input("Bici: ")
 
-        identificador = zona+rental+bici
+        identificador = zona.upper()+rental+bici
         return identificador
 
     else:
@@ -138,6 +144,7 @@ def identificadorBici():
 # Esta funcion nos devolverá el campo que se quiere modificar del documentos seleccionado
 def elegirCampo():
 
+    correctoCampo = ["identificador","estado","precio","ubicacion","imagen"]
     time.sleep(1)
     print('''
 Escribe el campo que quieres modificar:
@@ -146,19 +153,23 @@ identificador, estado, precio, ubicacion, imagen
 ''')
     campo = input("Campo: ")
 
-    if campo == "identificador":
+    while campo.lower() not in correctoCampo:
+
+        campo = input("Escriba correctamente un campo de los siguientes(identificador, estado, precio, ubicacion, imagen): ")
+
+    if campo.lower() == "identificador":
         return "_idbike"
 
-    if campo == "estado":
+    if campo.lower() == "estado":
         return "state"
 
-    if campo == "precio":
+    if campo.lower() == "precio":
         return "prize_euros_days"
 
-    if campo == "ubicacion":
+    if campo.lower() == "ubicacion":
         return "where._idrental"
 
-    if campo == "imagen":
+    if campo.lower() == "imagen":
         return "img"
 
 
