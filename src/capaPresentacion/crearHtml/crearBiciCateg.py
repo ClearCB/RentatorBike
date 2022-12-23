@@ -9,9 +9,9 @@ from src.capaNegocio.crearArchivos import crearArchivo
 headBiciCateg = crearHtmlHead(headBase,"Bicicletas por categoría", "Página donde aparecen las bicicletas filtradas por su categoria", "bicicletas, tipos, mtb, carretera, electrica, ciudad, alquilar, rental, bike","../cssStyles/","bicisfiltro")
 
 # Definimos variable headBiciCategoria
-headBiciCateg = crearHeader(headerBase,"../","")
+headerBiciCateg = crearHeader(headerBase,"../","")
 
 # Definimos una función que ejecuta la función necesaria para crear el archivo correctamente.
 def crearBiciCategoriaHtml():
 
-    crearArchivo(crearCodigoHtml(headBiciCateg,headBiciCateg,bodyCategoriaHtml(),footerBase),".\\docs\\second_pages","biciscategoria","html")
+    crearArchivo(crearCodigoHtml(headBiciCateg,headerBiciCateg,bodyCategoriaHtml(),footerBase),".\\docs\\second_pages","biciscategoria","html")
