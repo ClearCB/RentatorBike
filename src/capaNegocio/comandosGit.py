@@ -31,10 +31,10 @@ def gitPull():
     try: # Comprobamos que el comando se puede ejecutar sin problema
         comandoDelete = f"git pull origin main"
         subprocess.run(comandoDelete)
-        print("Comando git delete ejecutado correctamente.")
+        print("Comando git pull ejecutado correctamente.")
 
     except subprocess.SubprocessError: # Capturamos un error en el caso de que no se pueda ejecutar correctamente
-        print("El comando git delete no se ha podido ejecutar correctamente, revíselo e inténtelo de nuevo.")
+        print("El comando git pull no se ha podido ejecutar correctamente, revíselo e inténtelo de nuevo.")
 
 # Definimos una función que ejecuta el comando gitpush
 def gitPush():
