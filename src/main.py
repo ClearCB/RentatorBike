@@ -6,6 +6,8 @@ from src.capaDatos.peticionMongo import respuestaMongo
 from src.check.checkNegocio import checkDirectorios
 from src.capaDatos.listarDatosMongo import listarBicis, listarRentals, respuestaText
 from src.capaDatos.peticionMongo import respuestaMongo
+from src.CRUD.crud import CRUD
+
 respuesta = respuestaText(respuestaMongo()) 
 listaBicis = listarBicis(respuesta)
 listaRentals = listarRentals(respuesta)
@@ -16,6 +18,7 @@ listaRentals = listarRentals(respuesta)
 # servida por gitHub Pages en link : 'https://clearcb.github.io/RentatorBike/'
 
 def generarGitHubPages():
+
 
     if checkGeneralDatos(respuestaMongo(),listaBicis,listaRentals) == False:
         raise Exception("Los datos no son correctos, revisa el programa y vuelve a ejecutarlo para evitar problemas")
@@ -28,4 +31,5 @@ def generarGitHubPages():
 
 if __name__ == '__main__':
 
+    CRUD()
     generarGitHubPages()
