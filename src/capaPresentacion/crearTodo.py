@@ -1,19 +1,9 @@
-from src.capaDatos.listarDatosMongo import listarBicis, listarRentals, respuestaText
-from src.capaDatos.peticionMongo import respuestaMongo
-from src.capaPresentacion.crearHtml.crearBiciSolitariaHtml import crearBiciSolitariaHtml
-from src.capaPresentacion.crearHtml.crearRentalsHtml import crearRentalsHtml
-from src.capaPresentacion.crearHtml.crearMarcasHtml import crearMarcasHtml
-from src.capaPresentacion.crearHtml.crearIndexHtml import crearIndexHtml
+from src.capaPresentacion.crearHtml.crearHtml import crearHtml
+from src.capaPresentacion.crearCss.crearCss import crearCss
 
-
-respuesta = respuestaText(respuestaMongo()) 
-listaBicis = listarBicis(respuesta)
-listaRentals = listarRentals(respuesta)
-
-
+# Esta funcion creara todos los archivos css y html necesarios para que nuestra pagina se vea correctamente
+# gitHub Pages
 def crearTodo():
 
-    crearIndexHtml()
-    crearRentalsHtml()
-    crearMarcasHtml()
-    crearBiciSolitariaHtml(listaBicis)
+    crearCss()
+    crearHtml()

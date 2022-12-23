@@ -75,4 +75,4 @@ def test_crearCssPorPagina():
     ruta = os.path.relpath(".\\docs\\cssStyles\\rentals.css")
     assert os.path.isfile(ruta) == True
 
-    # shutil.rmtree(os.path.relpath(".\\docs\\cssStyles"))
+    shutil.rmtree(os.path.relpath(".\\docs\\cssStyles"))

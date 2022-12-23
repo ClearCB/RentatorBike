@@ -1,0 +1,48 @@
+
+footer {
+  display: flex;
+  background-color: grey;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  color: rgb(0, 0, 0);
+  justify-content: space-evenly;
+  margin-top: 20px;
+  z-index: 0;
+}
+.copyright_footer a{
+  text-decoration: none;
+  color:white;
+}
+.soporte_links ul {
+  padding-left: 0px;
+}
+.soporte_links ul, li{
+  list-style: none;
+}
+.soporte_links a{
+  text-decoration: none;
+  color:white;
+}
+
+/* Inicio de media-queries para dispositivo "Samsung Galaxy S8+" en modo vertical:  píxeles 360x740 */
+@media (min-width: 360px) and (max-width: 740px){
+footer {
+  flex-direction: column-reverse;
+  align-items: center;
+  align-content: center;
+}
+
+.soporte_links {
+  width: 100%;
+}
+
+.soporte_links ul, .footer__license__description, .footer__license__img {
+  margin: 15px;
+}
+
+.copyright_footer {
+  width: 100%;
+}
+}

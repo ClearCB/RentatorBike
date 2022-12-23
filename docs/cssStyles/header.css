@@ -1,0 +1,91 @@
+
+.header {
+  background: #edeebc;
+  overflow: hidden;
+  position: relative;
+}
+.header__logo {
+  height: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 20%;
+}
+.header__logo h1,
+.header__logo h2 {
+  font-family: "Century Gothic";
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+.header__logo h1 {
+  font-size: 3.6rem;
+  margin-bottom: 5px;
+}
+.header__logo h2 {
+  font-size: 1.7rem;
+}
+.header__nav {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: -350px;
+  transition: right 0.3s ease;
+  background: #ff9200;
+  clip-path: polygon(0px 0px, 35% 100%, 100% 100%, 100% 0%, 75% 0px);
+}
+.header:hover .header__nav {
+  right: 0;
+}
+.header__links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 33px;
+  width: 500px;
+  height: 500px;
+  left: 150px;
+  z-index: 3;
+}
+.header__links a {
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px 60px 0 -200px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/* Inicio de media-queries para dispositivo "Samsung Galaxy S8+" en modo vertical:  píxeles 360x740 */
+
+@media only screen and (min-width: 350px) 
+    and (max-width:800px) 
+    and (orientation: portrait) {
+
+    header {
+        background: #edeebc;
+        overflow: hidden;
+        position: relative;
+      }
+    .header {
+        display: block;
+        position: relative;
+        left: -10%;
+    }
+
+    .header__nav {
+        display: none;
+    }
+    .header__logo {
+        display: flex;
+        padding-right: 100px;
+    }    
+    
+}
