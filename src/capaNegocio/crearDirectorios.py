@@ -1,4 +1,5 @@
 import os
+import shutil
 
 # Este modulo se va a encargar de la creación de los directorios que vamos a necesitar para la página
 
@@ -14,6 +15,16 @@ def creacionDirectorios(ruta,nombreDirectorio):
         print(f"El directorio {nombreDirectorio} no ha podido crearse")
         return False
 
+# Esta funcion elimina el directorio docs para actualizar la informacion fielmente
+def borrarDirectorios(ruta):
+
+    try:
+        shutil.rmtree(os.path.relpath(ruta))
+    except FileNotFoundError:
+        print("El directorio docs, no existen. Se continua con la normal ejecución del programa")
+        return False
+
+
 # Definimos una función que nos crea los directorios que necesitamos para desplegar la página estática
 def crearRutasDocs():
 
@@ -21,6 +32,9 @@ def crearRutasDocs():
     pathBiciSolitarias = ".\\docs\\second_pages\\bicissolitarias"
     pathPaginaSecundaria = ".\\docs\\second_pages"
     pathCcsStyles = ".\\docs\\cssStyles"
+
+    # Borramos el directorio existente
+    borrarDirectorios("./docs")
 
     # Creamos los directorios
     creacionDirectorios(pathBiciSolitarias, "bicissolitarias")
