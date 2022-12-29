@@ -6,7 +6,9 @@ Para visitar nuestra página web: [rentatorsl](https://clearcb.github.io/Rentato
 
 * [**Introducción**](#introducción)
 * [**Requisitos**](#requisitos)
-* [**Funcionamiento**](#funcionamiento)
+* [**Instalación**](#instalación)
+* [**Uso**](#uso)
+* [**Comportamiento**](#comportamiento)
 * [**Tecnologías**](#tecnologías)
 * [**Arquitectura**](#arquitectura)
 * [**Diagrama de componentes**](#diagrama-de-componentes)
@@ -35,13 +37,54 @@ Facilitando una completa y sencilla adapatacion al mundo del ciclismo, hemos cre
 * Request
 * Api-key
 * Atlas cluster de MongoDB
-* Recomendación: creación de un entorno virtual local
 
-## FUNCIONAMIENTO
+## Instalación
 
 ---
 
-El funcionamiento de la aplicación consta de varias partes.
+Se recomienda la creación de un entorno virtual con python "venv" para la instalación de todas las dependencias necesarias para el correcto funcionamiento del proyecto.
+
+En primer lugar, es necesario tener instalado GIT en el dispositivo y crear un directorio para el proyecto, para eso ejecutar el siguiente comando.
+
+```cmd
+mkdir ./RentatorBike
+cd RentatorBike
+```
+
+Posteriormente, clonar el repositorio en tu dispositivo con el siguiente
+
+```cmd
+git clone https://github.com/ClearCB/RentatorBike.git
+```
+
+Nos situamos dentro del directorio clonado, creamos un entorno entorno virtual y lo activamos:
+
+```cmd
+cd venv/Scripts
+activate
+```
+
+Ahora instalamos las dependencias necesarias:
+
+```cmd
+pip install -r requirements.txt
+```
+
+Y finalmente ya tenemos todo lo necesario para ejecutar el proyecto.
+
+## Uso
+
+Para utilizar este proyecto es necesaria la creacion de un cluster de MongoDB y crear una api-Key con permisos de administrador (lectura y escritura). Es importante que se sustituyan las variables de entorno por las del usuario que quiere ejecutar el programa.
+
+En primer lugar nos situamos en el directorio raiz y ejecutamos el archivo main.py. En el caso de que no se quiere ejecutar ninguna accion CRUD sobre la base de datos, simplemente presionaremos el boton 0 para continuar con la ejecución del programa.
+
+Por otro lado, seguiremos las instrucciones de la interfaz de usuario para ejecutar cada una de las acciones habilitadas por la aplicación.
+
+## COMPORTAMIENTO
+
+---
+
+El comportamiento de la aplicación consta de varias partes.
 
 En primer lugar, contamos con un módulo que nos permitirá ejecutar un CRUD sobre la base de datos de MongoDB.
 
@@ -121,6 +164,7 @@ Contamos con un cluster de MongoDB Atlas, que utilizando su servicio gratuito en
 
 Nuestra base de datos tiene un esquema un poco complejo asi que os dejaremos un ejemplo de un documento con el cual nuestro programa interactua.
 
+```MongoDB
     {_idbike: 'PA0101',
     state: 'up',
     type: 'bici de ciudad',
@@ -136,6 +180,7 @@ Nuestra base de datos tiene un esquema un poco complejo asi que os dejaremos un 
     where:{ _idrental: 'PA01' },
     img:'http://imgfz.com/i/CiZJnhA.jpeg'
     }
+```
 
 ## GIT
 
